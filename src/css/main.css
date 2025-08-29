@@ -1,0 +1,132 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+
+body {
+  margin: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0
+}
+
+[hidden],
+template {
+  display: none
+}
+
+a {
+  background-color: transparent
+}
+
+a:active,
+a:hover {
+  outline: 0
+}
+
+.no-outline-btn {
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  padding: 0;
+  /* Make flag larger */
+  line-height: 1;
+  color: inherit;
+}
+
+.no-outline-btn::after {
+  display: none;
+}
+
+.no-outline-btn:focus,
+.no-outline-btn:hover {
+  background-color: transparent;
+}
+
+
+
+/* HEADER */
+.Header-inner {
+  padding: 2px;
+}
+
+.Header-branding {
+  max-width: 92px;
+  padding: 10px;
+}
+
+.Header-nav button,
+.Header-nav a {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  color: inherit;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.Header-nav button:focus,
+.Header-nav button:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.no-outline-btn .current-language-flag {
+  font-size: 1rem;
+  display: inline-block;
+  transition: transform 0.2s cubic-bezier(.4, 2, .3, 1);
+}
+
+.no-outline-btn:focus .current-language-flag,
+.no-outline-btn:hover .current-language-flag {
+  transform: translateY(-2px) scale(1.08);
+}
+
+.Header-nav-item {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* If needed, also target multilingual-text links */
+.Header-nav-item .multilingual-text {
+  display: inline-flex;
+  align-items: baseline;
+  vertical-align: baseline;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}

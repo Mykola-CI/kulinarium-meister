@@ -1,0 +1,33 @@
+# Node modules (if using npm/yarn)
+node_modules/
+
+# Build output
+dist/
+build/
+
+# VS Code settings
+.vscode/
+
+# Mac system files
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# Log files
+*.log
+
+# Dependency directories
+bower_components/
+
+# Misc
+*.swp
+*.swo
+.idea/
+*.bak
+*.tmp
+
+drafts/

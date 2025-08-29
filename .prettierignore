@@ -1,0 +1,6 @@
+*.scss
+.yarn
+dist
+assets
+node_modules
+.browserslistrc
