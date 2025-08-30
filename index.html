@@ -137,16 +137,17 @@
                 <div class="language-switcher">
                   <div class="dropdown">
                     <button
-                      class="btn btn-outline-secondary dropdown-toggle language-btn no-outline-btn"
+                      class="btn dropdown-toggle language-btn no-outline-btn"
                       type="button"
                       id="languageDropdown"
                       data-bs-toggle="dropdown"
+                      data-bs-offset="-12,8"
                       aria-expanded="false"
                     >
                       <span class="current-language-flag">🇺🇦</span>
                     </button>
                     <ul
-                      class="dropdown-menu"
+                      class="dropdown-menu Header-nav-folder"
                       aria-labelledby="languageDropdown"
                     >
                       <li>
@@ -188,11 +189,12 @@
                   <button
                     class="btn btn-primary dropdown-toggle multilingual-text no-outline-btn Header-nav-item"
                     type="button"
+                    data-bs-offset="-12,8"
                     data-bs-toggle="dropdown"
                   >
                     Тісто..Dough..Ciasto..Тесто
                   </button>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu Header-nav-folder">
                     <li>
                       <a
                         href="/tisto-dlya-vypichky"
@@ -219,25 +221,27 @@
                     </li>
                   </ul>
                 </div>
-                <div>
+                <div class="header-nav--a-link">
                   <a href="/pasta" class="Header-nav-item multilingual-text"
                     >Паста..Pasta..Makaron..Паста</a
                   >
                 </div>
-                <div>
+                <div class="header-nav--a-link">
                   <a href="/ravioli" class="Header-nav-item multilingual-text"
                     >Равiолi..Ravioli..Ravioli..Равиоли</a
                   >
                 </div>
-                <div>
+                <div class="header-nav--a-link">
                   <a href="/recipes" class="Header-nav-item multilingual-text"
                     >Відео-рецепти..Video Recipes..Przepisy..Видео-рецепты</a
                   >
                 </div>
+                <!-- Visible only in Ukrainian lang setting -->
                 <div class="dropdown">
                   <button
                     class="btn btn-primary dropdown-toggle multilingual-text no-outline-btn Header-nav-item"
                     type="button"
+                    data-bs-offset="-12,8"
                     data-bs-toggle="dropdown"
                   >
                     <a
@@ -246,7 +250,7 @@
                       >Мiсця продажу.. .. ..</a
                     >
                   </button>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu Header-nav-folder">
                     <li>
                       <a
                         href="/kyiv"
@@ -2404,7 +2408,6 @@
     <script src="src/vendor/bootsrtap/js/bootstrap.bundle.min.js"></script>
     <script src="src/js/lang-switcher.js"></script>
     <script src="src/js/index.js"></script>
-
 
     <svg
       xmlns="http://www.w3.org/2000/svg"
