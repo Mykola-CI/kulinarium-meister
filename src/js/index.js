@@ -82,4 +82,78 @@ document.addEventListener('DOMContentLoaded', function () {
   window.heroKaleidoscope = new HeroKaleidoscope('#heroKaleidoscope', {
     interval: 2500, // 3 seconds between transitions
   })
+
+  // Video Parallax Effect Implementation
+  class VideoParallax {
+    constructor() {
+      this.videoSection = document.getElementById('video-section')
+      this.video = document.getElementById('parallax-video')
+      this.isScrolling = false
+      this.init()
+    }
+
+    init() {
+      if (!this.videoSection || !this.video) return
+
+      // Setup parallax once video loads
+      this.video.addEventListener('loadedmetadata', () => {
+        this.setupParallax()
+      })
+
+      if (this.video.readyState >= 1) {
+        this.setupParallax()
+      }
+    }
+
+    setupParallax() {
+      this.calculateDimensions()
+      this.bindScrollEvents()
+      this.updateParallax()
+    }
+
+    calculateDimensions() {
+      this.sectionHeight = this.videoSection.offsetHeight
+      this.videoHeight = this.video.offsetHeight
+      this.maxOffset = Math.max(0, this.videoHeight - this.sectionHeight)
+    }
+
+    bindScrollEvents() {
+      window.addEventListener(
+        'scroll',
+        () => {
+          if (!this.isScrolling) {
+            requestAnimationFrame(() => {
+              this.updateParallax()
+              this.isScrolling = false
+            })
+            this.isScrolling = true
+          }
+        },
+        { passive: true }
+      )
+    }
+
+    updateParallax() {
+      const rect = this.videoSection.getBoundingClientRect()
+      const windowHeight = window.innerHeight
+
+      // Calculate section's progress through viewport
+      // 0 = section bottom at viewport bottom (initial position)
+      // 1 = section top at viewport top (end position)
+      const progress = Math.max(
+        0,
+        Math.min(
+          1,
+          (windowHeight - rect.bottom) / (windowHeight + this.sectionHeight)
+        )
+      )
+
+      // Calculate video offset (negative moves video up to show upper portions)
+      const offset = this.maxOffset * progress
+
+      // Apply transform to video
+      this.video.style.transform = `translateY(${offset}px)`
+    }
+  }
+  new VideoParallax()
 })

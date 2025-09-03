@@ -1,10 +1,12 @@
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 body {
+  box-sizing: border-box;
   margin: 0;
   font-family: Open Sans;
   font-weight: 300;
@@ -98,6 +100,12 @@ h1,
 h2,
 h3 {
   text-rendering: optimizeLegibility;
+}
+
+.outer-container-body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* HEADER */
@@ -204,7 +212,7 @@ header {
   width: 100%;
   overflow: hidden;
   padding: 20px 6%;
-  margin-bottom: 120px;
+  margin-bottom: 126px;
 }
 
 #kaleidoscope > div {
@@ -235,7 +243,10 @@ header {
 }
 
 .hero-subtitle {
-  padding: 17px;
+  padding: 8px 24px;
+}
+.hero-subtitle > h2 {
+padding-bottom: 12px;
 }
 
 /* Product Categories */
@@ -282,17 +293,16 @@ header {
 
 #main-wrappers {
   background-image: url("/assets/images/product-categories/category_thumb_5@0.5x.webp");
-  background-position-x: left;
-  background-size: 110% auto;
-  background-repeat: no-repeat;
-  background-position: 80% center;
+  background-size: 105%;
+  background-repeat:repeat-y;
+  background-position: 10% center;
 }
 
 #main-filled {
-  background-image: url("/assets/images/product-categories/category_thumb_1@0.5x.webp");
-  background-size: 107% auto;
-  background-position: left;
-  background-repeat: no-repeat;
+  background-image: url("/assets/images/product-categories/category_thumb_1@0.5x.png");
+  background-size: cover;
+  background-position: 10% center;
+  background-repeat: repeat;
 }
 
 #main-wrappers,
@@ -308,4 +318,42 @@ header {
 
 .categories-2nd-row {
   height: 70dvh;
+}
+
+/* Video Section - Responsive TV Screen */
+.video-section {
+  width: 100%;
+  height: clamp(225px, 35.4vw, 500px);
+  /* Responsive height as requested */
+  position: relative;
+  overflow: hidden;
+  /* Essential for cropping video */
+  background: #000;
+}
+
+/* Video Element - Parallax Behavior */
+.parallax-video {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  min-height: 120%;
+  /* Ensure video is larger than container for parallax movement */
+  object-fit: cover;
+  /* Maintain aspect ratio, crop as needed */
+  object-position: center center;
+  z-index: 1;
+  transform: translateY(0);
+  /* Initial position, controlled by JS */
+  transition: transform 0.1s ease-out;
+  /* Smooth movement */
+}
+
+/* Ensure video covers full width on all screen sizes */
+@media (max-width: 768px) {
+  .parallax-video {
+    min-height: 140%;
+    /* Extra height for mobile parallax movement */
+  }
 }
