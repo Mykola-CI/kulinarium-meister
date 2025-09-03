@@ -332,7 +332,8 @@ padding-bottom: 12px;
 }
 
 /* Video Element - Parallax Behavior */
-.parallax-video {
+.parallax-video,
+.artwork-image {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -350,10 +351,12 @@ padding-bottom: 12px;
   /* Smooth movement */
 }
 
-/* Ensure video covers full width on all screen sizes */
-@media (max-width: 768px) {
-  .parallax-video {
-    min-height: 140%;
-    /* Extra height for mobile parallax movement */
+
+@media (max-width: 767px) {
+  .artwork-image {
+    min-height: 130%;
+    /* Much more conservative */
+    object-position: center center;
+    /* Keep centered */
   }
 }

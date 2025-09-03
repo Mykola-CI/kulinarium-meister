@@ -155,5 +155,78 @@ document.addEventListener('DOMContentLoaded', function () {
       this.video.style.transform = `translateY(${offset}px)`
     }
   }
+
+  // Image Parallax Effect for Mobile
+  class ImageParallax {
+    constructor() {
+      this.videoSection = document.getElementById('video-section')
+      this.image = document.querySelector('.artwork-image')
+      this.isScrolling = false
+      this.init()
+    }
+
+    init() {
+      if (!this.videoSection || !this.image) return;
+
+      // Setup parallax once image loads
+      if (this.image.complete) {
+        this.setupParallax();
+      } else {
+        this.image.addEventListener('load', () => {
+          this.setupParallax()
+        });
+      }
+    }
+
+    setupParallax() {
+      this.calculateDimensions()
+      this.bindScrollEvents()
+      this.updateParallax()
+    }
+
+    calculateDimensions() {
+      this.sectionHeight = this.videoSection.offsetHeight;
+      this.imageHeight = this.image.offsetHeight;
+      this.maxOffset = Math.max(0, this.imageHeight - this.sectionHeight);
+    }
+
+    bindScrollEvents() {
+      window.addEventListener(
+        'scroll',
+        () => {
+          if (!this.isScrolling) {
+            requestAnimationFrame(() => {
+              this.updateParallax()
+              this.isScrolling = false
+            })
+            this.isScrolling = true
+          }
+        },
+        { passive: true }
+      )
+    }
+
+    updateParallax() {
+      // Only apply parallax on mobile screens
+      if (window.innerWidth >= 768) return;
+
+      const rect = this.videoSection.getBoundingClientRect()
+      const windowHeight = window.innerHeight
+
+      const progress = Math.max(
+        0,
+        Math.min(
+          1,
+          (windowHeight - rect.bottom) / (windowHeight + this.sectionHeight)
+        )
+      )
+
+      const offset = this.maxOffset * progress
+      this.image.style.transform = `translateY(${offset}px)`
+    }
+  }
+
+  // Initialize both parallax effects
   new VideoParallax()
+  new ImageParallax()
 })
