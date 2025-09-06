@@ -113,10 +113,10 @@
       <div class="position-relative">
         <!-- Header -->
         <header
-          class="d-flex flex-row justify-content-center position-sticky top-0 start-0"
+          class="w-100 d-flex flex-row justify-content-center position-sticky top-0 start-0"
         >
           <div
-            class="Header-inner d-flex flex-column align-items-center flex-grow-0 flex-shrink-0"
+            class="Header-inner w-100 d-md-none d-flex flex-row justify-content-between align-items-center flex-grow-0 flex-shrink-0"
           >
             <div class="Header-branding">
               <a href="/">
@@ -130,8 +130,51 @@
                 />
               </a>
             </div>
+            <div class="icon-bars">
+              <svg
+                width="24"
+                height="14"
+                viewBox="0 0 24 14"
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="0"
+                  y1="3"
+                  x2="24"
+                  y2="3"
+                  stroke="currentColor"
+                  stroke-width="1"
+                />
+                <line
+                  x1="0"
+                  y1="11"
+                  x2="24"
+                  y2="11"
+                  stroke="currentColor"
+                  stroke-width="1"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            class="Header-inner d-none d-md-flex flex-column align-items-center flex-grow-0 flex-shrink-0"
+          >
+            <div class="Header-branding">
+              <a href="/">
+                <img
+                  src="assets/images/logo_png_black@2x.png"
+                  alt="Kulinarium Meister"
+                  class="img-fluid"
+                  style="display: block"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+            </div>
+
             <!-- Navigation bar -->
-            <nav class="Header-nav Header-nav--primary">
+            <nav class="Header-nav d-none d-md-block Header-nav--primary">
               <div
                 class="Header-nav-inner d-flex flex-row gap-3 align-items-center"
               >
@@ -320,11 +363,11 @@
         <!-- MAIN CONTENT -->
         <main>
           <!-- Hero Section -->
-          <section>
-            <h1 class="d-none">hero section</h1>
+          <section class="hero-section">
+            <h1 hidden>hero section</h1>
             <div id="kaleidoscope" class="text-center">
               <div class="row justify-content-center align-items-center">
-                <div class="col-6">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-6">
                   <div class="hero-kaleidoscope" id="heroKaleidoscope">
                     <img
                       src="/assets/images/kaleidoscope/lazagnya_1.webp"
@@ -386,13 +429,13 @@
             </div>
           </section>
           <!-- Product Categories -->
-          <section>
-            <h2 class="d-none">products</h2>
+          <section class="product-categories">
+            <h2 class="d-none">Product Categories</h2>
             <div class="text-center">
               <div class="categories-1st-row row gx-0">
                 <article
                   id="main-dough"
-                  class="Index-gallery-item col-8 position-relative"
+                  class="Index-gallery-item col-md-8 col-12 position-relative"
                 >
                   <div
                     class="Index-gallery-item-content position-absolute top-50 start-0 ms-4 ps-2 translate-middle-y"
@@ -413,7 +456,7 @@
                   </div>
                 </article>
 
-                <div class="col-4 d-flex flex-column">
+                <div class="col-md-4 col-12 d-flex flex-column">
                   <article
                     id="main-wrappers"
                     class="Index-gallery-item position-relative"
@@ -461,7 +504,7 @@
               <div class="categories-2nd-row row gx-0">
                 <article
                   id="main-pasta"
-                  class="Index-gallery-item col-6 position-relative"
+                  class="Index-gallery-item col-md-6 col-12 position-relative"
                 >
                   <div
                     class="Index-gallery-item-content position-absolute top-50 start-0 ms-4 translate-middle-y ps-2"
@@ -481,7 +524,7 @@
 
                 <article
                   id="main-ravioli"
-                  class="Index-gallery-item col-6 position-relative"
+                  class="Index-gallery-item col-12 col-md-6 position-relative"
                 >
                   <div class="Index-gallery-item-content">
                     <h2
@@ -502,9 +545,9 @@
 
           <!-- WORKSHOP PRESENTATION -->
           <!-- Main Video Parallax Section -->
-          <section class="video-section" id="video-section">
+          <section class="workshop video-section" id="video-section">
             <video
-              class="parallax-video d-none d-md-block"
+              class="parallax-video"
               id="parallax-video"
               autoplay
               muted
@@ -518,1072 +561,19 @@
               />
               Your browser does not support the video tag.
             </video>
-            <img
+            <!-- <img
               src="/assets/images/parallax/social_share_artwork.webp"
               class="artwork-image d-md-none img-fluid"
               alt="Kulinarium Meister Artwork"
-            />
+            /> -->
           </section>
 
           <!-- VIDEO RECIPES -->
-          <section
-            id="featured-recipes"
-            class="Index-page"
-            data-collection-id="59a7ec35ff7c50607043bac3"
-            data-parallax-id="59a7ec35ff7c50607043bac3"
-            data-edit-main-image="Background"
-          >
-            <div class="Index-page-content">
-              <div
-                class="sqs-layout sqs-grid-12 columns-12"
-                data-type="page"
-                data-updated-on="1533382471882"
-                id="page-59a7ec35ff7c50607043bac3"
-              >
-                <div class="row sqs-row">
-                  <div class="col sqs-col-12 span-12">
-                    <div
-                      class="sqs-block website-component-block sqs-block-website-component sqs-block-spacer spacer-block"
-                      data-aspect-ratio="9.902740937223696"
-                      data-block-css='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/4349438c-a081-46b6-a836-0a27dc9737da_155/website.components.spacer.styles.css"]'
-                      data-block-scripts='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/4349438c-a081-46b6-a836-0a27dc9737da_155/website.components.spacer.visitor.js"]'
-                      data-block-type="1337"
-                      data-definition-name="website.components.spacer"
-                      id="block-yui_3_17_2_11_1505115864594_7504"
-                    >
-                      <div class="sqs-block-content">&nbsp;</div>
-                    </div>
-                    <div class="row sqs-row">
-                      <div class="col sqs-col-2 span-2">
-                        <div
-                          class="sqs-block website-component-block sqs-block-website-component sqs-block-spacer spacer-block"
-                          data-aspect-ratio="8.560311284046692"
-                          data-block-css='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/4349438c-a081-46b6-a836-0a27dc9737da_155/website.components.spacer.styles.css"]'
-                          data-block-scripts='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/4349438c-a081-46b6-a836-0a27dc9737da_155/website.components.spacer.visitor.js"]'
-                          data-block-type="1337"
-                          data-definition-name="website.components.spacer"
-                          id="block-yui_3_17_2_50_1505337193431_73106"
-                        >
-                          <div class="sqs-block-content">&nbsp;</div>
-                        </div>
-                      </div>
-                      <div class="col sqs-col-10 span-10">
-                        <div
-                          class="sqs-block html-block sqs-block-html"
-                          data-block-type="2"
-                          data-sqsp-block="text"
-                          id="block-yui_3_17_2_3_1504687274024_21836"
-                        >
-                          <div class="sqs-block-content">
-                            <div
-                              class="sqs-html-content"
-                              data-sqsp-text-block-content
-                            >
-                              <h1>
-                                ....<a href="/recipes"
-                                  >Наша кулінарна відео майстерня</a
-                                >..Our cooking video workshop..Nasze warsztaty
-                                kulinarne wideo..Наша кулинарная видео
-                                мастерская....
-                              </h1>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          class="sqs-block embed-block sqs-block-embed sqs-col-4 span-4 float float-right"
-                          data-block-json='&#123;"hSize":4,"floatDir":"right","html":"&lt;iframe src=\"https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FKulinariumMeister%2F&amp;width=450&amp;layout=standard&amp;action=like&amp;size=large&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=2056003061299498\" width=\"450\" height=\"80\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowTransparency=\"true\"&gt;&lt;/iframe&gt;","resolvedBy":"manual","resolved":true&#125;'
-                          data-block-type="22"
-                          id="block-yui_3_17_2_1_1522651483001_7734"
-                        >
-                          <div class="sqs-block-content">
-                            <iframe
-                              scrolling="no"
-                              src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FKulinariumMeister%2F&amp;width=450&amp;layout=standard&amp;action=like&amp;size=large&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=2056003061299498&amp;wmode=opaque"
-                              allowTransparency="true"
-                              width="450"
-                              data-embed="true"
-                              style="border: none; overflow: hidden"
-                              frameborder="0"
-                              height="80"
-                            ></iframe>
-                          </div>
-                        </div>
-                        <div
-                          class="sqs-block html-block sqs-block-html"
-                          data-block-type="2"
-                          data-sqsp-block="text"
-                          id="block-yui_3_17_2_1_1522651483001_8549"
-                        >
-                          <div class="sqs-block-content">
-                            <div
-                              class="sqs-html-content"
-                              data-sqsp-text-block-content
-                            >
-                              <p>
-                                ....Вiдео рецепти для імпровізацій і кулінарних
-                                варіацій! Пропонуємо колекцію смачної рецептури,
-                                зібраної з усього світу, скориставшись якою, ви
-                                відчуєте красу різноманітних національних
-                                традицій..Video recipes for improvisations and
-                                culinary variations! We offer a collection of
-                                tasty recipes collected from all over the world,
-                                using which you will feel the beauty of diverse
-                                national traditions..Wideo przepisy na
-                                improwizacje i kulinarne odmiany! Oferujemy
-                                zbiór smacznych przepisów zebranych z całego
-                                świata, dzięki którym poczujesz piękno
-                                różnorodnych narodowych tradycji..Видео рецепты
-                                для импровизаций и кулинарных вариаций!
-                                Предлагаем коллекцию вкусной рецептуры,
-                                собранной со всего мира, воспользовавшись
-                                которой, вы почувствуете красоту различных
-                                национальных традиций.....
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          class="sqs-block horizontalrule-block sqs-block-horizontalrule"
-                          data-block-type="47"
-                          id="block-yui_3_17_2_22_1505307972301_7107"
-                        >
-                          <div class="sqs-block-content">
-                            <hr />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row sqs-row">
-                      <div class="col sqs-col-4 span-4">
-                        <div
-                          class="sqs-block summary-v2-block sqs-block-summary-v2"
-                          data-block-json='&#123;"hSize":null,"floatDir":null,"collectionId":"58f74dcdf7e0ab3d069bdcc3","design":"carousel","headerText":"","textSize":"large","pageSize":1,"imageAspectRatio":"Auto","columnWidth":320,"gutter":0,"listImageSize":28,"listImageAlignment":"right","slidesPerRow":1,"textAlignment":"left","showTitle":true,"showThumbnail":true,"showExcerpt":false,"showReadMoreLink":false,"showPrice":true,"productQuickViewEnabled":false,"showPastOrUpcomingEvents":"upcoming","metadataPosition":"above-title","primaryMetadata":"date","secondaryMetadata":"none","filter":&#123;"tag":null,"featured":true&#125;,"autoCrop":true,"lightbox":false,"mixedContent":true,"blockId":"ab0326438f5e3de5b44b"&#125;'
-                          data-block-type="55"
-                          id="block-yui_3_17_2_4_1504524487048_46739"
-                        >
-                          <div class="sqs-block-content">
-                            <div
-                              class="summary-block-wrapper summary-block-collection-type-blog summary-block-setting-text-size-large summary-block-setting-text-align-left summary-block-setting-design-carousel summary-block-setting-design-list-thumbnail-right summary-block-setting-metadata-position-above-title summary-block-setting-primary-metadata-date summary-block-setting-secondary-metadata-none summary-block-setting-show-thumbnail summary-block-setting-show-title summary-block-setting-show-price summary-block-setting-hide-excerpt sqs-gallery-design-carousel"
-                            >
-                              <div
-                                class="summary-item-list-container sqs-gallery-container"
-                              >
-                                <header class="summary-block-header">
-                                  <div
-                                    class="summary-heading"
-                                    data-animation-role="content"
-                                  >
-                                    <span class="summary-collection-title"
-                                      >Відео-рецепти..Video
-                                      Recipes..Przepisy..Видео-рецепты</span
-                                    >
-                                  </div>
 
-                                  <div
-                                    class="summary-carousel-pager sqs-gallery-controls"
-                                    data-animation-role="content"
-                                  >
-                                    <span
-                                      class="summary-carousel-pager-prev previous"
-                                      tabindex="0"
-                                      role="button"
-                                      aria-label="Previous"
-                                    ></span>
-                                    <span
-                                      class="summary-carousel-pager-next next"
-                                      tabindex="0"
-                                      role="button"
-                                      aria-label="Next"
-                                    ></span>
-                                  </div>
-                                </header>
-
-                                <div class="summary-item-list sqs-gallery">
-                                  <div
-                                    class="summary-item summary-item-record-type-text sqs-gallery-design-carousel-slide summary-item-has-thumbnail summary-item-has-cats summary-item-has-tags summary-item-has-author"
-                                  >
-                                    <div
-                                      class="summary-thumbnail-outer-container"
-                                    >
-                                      <a
-                                        href="/recipes/white-fish-and-sea-cabbage-dumplings"
-                                        class="summary-thumbnail-container sqs-gallery-image-container"
-                                        data-title="Вареники з рибою та морською капустою"
-                                        data-description=""
-                                      >
-                                        <div
-                                          class="summary-thumbnail img-wrapper"
-                                          data-animation-role="image"
-                                        >
-                                          <!-- Main Image -->
-                                          <img
-                                            data-src="https://images.squarespace-cdn.com/content/v1/58f6911f15d5dbcc64eaca88/1528711433322-QIQ9XSJHS7NKP7YESIZM/white+fish+and+sea+cabbage+dumplings.jpg"
-                                            data-image="https://images.squarespace-cdn.com/content/v1/58f6911f15d5dbcc64eaca88/1528711433322-QIQ9XSJHS7NKP7YESIZM/white+fish+and+sea+cabbage+dumplings.jpg"
-                                            data-image-dimensions="1440x900"
-                                            data-image-focal-point="0.5,0.5"
-                                            alt="Вареники з рибою та морською капустою"
-                                            data-load="false"
-                                            class="summary-thumbnail-image"
-                                            elementtiming="summary-thumbnail-image-carousel"
-                                          />
-                                        </div>
-                                      </a>
-
-                                      <!-- Products: Quick View -->
-                                    </div>
-
-                                    <div
-                                      class="summary-content sqs-gallery-meta-container"
-                                      data-animation-role="content"
-                                    >
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--above-title"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        >
-                                          <!-- Timestamp -->
-                                          <time
-                                            class="summary-metadata-item summary-metadata-item--date"
-                                            datetime="2018-06-12"
-                                            >Jun 12, 2018</time
-                                          >
-                                        </div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-
-                                      <div class="summary-title">
-                                        <a
-                                          href="/recipes/white-fish-and-sea-cabbage-dumplings"
-                                          class="summary-title-link"
-                                          >Вареники з рибою та морською
-                                          капустою</a
-                                        >
-                                      </div>
-
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--below-title"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        >
-                                          <!-- Timestamp -->
-                                          <time
-                                            class="summary-metadata-item summary-metadata-item--date"
-                                            datetime="2018-06-12"
-                                            >Jun 12, 2018</time
-                                          >
-                                        </div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--below-content"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        >
-                                          <!-- Timestamp -->
-                                          <time
-                                            class="summary-metadata-item summary-metadata-item--date"
-                                            datetime="2018-06-12"
-                                            >Jun 12, 2018</time
-                                          >
-                                        </div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col sqs-col-8 span-8">
-                        <div
-                          class="sqs-block summary-v2-block sqs-block-summary-v2"
-                          data-block-json='&#123;"hSize":null,"floatDir":null,"collectionId":"58f74dcdf7e0ab3d069bdcc3","design":"autogrid","headerText":"","textSize":"small","pageSize":8,"imageAspectRatio":"1","columnWidth":200,"gutter":30,"listImageSize":30,"listImageAlignment":"left","slidesPerRow":3,"textAlignment":"center","showTitle":true,"showThumbnail":true,"showExcerpt":false,"showReadMoreLink":false,"showPrice":true,"productQuickViewEnabled":false,"showPastOrUpcomingEvents":"upcoming","metadataPosition":"below-content","primaryMetadata":"none","secondaryMetadata":"none","filter":&#123;&#125;,"autoCrop":true,"lightbox":false,"mixedContent":true,"blockId":"2eca6687410c30bd0d26"&#125;'
-                          data-block-type="55"
-                          id="block-yui_3_17_2_6_1504177103126_4763"
-                        >
-                          <div class="sqs-block-content">
-                            <div
-                              class="summary-block-wrapper summary-block-collection-type-blog summary-block-setting-text-size-small summary-block-setting-text-align-center summary-block-setting-design-autogrid summary-block-setting-design-list-thumbnail-left summary-block-setting-metadata-position-below-content summary-block-setting-primary-metadata-none summary-block-setting-secondary-metadata-none summary-block-setting-show-thumbnail summary-block-setting-show-title summary-block-setting-show-price summary-block-setting-hide-excerpt sqs-gallery-design-autogrid"
-                            >
-                              <div
-                                class="summary-item-list-container sqs-gallery-container"
-                              >
-                                <header class="summary-block-header">
-                                  <div
-                                    class="summary-heading"
-                                    data-animation-role="content"
-                                  >
-                                    <span class="summary-collection-title"
-                                      >Відео-рецепти..Video
-                                      Recipes..Przepisy..Видео-рецепты</span
-                                    >
-                                  </div>
-
-                                  <div
-                                    class="summary-carousel-pager sqs-gallery-controls"
-                                    data-animation-role="content"
-                                  >
-                                    <span
-                                      class="summary-carousel-pager-prev previous"
-                                      tabindex="0"
-                                      role="button"
-                                      aria-label="Previous"
-                                    ></span>
-                                    <span
-                                      class="summary-carousel-pager-next next"
-                                      tabindex="0"
-                                      role="button"
-                                      aria-label="Next"
-                                    ></span>
-                                  </div>
-                                </header>
-
-                                <div class="summary-item-list sqs-gallery">
-                                  <div
-                                    class="summary-item summary-item-record-type-text sqs-gallery-design-autogrid-slide summary-item-has-thumbnail summary-item-has-cats summary-item-has-tags summary-item-has-author"
-                                  >
-                                    <div
-                                      class="summary-thumbnail-outer-container"
-                                    >
-                                      <a
-                                        href="/recipes/white-fish-and-sea-cabbage-dumplings"
-                                        class="summary-thumbnail-container sqs-gallery-image-container"
-                                        data-title="Вареники з рибою та морською капустою"
-                                        data-description=""
-                                      >
-                                        <div
-                                          class="summary-thumbnail img-wrapper"
-                                          data-animation-role="image"
-                                        >
-                                          <!-- Main Image -->
-                                          <img
-                                            data-src="https://images.squarespace-cdn.com/content/v1/58f6911f15d5dbcc64eaca88/1528711433322-QIQ9XSJHS7NKP7YESIZM/white+fish+and+sea+cabbage+dumplings.jpg"
-                                            data-image="https://images.squarespace-cdn.com/content/v1/58f6911f15d5dbcc64eaca88/1528711433322-QIQ9XSJHS7NKP7YESIZM/white+fish+and+sea+cabbage+dumplings.jpg"
-                                            data-image-dimensions="1440x900"
-                                            data-image-focal-point="0.5,0.5"
-                                            alt="Вареники з рибою та морською капустою"
-                                            data-load="false"
-                                            class="summary-thumbnail-image"
-                                            elementtiming="summary-thumbnail-image-autogrid"
-                                          />
-                                        </div>
-                                      </a>
-
-                                      <!-- Products: Quick View -->
-                                    </div>
-
-                                    <div
-                                      class="summary-content sqs-gallery-meta-container"
-                                      data-animation-role="content"
-                                    >
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--above-title"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-
-                                      <div class="summary-title">
-                                        <a
-                                          href="/recipes/white-fish-and-sea-cabbage-dumplings"
-                                          class="summary-title-link"
-                                          >Вареники з рибою та морською
-                                          капустою</a
-                                        >
-                                      </div>
-
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--below-title"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--below-content"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <div
-                                    class="summary-item summary-item-record-type-text sqs-gallery-design-autogrid-slide summary-item-has-thumbnail summary-item-has-cats summary-item-has-tags summary-item-has-author"
-                                  >
-                                    <div
-                                      class="summary-thumbnail-outer-container"
-                                    >
-                                      <a
-                                        href="/recipes/chicken-and-mushroom-cannelloni"
-                                        class="summary-thumbnail-container sqs-gallery-image-container"
-                                        data-title="Канелоні з куркою та грибами"
-                                        data-description=""
-                                      >
-                                        <div
-                                          class="summary-thumbnail img-wrapper"
-                                          data-animation-role="image"
-                                        >
-                                          <!-- Main Image -->
-                                          <img
-                                            data-src="https://images.squarespace-cdn.com/content/v1/58f6911f15d5dbcc64eaca88/1528634068153-V8U6ETIYQBLXBGBJCTOI/chicken-and-mushroom-cannelloni.jpg"
-                                            data-image="https://images.squarespace-cdn.com/content/v1/58f6911f15d5dbcc64eaca88/1528634068153-V8U6ETIYQBLXBGBJCTOI/chicken-and-mushroom-cannelloni.jpg"
-                                            data-image-dimensions="1440x900"
-                                            data-image-focal-point="0.5,0.5"
-                                            alt="Канелоні з куркою та грибами"
-                                            data-load="false"
-                                            class="summary-thumbnail-image"
-                                            elementtiming="summary-thumbnail-image-autogrid"
-                                          />
-                                        </div>
-                                      </a>
-
-                                      <!-- Products: Quick View -->
-                                    </div>
-
-                                    <div
-                                      class="summary-content sqs-gallery-meta-container"
-                                      data-animation-role="content"
-                                    >
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--above-title"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-
-                                      <div class="summary-title">
-                                        <a
-                                          href="/recipes/chicken-and-mushroom-cannelloni"
-                                          class="summary-title-link"
-                                          >Канелоні з куркою та грибами</a
-                                        >
-                                      </div>
-
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--below-title"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--below-content"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <div
-                                    class="summary-item summary-item-record-type-text sqs-gallery-design-autogrid-slide summary-item-has-thumbnail summary-item-has-cats summary-item-has-tags summary-item-has-author"
-                                  >
-                                    <div
-                                      class="summary-thumbnail-outer-container"
-                                    >
-                                      <a
-                                        href="/recipes/squid-ink-seafood-pasta"
-                                        class="summary-thumbnail-container sqs-gallery-image-container"
-                                        data-title="Чорна паста під соусом з морепродуктів"
-                                        data-description=""
-                                      >
-                                        <div
-                                          class="summary-thumbnail img-wrapper"
-                                          data-animation-role="image"
-                                        >
-                                          <!-- Main Image -->
-                                          <img
-                                            data-src="https://images.squarespace-cdn.com/content/v1/58f6911f15d5dbcc64eaca88/1528635407962-I2VWKOQWTFB4F5MKBDQ9/squid-ink-seafood-pasta.jpg"
-                                            data-image="https://images.squarespace-cdn.com/content/v1/58f6911f15d5dbcc64eaca88/1528635407962-I2VWKOQWTFB4F5MKBDQ9/squid-ink-seafood-pasta.jpg"
-                                            data-image-dimensions="1440x900"
-                                            data-image-focal-point="0.5,0.5"
-                                            alt="Чорна паста під соусом з морепродуктів"
-                                            data-load="false"
-                                            class="summary-thumbnail-image"
-                                            elementtiming="summary-thumbnail-image-autogrid"
-                                          />
-                                        </div>
-                                      </a>
-
-                                      <!-- Products: Quick View -->
-                                    </div>
-
-                                    <div
-                                      class="summary-content sqs-gallery-meta-container"
-                                      data-animation-role="content"
-                                    >
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--above-title"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-
-                                      <div class="summary-title">
-                                        <a
-                                          href="/recipes/squid-ink-seafood-pasta"
-                                          class="summary-title-link"
-                                          >Чорна паста під соусом з
-                                          морепродуктів</a
-                                        >
-                                      </div>
-
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--below-title"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--below-content"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <div
-                                    class="summary-item summary-item-record-type-text sqs-gallery-design-autogrid-slide summary-item-has-thumbnail summary-item-has-cats summary-item-has-tags summary-item-has-author"
-                                  >
-                                    <div
-                                      class="summary-thumbnail-outer-container"
-                                    >
-                                      <a
-                                        href="/recipes/mixed-berry-and-mascarpone-tarts"
-                                        class="summary-thumbnail-container sqs-gallery-image-container"
-                                        data-title="Тарталетки із сиром маскарпоне та ягодами"
-                                        data-description=""
-                                      >
-                                        <div
-                                          class="summary-thumbnail img-wrapper"
-                                          data-animation-role="image"
-                                        >
-                                          <!-- Main Image -->
-                                          <img
-                                            data-src="https://images.squarespace-cdn.com/content/v1/58f6911f15d5dbcc64eaca88/1528644890846-9B77VSW7N65IASKTQJE2/mixed-berry-and-mascarpone-tarts.jpg"
-                                            data-image="https://images.squarespace-cdn.com/content/v1/58f6911f15d5dbcc64eaca88/1528644890846-9B77VSW7N65IASKTQJE2/mixed-berry-and-mascarpone-tarts.jpg"
-                                            data-image-dimensions="1440x900"
-                                            data-image-focal-point="0.5,0.5"
-                                            alt="Тарталетки із сиром маскарпоне та ягодами"
-                                            data-load="false"
-                                            class="summary-thumbnail-image"
-                                            elementtiming="summary-thumbnail-image-autogrid"
-                                          />
-                                        </div>
-                                      </a>
-
-                                      <!-- Products: Quick View -->
-                                    </div>
-
-                                    <div
-                                      class="summary-content sqs-gallery-meta-container"
-                                      data-animation-role="content"
-                                    >
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--above-title"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-
-                                      <div class="summary-title">
-                                        <a
-                                          href="/recipes/mixed-berry-and-mascarpone-tarts"
-                                          class="summary-title-link"
-                                          >Тарталетки із сиром маскарпоне та
-                                          ягодами</a
-                                        >
-                                      </div>
-
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--below-title"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--below-content"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <div
-                                    class="summary-item summary-item-record-type-text sqs-gallery-design-autogrid-slide summary-item-has-thumbnail summary-item-has-cats summary-item-has-tags summary-item-has-author"
-                                  >
-                                    <div
-                                      class="summary-thumbnail-outer-container"
-                                    >
-                                      <a
-                                        href="/recipes/pappardelle-with-salmon-and-broccoli"
-                                        class="summary-thumbnail-container sqs-gallery-image-container"
-                                        data-title="Папарделе з броколі і лососем"
-                                        data-description=""
-                                      >
-                                        <div
-                                          class="summary-thumbnail img-wrapper"
-                                          data-animation-role="image"
-                                        >
-                                          <!-- Main Image -->
-                                          <img
-                                            data-src="https://images.squarespace-cdn.com/content/v1/58f6911f15d5dbcc64eaca88/1528018281275-01GL5RMFLUK0LDGMYT2O/%D0%BF%D0%B0%D0%BF%D0%B0%D1%80%D0%B4%D0%B5%D0%BB%D0%B5+%D0%B7+%D0%B1%D1%80%D0%BE%D0%BA%D0%BA%D0%BE%D0%BB%D1%96+%D1%82%D0%B0+%D0%BB%D0%BE%D1%81%D0%BE%D1%81%D0%B5%D0%BC.png"
-                                            data-image="https://images.squarespace-cdn.com/content/v1/58f6911f15d5dbcc64eaca88/1528018281275-01GL5RMFLUK0LDGMYT2O/%D0%BF%D0%B0%D0%BF%D0%B0%D1%80%D0%B4%D0%B5%D0%BB%D0%B5+%D0%B7+%D0%B1%D1%80%D0%BE%D0%BA%D0%BA%D0%BE%D0%BB%D1%96+%D1%82%D0%B0+%D0%BB%D0%BE%D1%81%D0%BE%D1%81%D0%B5%D0%BC.png"
-                                            data-image-dimensions="1440x900"
-                                            data-image-focal-point="0.50325,0.4230769230769231"
-                                            alt="Папарделе з броколі і лососем"
-                                            data-load="false"
-                                            class="summary-thumbnail-image"
-                                            elementtiming="summary-thumbnail-image-autogrid"
-                                          />
-                                        </div>
-                                      </a>
-
-                                      <!-- Products: Quick View -->
-                                    </div>
-
-                                    <div
-                                      class="summary-content sqs-gallery-meta-container"
-                                      data-animation-role="content"
-                                    >
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--above-title"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-
-                                      <div class="summary-title">
-                                        <a
-                                          href="/recipes/pappardelle-with-salmon-and-broccoli"
-                                          class="summary-title-link"
-                                          >Папарделе з броколі і лососем</a
-                                        >
-                                      </div>
-
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--below-title"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--below-content"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <div
-                                    class="summary-item summary-item-record-type-text sqs-gallery-design-autogrid-slide summary-item-has-thumbnail summary-item-has-cats summary-item-has-tags summary-item-has-author"
-                                  >
-                                    <div
-                                      class="summary-thumbnail-outer-container"
-                                    >
-                                      <a
-                                        href="/recipes/pappardelle-with-pesto"
-                                        class="summary-thumbnail-container sqs-gallery-image-container"
-                                        data-title="Папарделе із соусом песто"
-                                        data-description=""
-                                      >
-                                        <div
-                                          class="summary-thumbnail img-wrapper"
-                                          data-animation-role="image"
-                                        >
-                                          <!-- Main Image -->
-                                          <img
-                                            data-src="https://images.squarespace-cdn.com/content/v1/58f6911f15d5dbcc64eaca88/1528644667617-W70JELR429EPJXGBT83G/pappardelle-with-pesto.jpg"
-                                            data-image="https://images.squarespace-cdn.com/content/v1/58f6911f15d5dbcc64eaca88/1528644667617-W70JELR429EPJXGBT83G/pappardelle-with-pesto.jpg"
-                                            data-image-dimensions="1440x900"
-                                            data-image-focal-point="0.5,0.5"
-                                            alt="Папарделе із соусом песто"
-                                            data-load="false"
-                                            class="summary-thumbnail-image"
-                                            elementtiming="summary-thumbnail-image-autogrid"
-                                          />
-                                        </div>
-                                      </a>
-
-                                      <!-- Products: Quick View -->
-                                    </div>
-
-                                    <div
-                                      class="summary-content sqs-gallery-meta-container"
-                                      data-animation-role="content"
-                                    >
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--above-title"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-
-                                      <div class="summary-title">
-                                        <a
-                                          href="/recipes/pappardelle-with-pesto"
-                                          class="summary-title-link"
-                                          >Папарделе із соусом песто</a
-                                        >
-                                      </div>
-
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--below-title"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--below-content"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <div
-                                    class="summary-item summary-item-record-type-text sqs-gallery-design-autogrid-slide summary-item-has-thumbnail summary-item-has-cats summary-item-has-tags summary-item-has-author"
-                                  >
-                                    <div
-                                      class="summary-thumbnail-outer-container"
-                                    >
-                                      <a
-                                        href="/recipes/cappellini-muffins"
-                                        class="summary-thumbnail-container sqs-gallery-image-container"
-                                        data-title="Мафіни з капеліні"
-                                        data-description=""
-                                      >
-                                        <div
-                                          class="summary-thumbnail img-wrapper"
-                                          data-animation-role="image"
-                                        >
-                                          <!-- Main Image -->
-                                          <img
-                                            data-src="https://images.squarespace-cdn.com/content/v1/58f6911f15d5dbcc64eaca88/1528644551012-STBD69YBIPB5XSF2YSMV/cappellini-muffins.jpg"
-                                            data-image="https://images.squarespace-cdn.com/content/v1/58f6911f15d5dbcc64eaca88/1528644551012-STBD69YBIPB5XSF2YSMV/cappellini-muffins.jpg"
-                                            data-image-dimensions="1440x900"
-                                            data-image-focal-point="0.5,0.5"
-                                            alt="Мафіни з капеліні"
-                                            data-load="false"
-                                            class="summary-thumbnail-image"
-                                            elementtiming="summary-thumbnail-image-autogrid"
-                                          />
-                                        </div>
-                                      </a>
-
-                                      <!-- Products: Quick View -->
-                                    </div>
-
-                                    <div
-                                      class="summary-content sqs-gallery-meta-container"
-                                      data-animation-role="content"
-                                    >
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--above-title"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-
-                                      <div class="summary-title">
-                                        <a
-                                          href="/recipes/cappellini-muffins"
-                                          class="summary-title-link"
-                                          >Мафіни з капеліні</a
-                                        >
-                                      </div>
-
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--below-title"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--below-content"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <div
-                                    class="summary-item summary-item-record-type-text sqs-gallery-design-autogrid-slide summary-item-has-thumbnail summary-item-has-cats summary-item-has-tags summary-item-has-author"
-                                  >
-                                    <div
-                                      class="summary-thumbnail-outer-container"
-                                    >
-                                      <a
-                                        href="/recipes/chocolate-pasta-casserole"
-                                        class="summary-thumbnail-container sqs-gallery-image-container"
-                                        data-title="Запіканка з шоколадної пасти"
-                                        data-description=""
-                                      >
-                                        <div
-                                          class="summary-thumbnail img-wrapper"
-                                          data-animation-role="image"
-                                        >
-                                          <!-- Main Image -->
-                                          <img
-                                            data-src="https://images.squarespace-cdn.com/content/v1/58f6911f15d5dbcc64eaca88/1528644442746-LXJ1XBVV8MIGX6N1MT63/chocolate-pasta-casserole.jpg"
-                                            data-image="https://images.squarespace-cdn.com/content/v1/58f6911f15d5dbcc64eaca88/1528644442746-LXJ1XBVV8MIGX6N1MT63/chocolate-pasta-casserole.jpg"
-                                            data-image-dimensions="1440x900"
-                                            data-image-focal-point="0.5,0.5"
-                                            alt="Запіканка з шоколадної пасти"
-                                            data-load="false"
-                                            class="summary-thumbnail-image"
-                                            elementtiming="summary-thumbnail-image-autogrid"
-                                          />
-                                        </div>
-                                      </a>
-
-                                      <!-- Products: Quick View -->
-                                    </div>
-
-                                    <div
-                                      class="summary-content sqs-gallery-meta-container"
-                                      data-animation-role="content"
-                                    >
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--above-title"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-
-                                      <div class="summary-title">
-                                        <a
-                                          href="/recipes/chocolate-pasta-casserole"
-                                          class="summary-title-link"
-                                          >Запіканка з шоколадної пасти</a
-                                        >
-                                      </div>
-
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--below-title"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-
-                                      <div
-                                        class="summary-metadata-container summary-metadata-container--below-content"
-                                      >
-                                        <div
-                                          class="summary-metadata summary-metadata--primary"
-                                        ></div>
-
-                                        <div
-                                          class="summary-metadata summary-metadata--secondary"
-                                        ></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="sqs-block button-block sqs-block-button"
-                      data-block-type="53"
-                      data-sqsp-block="button"
-                      id="block-yui_3_17_2_5_1504234968623_7837"
-                    >
-                      <div class="sqs-block-content">
-                        <div
-                          class="sqs-block-button-container sqs-block-button-container--center"
-                          data-animation-role="button"
-                          data-alignment="center"
-                          data-button-size="small"
-                          data-button-type="tertiary"
-                        >
-                          <a
-                            href="/recipes"
-                            class="sqs-block-button-element--small sqs-button-element--tertiary sqs-block-button-element"
-                            data-sqsp-button
-                          >
-                            Більше
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <nav class="Index-nav">
-            <div class="Index-nav-inner">
-              <a href="#hero-ua" class="Index-nav-item active">
-                <div class="Index-nav-indicator"></div>
-                <div class="Index-nav-text"><span>Живе тісто</span></div>
-              </a>
-
-              <a href="#products" class="Index-nav-item">
-                <div class="Index-nav-indicator"></div>
-                <div class="Index-nav-text"><span>Продукцiя</span></div>
-              </a>
-
-              <a href="#featured-factory" class="Index-nav-item">
-                <div class="Index-nav-indicator"></div>
-                <div class="Index-nav-text"><span>Виробництво</span></div>
-              </a>
-
-              <a href="#featured-recipes" class="Index-nav-item">
-                <div class="Index-nav-indicator"></div>
-                <div class="Index-nav-text"><span>Рецепти</span></div>
-              </a>
-            </div>
-          </nav>
         </main>
       </div>
 
-      <footer
+      <!-- <footer
         class="Footer"
         role="contentinfo"
         data-controller="FooterBreakpoints"
@@ -1819,7 +809,7 @@
             </div>
           </div>
         </div>
-      </footer>
+      </footer> -->
     </div>
 
     <script src="src/vendor/jquery/jquery.min.js"></script>

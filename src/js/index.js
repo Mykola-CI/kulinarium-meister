@@ -166,15 +166,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     init() {
-      if (!this.videoSection || !this.image) return;
+      if (!this.videoSection || !this.image) return
 
       // Setup parallax once image loads
       if (this.image.complete) {
-        this.setupParallax();
+        this.setupParallax()
       } else {
         this.image.addEventListener('load', () => {
           this.setupParallax()
-        });
+        })
       }
     }
 
@@ -185,9 +185,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     calculateDimensions() {
-      this.sectionHeight = this.videoSection.offsetHeight;
-      this.imageHeight = this.image.offsetHeight;
-      this.maxOffset = Math.max(0, this.imageHeight - this.sectionHeight);
+      this.sectionHeight = this.videoSection.offsetHeight
+      this.imageHeight = this.image.offsetHeight
+      this.maxOffset = Math.max(0, this.imageHeight - this.sectionHeight)
     }
 
     bindScrollEvents() {
@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     updateParallax() {
       // Only apply parallax on mobile screens
-      if (window.innerWidth >= 768) return;
+      if (window.innerWidth >= 768) return
 
       const rect = this.videoSection.getBoundingClientRect()
       const windowHeight = window.innerHeight
@@ -217,7 +217,8 @@ document.addEventListener('DOMContentLoaded', function () {
         0,
         Math.min(
           1,
-          (windowHeight - rect.bottom) / (windowHeight + this.sectionHeight)
+          (windowHeight - rect.top) / (windowHeight + this.sectionHeight)
+          // (windowHeight - rect.bottom) / windowHeight
         )
       )
 

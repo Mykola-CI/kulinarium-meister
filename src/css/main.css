@@ -19,6 +19,7 @@ body {
   background-color: #fff;
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: auto;
+  overflow: auto;
 }
 
 article,
@@ -89,7 +90,7 @@ h2 {
   font-family: Gabriela;
   font-weight: 400;
   font-style: normal;
-  font-size: 24px;
+  font-size: clamp(16px, 3vw - 6px, 24px);
   letter-spacing: 0em;
   line-height: 1.26em;
   text-transform: none;
@@ -106,7 +107,20 @@ h3 {
   width: 100%;
   margin: 0;
   padding: 0;
+
+  /* for debugging overflow */
+
+  /* border: 2px solid red !important;
+  background: rgba(255, 0, 0, 0.05) !important;
+  box-shadow: 0 0 0 4px orange inset !important;
+  overflow-x: visible !important; */
 }
+
+/* for debugging overflow */
+/* .outer-container-body > * {
+  outline: 2px dashed blue !important;
+  background: rgba(0, 0, 255, 0.05) !important;
+} */
 
 /* HEADER */
 header {
@@ -116,7 +130,7 @@ header {
 }
 
 .Header-inner {
-  padding-top: 5px;
+  padding: 10px 6% 0 6%;
 }
 
 .Header-nav {
@@ -208,11 +222,15 @@ header {
 /* MAIN HOME PAGE CONTENT */
 /* ------------------------------------ */
 
+/* Hero Section */
+.hero-section {
+  margin-bottom: 126px;
+}
+
 #kaleidoscope {
   width: 100%;
   overflow: hidden;
   padding: 20px 6%;
-  margin-bottom: 126px;
 }
 
 #kaleidoscope > div {
@@ -245,8 +263,9 @@ header {
 .hero-subtitle {
   padding: 8px 24px;
 }
+
 .hero-subtitle > h2 {
-padding-bottom: 12px;
+  padding-bottom: 12px;
 }
 
 /* Product Categories */
@@ -261,7 +280,7 @@ padding-bottom: 12px;
   font-family: Cormorant Infant;
   font-weight: 400;
   font-style: normal;
-  font-size: 42px;
+  font-size: clamp(30px, 3vw - 6px, 42px);
   letter-spacing: 0em;
   line-height: 1em;
   text-transform: none;
@@ -294,7 +313,7 @@ padding-bottom: 12px;
 #main-wrappers {
   background-image: url("/assets/images/product-categories/category_thumb_5@0.5x.webp");
   background-size: 105%;
-  background-repeat:repeat-y;
+  background-repeat: repeat-y;
   background-position: 10% center;
 }
 
@@ -339,7 +358,7 @@ padding-bottom: 12px;
   left: 0;
   width: 100%;
   height: auto;
-  min-height: 120%;
+  min-height: 100%;
   /* Ensure video is larger than container for parallax movement */
   object-fit: cover;
   /* Maintain aspect ratio, crop as needed */
@@ -354,9 +373,36 @@ padding-bottom: 12px;
 
 @media (max-width: 767px) {
   .artwork-image {
-    min-height: 130%;
+    min-height: 250%;
+    bottom: 0;
     /* Much more conservative */
     object-position: center center;
     /* Keep centered */
+  }
+
+  .Header-branding {
+    width: 66px;
+    padding: 8px;
+  }
+
+  .categories-1st-row {
+    height: auto;
+  }
+
+  .categories-1st-row > article {
+    height: 35dvh;
+  }
+
+  .categories-1st-row > div {
+    height: 70dvh;
+  }
+
+  .hero-section {
+    margin-bottom: 80px;
+    margin-top: 60px;
+  }
+
+  .hero-subtitle {
+    padding: 20px 24px;
   }
 }
