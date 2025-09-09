@@ -11,7 +11,7 @@ body {
   font-family: Open Sans;
   font-weight: 300;
   font-style: normal;
-  font-size: 16px;
+  font-size: clamp(14px, 6vw - 14px, 16px);
   letter-spacing: .03em;
   line-height: 1.8em;
   text-transform: none;
@@ -120,6 +120,28 @@ header {
   padding: 10px 6% 0 6%;
 }
 
+.icon-bars button {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+}
+
+/* Override offcanvas toggle button active state */
+.icon-bars button:hover,
+.icon-bars button:focus,
+.icon-bars button.active,
+.icon-bars button[aria-expanded="true"] {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  color: inherit !important;
+}
+
+/* add a subtle effect to show it's active */
+.icon-bars button[aria-expanded="true"] svg {
+  opacity: 0.7;
+}
+
 .Header-nav {
   font-family: Open Sans;
   font-weight: 600;
@@ -135,6 +157,21 @@ header {
 .Header-branding {
   max-width: 92px;
   padding: 10px;
+}
+
+.Header-nav--offcanvas button,
+.Header-nav--offcanvas a {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  color: inherit;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .Header-nav button,
@@ -158,6 +195,12 @@ header {
 .header-nav--a-link:hover {
   text-decoration: none;
   color: inherit;
+  transform: translateY(-2px) scale(1.08);
+}
+
+.Header-nav--offcanvas button:focus,
+.Header-nav--offcanvas button:hover {
+  text-decoration: none;
   transform: translateY(-2px) scale(1.08);
 }
 
@@ -323,7 +366,7 @@ header {
 }
 
 .categories-2nd-row {
-  height: 70dvh;
+  height: 70vh;
 }
 
 /* Video Section - Responsive TV Screen */
@@ -359,7 +402,7 @@ header {
 
 /* Section recipes */
 .our-recipes {
-  margin-top: clamp(96px, 10vw - 23px, 193px);
+  margin-top: clamp(60px, 10vw - 23px, 193px);
   width: 100%;
   padding: 20px 6%;
   box-sizing: border-box;
@@ -421,12 +464,14 @@ header {
   line-height: 1.2em;
   letter-spacing: .03em;
   font-weight: 300;
+  text-transform: capitalize;
 }
 
 .video-recipes--card img {
   aspect-ratio: 1/1;
   object-fit: cover;
 }
+
 .button-recipe-container a {
   text-decoration: none;
 }
@@ -443,6 +488,97 @@ header {
   border-color: rgba(0, 0, 0, .1);
   box-shadow: 0 2px 0 0 rgba(0, 0, 0, .1);
   color: rgba(28, 28, 28, .79);
+}
+
+/* FOOTER */
+.footer-container {
+  padding: 30px 6%;
+  box-sizing: border-box;
+  background-color: #f8f6f7;
+  min-height: 228px;
+}
+
+#footer-nav {
+  padding: 20px 0;
+
+}
+
+.footer--company-details {
+  padding: 20px 0 10px 0;
+}
+
+
+
+.footer--company-details-text a {
+  padding-bottom: .05em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0, 0, 0, .3);
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+.footer--company-details-text p {
+  opacity: .7;
+}
+
+.footer--company-details-text a:hover {
+  border-bottom-color: rgba(0, 0, 0, .8);
+  opacity: .7;
+}
+
+/* DOUGH FOR BAKING STYLES */
+
+.dough-page-container {
+  padding: 100px 6%;
+}
+
+.dough-hero-title h1 {
+  font-family: Cormorant Infant;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(30px, 3vw - 6px, 48px);
+  letter-spacing: 0em;
+  line-height: 1.2em;
+  text-transform: none;
+  max-width: 40ch;
+}
+
+.dough--row {
+  margin-top: -35px;
+}
+
+/* Product image hover effect */
+.product-image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 15%;
+  /* Creates 2:1 aspect ratio */
+  overflow: hidden;
+}
+
+.product-image {
+  transition: opacity 0.8s ease;
+}
+
+.product-image.primary {
+  opacity: 1;
+}
+
+.product-image.secondary {
+  position: absolute;
+  top: 17%;
+  left: 0;
+  opacity: 0;
+}
+
+.product-image-container:hover .product-image.primary {
+  opacity: 0;
+}
+
+.product-image-container:hover .product-image.secondary {
+  opacity: 1;
 }
 
 @media (max-width: 1200px) {
@@ -471,11 +607,11 @@ header {
   }
 
   .categories-1st-row > article {
-    height: 35dvh;
+    height: 35vh;
   }
 
   .categories-1st-row > div {
-    height: 70dvh;
+    height: 70vh;
   }
 
   .hero-section {
@@ -490,11 +626,37 @@ header {
   .recipe-hero-card-content {
     margin-bottom: 30px;
   }
+
+  .dough-page-container {
+    padding: 60px 6%;
+  }
+
 }
 
 @media (max-width: 575px) {
   .video-recipes--card img {
     aspect-ratio: auto;
     object-fit: cover;
+  }
+
+  .recipe-divider {
+    padding-top: 0;
+  }
+
+  .recipe-text {
+    padding-bottom: 0;
+  }
+
+  .hero-section {
+    margin-bottom: 55px;
+    margin-top: 50px;
+  }
+
+  .dough-page-container {
+    padding: 30px 6%;
+  }
+
+  .dough--row {
+    margin-top: -5px;
   }
 }

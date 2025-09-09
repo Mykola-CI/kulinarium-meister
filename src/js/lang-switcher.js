@@ -10,7 +10,7 @@ class MultilingualSwitcher {
       { code: 'uk', name: 'Українська', flag: '🇺🇦' },
       { code: 'en', name: 'English', flag: '🇬🇧' },
       { code: 'pl', name: 'Polski', flag: '🇵🇱' },
-      { code: 'ru', name: 'Русский', flag: '🇷🇺' },
+      { code: 'ru', name: 'Русский', flag: '[Ru]' },
     ]
 
     this.init()
@@ -32,7 +32,7 @@ class MultilingualSwitcher {
     }
 
     // Set up event listeners
-    this.setupEventListeners();
+    this.setupEventListeners()
 
     // Apply initial language
     this.applyLanguage(this.currentLanguage)
@@ -42,7 +42,7 @@ class MultilingualSwitcher {
    * Auto-detect user's preferred language based on browser settings
    */
   detectUserLanguage() {
-    const userLang = navigator.language || navigator.userLanguage;
+    const userLang = navigator.language || navigator.userLanguage
     const langMap = {
       uk: 0,
       'uk-UA': 0,
@@ -55,7 +55,7 @@ class MultilingualSwitcher {
       'ru-RU': 3,
     }
 
-    return langMap[userLang] || langMap[userLang.split('-')[0]] || 0;
+    return langMap[userLang] || langMap[userLang.split('-')[0]] || 0
   }
 
   /**
@@ -103,10 +103,10 @@ class MultilingualSwitcher {
             if (node.nodeType === Node.ELEMENT_NODE) {
               this.processNewElements(node)
             }
-          });
+          })
         }
-      });
-    });
+      })
+    })
 
     observer.observe(document.body, {
       childList: true,
@@ -122,17 +122,17 @@ class MultilingualSwitcher {
 
     // Short delay for smooth transition
     setTimeout(() => {
-      this.currentLanguage = langIndex;
-      this.applyLanguage(langIndex);
+      this.currentLanguage = langIndex
+      this.applyLanguage(langIndex)
 
       // Save preference
       localStorage.setItem('selectedLanguage', langIndex.toString())
 
       // Update URL
-      this.updateURL(langIndex);
+      this.updateURL(langIndex)
 
       // Complete transition
-      document.body.classList.add('complete');
+      document.body.classList.add('complete')
       setTimeout(() => {
         document.body.classList.remove('language-transition', 'complete')
       }, 300)
@@ -160,7 +160,7 @@ class MultilingualSwitcher {
     this.updateActiveLanguage(langIndex)
 
     // Update page language attribute
-    document.documentElement.lang = this.languages[langIndex].code;
+    document.documentElement.lang = this.languages[langIndex].code
 
     // Update meta tags for SEO
     this.updateMetaTags(langIndex)
@@ -183,7 +183,7 @@ class MultilingualSwitcher {
 
     // Store original text if not already stored
     if (!element.dataset.originalText) {
-      element.dataset.originalText = originalText;
+      element.dataset.originalText = originalText
     }
 
     // Split by double dots and get the appropriate language
@@ -244,7 +244,7 @@ class MultilingualSwitcher {
       false
     )
 
-    const textNodes = [];
+    const textNodes = []
     let node
     while ((node = walker.nextNode())) {
       if (node.nodeValue.includes('..')) {
@@ -253,9 +253,9 @@ class MultilingualSwitcher {
     }
 
     textNodes.forEach((textNode) => {
-      const parts = textNode.nodeValue.split('..');
+      const parts = textNode.nodeValue.split('..')
       if (parts.length > this.currentLanguage) {
-        textNode.nodeValue = parts[this.currentLanguage].trim();
+        textNode.nodeValue = parts[this.currentLanguage].trim()
       }
     })
   }
@@ -264,23 +264,27 @@ class MultilingualSwitcher {
    * Update language switcher button - ONLY FLAG DISPLAY
    */
   updateLanguageSwitcher(langIndex) {
-    const currentLangFlagEl = document.querySelector('.current-language-flag')
+    const currentLangFlagEl = document.querySelectorAll(
+      '.current-language-flag'
+    )
     if (currentLangFlagEl) {
-      const lang = this.languages[langIndex]
-      currentLangFlagEl.textContent = lang.flag // Only flag, no text
+      currentLangFlagEl.forEach((el) => {
+        const lang = this.languages[langIndex]
+        el.textContent = lang.flag // Only flag, no text
+      })
     }
   }
 
   updateActiveLanguage(langIndex) {
     // Remove active class from all options
     document.querySelectorAll('.language-option').forEach((option) => {
-      option.classList.remove('active');
+      option.classList.remove('active')
     })
 
     // Add active class to selected option
-    const activeOption = document.querySelector(`[data-lang="${langIndex}"]`);
+    const activeOption = document.querySelector(`[data-lang="${langIndex}"]`)
     if (activeOption) {
-      activeOption.classList.add('active');
+      activeOption.classList.add('active')
     }
   }
 
@@ -311,7 +315,7 @@ class MultilingualSwitcher {
     }
 
     // Update og:locale for social media
-    let ogLocaleMeta = document.querySelector('meta[property="og:locale"]');
+    let ogLocaleMeta = document.querySelector('meta[property="og:locale"]')
     if (ogLocaleMeta) {
       const localeMap = {
         uk: 'uk_UA',
@@ -369,7 +373,7 @@ class MultilingualSwitcher {
    * Public method to get all available languages
    */
   getAvailableLanguages() {
-    return [...this.languages]; // Return copy to prevent external modification
+    return [...this.languages] // Return copy to prevent external modification
   }
 
   /**
@@ -391,10 +395,10 @@ class MultilingualSwitcher {
  * Finds the appropriate container to hide based on element hierarchy
  */
   hideElementCompletely(element) {
-    const containerToHide = this.findContainerToHide(element);
+    const containerToHide = this.findContainerToHide(element)
     if (containerToHide) {
-      containerToHide.style.display = 'none';
-      containerToHide.setAttribute('data-hidden-by-lang', 'true');
+      containerToHide.style.display = 'none'
+      containerToHide.setAttribute('data-hidden-by-lang', 'true')
     }
   }
 
@@ -402,10 +406,13 @@ class MultilingualSwitcher {
    * Show element when switching back to a language with content
    */
   showElementCompletely(element) {
-    const containerToShow = this.findContainerToHide(element);
-    if (containerToShow && containerToShow.hasAttribute('data-hidden-by-lang')) {
-      containerToShow.style.display = '';
-      containerToShow.removeAttribute('data-hidden-by-lang');
+    const containerToShow = this.findContainerToHide(element)
+    if (
+      containerToShow &&
+      containerToShow.hasAttribute('data-hidden-by-lang')
+    ) {
+      containerToShow.style.display = ''
+      containerToShow.removeAttribute('data-hidden-by-lang')
     }
   }
 
@@ -415,15 +422,15 @@ class MultilingualSwitcher {
    */
   findContainerToHide(element) {
     // Check if element is inside a dropdown
-    const dropdownContainer = element.closest('.dropdown');
+    const dropdownContainer = element.closest('.dropdown')
     if (dropdownContainer) {
-      return dropdownContainer;
+      return dropdownContainer
     }
 
     // Check if element is a navigation item
-    const navItem = element.closest('.nav-item, .Header-nav-item');
+    const navItem = element.closest('.nav-item, .Header-nav-item')
     if (navItem) {
-      return navItem;
+      return navItem
     }
 
     // Check if element is inside a list item
@@ -463,7 +470,7 @@ document.addEventListener('DOMContentLoaded', function () {
       window.multilingualSwitcher.getAvailableLanguages()
     )
   }
-});
+})
 
 // Legacy support for existing languageClicked function
 function languageClicked(langIndex) {
@@ -508,5 +515,3 @@ function onLanguageChange(callback) {
 function offLanguageChange(callback) {
   document.removeEventListener('languageChanged', callback)
 }
-
-

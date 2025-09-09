@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // Navigation hover effect
   const navItems = Array.from(
     document.querySelectorAll(
-      '.Header-nav-inner .header-nav--a-link, .Header-nav-inner button'
+      '.Header-nav-inner .header-nav--a-link, .Header-nav-inner button, .footer-container .header-nav--a-link'
     )
   )
 
