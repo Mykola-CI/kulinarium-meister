@@ -7,6 +7,7 @@ html {
 
 body {
   box-sizing: border-box;
+  min-height: 100vh;
   margin: 0;
   font-family: Open Sans;
   font-weight: 300;
@@ -545,16 +546,17 @@ header {
   max-width: 40ch;
 }
 
-.dough--row {
-  margin-top: -35px;
-}
+/* .dough--row {
+  margin-top: -100px;
+} */
 
 /* Product image hover effect */
 .product-image-container {
   position: relative;
   width: 100%;
-  padding-top: 15%;
+  padding-top: 25%;
   /* Creates 2:1 aspect ratio */
+  margin-top: -100px;
   overflow: hidden;
 }
 
@@ -568,7 +570,7 @@ header {
 
 .product-image.secondary {
   position: absolute;
-  top: 17%;
+  top: 25%;
   left: 0;
   opacity: 0;
 }
