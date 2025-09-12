@@ -58,7 +58,13 @@ template {
 }
 
 a {
-  background-color: transparent
+  background-color: transparent;
+  text-decoration: none !important;
+  color: inherit;
+}
+
+li {
+  list-style: none;
 }
 
 a:active,
@@ -113,7 +119,7 @@ h3 {
 /* HEADER */
 header {
   background-color: #fff;
-  z-index: 100;
+  z-index: 200;
   opacity: 0.9;
 }
 
@@ -407,8 +413,6 @@ header {
   width: 100%;
   padding: 20px 6%;
   box-sizing: border-box;
-  /* background-color: aqua; */
-  min-height: 400px;
 }
 
 .my-recipes-container {
@@ -532,23 +536,27 @@ header {
 /* DOUGH FOR BAKING STYLES */
 
 .dough-page-container {
-  padding: 100px 6%;
+  padding: 0 6%;
+}
+
+.dough-hero-title {
+  padding-top: 100px;
 }
 
 .dough-hero-title h1 {
   font-family: Cormorant Infant;
   font-weight: 400;
   font-style: normal;
-  font-size: clamp(24px, 3vw - 6px, 48px);
+  font-size: clamp(24px, 3vw, 48px);
   letter-spacing: 0em;
   line-height: 1.2em;
   text-transform: none;
   max-width: 40ch;
 }
 
-/* .dough--row {
-  margin-top: -100px;
-} */
+.dough-hero-title p {
+  max-width: 105ch;
+}
 
 /* Product image hover effect */
 .product-image-container {
@@ -583,9 +591,29 @@ header {
   opacity: 1;
 }
 
+/* OUR RECIPES PAGE */
+.our-recipes--page {
+  margin-top: clamp(60px, 10vw - 23px, 80px);
+  padding: 20px 6%;
+}
+
+.recipes--list-filter {
+  columns: 3;
+  column-gap: 30px;
+}
+
+.video-recipes--card-page img {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
 @media (max-width: 1200px) {
   .parallax-video {
     min-height: 150%;
+  }
+
+  .product-image-container {
+    margin-top: -55px;
   }
 }
 
@@ -629,10 +657,9 @@ header {
     margin-bottom: 30px;
   }
 
-  .dough-page-container {
-    padding: 60px 6%;
+  .dough-hero-title {
+    padding-top: 60px;
   }
-
 }
 
 @media (max-width: 575px) {
@@ -654,11 +681,15 @@ header {
     margin-top: 50px;
   }
 
-  .dough-page-container {
-    padding: 30px 6%;
+  .dough-hero-title {
+    padding-top: 30px;
   }
 
   .dough--row {
     margin-top: -5px;
+  }
+
+  .product-image-container {
+    margin-top: -25px;
   }
 }
