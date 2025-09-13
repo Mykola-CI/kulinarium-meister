@@ -600,9 +600,11 @@
         <main>
           <!-- VIDEO RECIPES -->
           <section class="our-recipes--page">
+            <!-- Main Container -->
             <div class="my-recipes-container">
+
               <div class="row justify-content-end mx-0 mb-5">
-                <div class="col-md-10 col-12">
+                <div class="col-lg-10 col-12">
                   <div class="d-inline-block">
                     <h1 class="multilingual-text">
                       Наша кулінарна відео майстерня..Our cooking video
@@ -613,121 +615,266 @@
                   </div>
                   <div class="row">
                     <div class="col-12 col-md-7">
-                      <ul class="recipes--list-filter ps-0">
-                        <li class="archive-group">
-                          <a href="/" class="archive-group-name-link">
-                            Листкове тісто
-
+                      <nav class="ps-0 filter-nav">
+                        <ul class="recipes--list-filter ps-0 isotope-filters">
+                          <li data-filter="*" class="filter-active multilingual-text">
+                            Усі рецепти..All Recipes..Wszystkie przepisy..Все рецепты
+                          </li>
+                          <li
+                            data-filter=".puff-pastry"
+                            class="multilingual-text"
+                          >
+                            Листкове тісто..Puff Pastry..Ciasto
+                            francuskie..Тесто слоеное
+                          </li>
+                          <li
+                            data-filter=".short-pastry"
+                            class="multilingual-text"
+                          >
+                            Пісочне тісто..Shortcrust Pastry..Ciasto
+                            kruche..Тесто песочное
+                          </li>
+                          <li
+                              class="multilingual-text"
+                              data-filter=".dumpling-wrappers"
+                            >
+                              Кружечки для пельменів..Dumpling Wrappers..Ciasto
+                              na uszka..Кружочки для пельменей </a
+                            >
+                          </li>
+                          <li
+                              class="multilingual-text"
+                              data-filter=".gingerbread-dough"
+                            >
+                              Імбирне тісто..Gingerbread Dough..Ciasto
+                              piernikowe..Имбирное тесто
+                          </li>
+                          <li
+                              class="multilingual-text"
+                              data-filter=".homemade-noodles"
+                            >
+                              Локшина домашня..Homemade Noodles..Domowy
+                              Makaron..Домашняя лапша </a
+                            >
+                          </li>
+                          <li
+                              class="multilingual-text"
+                              data-filter=".strudel-dough"
+                            >
+                              Тісто для штруделя..Strudel Dough..Ciasto na
+                              Strudel..Тесто для штруделя
+                          </li>
+                          <li
+                              class="multilingual-text"
+                              data-filter=".pappardelle-pasta"
+                            >
+                              Паста папарделе..Pappardelle Pasta..Makaron
+                              Pappardelle..Паста паппарделле
+                          </li>
+                          <li
+                            data-filter=".canelloni"
+                            class="multilingual-text"
+                          >
+                            Канелоні..Canelloni..Cannelloni..Канелони
+                          </li>
+                          <li
+                              class="archive-group-name-link multilingual-text"
+                              data-filter=".cappellini"
+                            >
+                              Капеліні..Cappellini..Cappellini..Капеллини
+                          </li>
+                          <li
+                            data-filter=".colored-pasta"
+                            class="multilingual-text"
+                          >
+                            Кольорова паста..Colored Pasta..Kolorowy
+                            Makaron..Цветная паста
+                          </li>
+                          <li
+                            data-filter=".black-pasta"
+                            class="multilingual-text"
+                          >
+                            Чорна паста..Black Pasta..Czarny Makaron..Черная
+                            паста
+                          </li>
+                          <li
+                            data-filter=".chocolate-pasta"
+                            class="multilingual-text"
+                          >
+                            Шоколадна паста..Chocolate Pasta..Czekoladowy
+                            Makaron..Шоколадная паста
+                          </li>
+                          <li
+                              class="archive-group-name-link multilingual-text"
+                              data-filter=".ravioli"
+                            >
+                              Равіолі..Ravioli..Ravioli..Равиоли
+                          </li>
+                        </ul>
+                        <!-- <a href="#all" class="active">All Recipes (38)</a>
+                        <ul class="recipes--list-filter ps-0">
+                          <li>
+                            <a
+                              href="#puff-pastry"
+                              class="archive-group-name-link multilingual-text"
+                              data-filter="puff-pastry"
+                            >
+                              Листкове тісто..Puff Pastry..Ciasto
+                              francuskie..Тесто слоеное
+                            </a>
                             <span class="archive-group-count">(9)</span>
-                          </a>
-                        </li>
-
-                        <li class="archive-group">
-                          <a href="/" class="archive-group-name-link">
-                            Пісочне тісто
-
-                            <span class="archive-group-count">(9)</span>
-                          </a>
-                        </li>
-
-                        <li class="archive-group">
-                          <a href="/" class="archive-group-name-link">
-                            Кружечки для пельменів
-
-                            <span class="archive-group-count">(4)</span>
-                          </a>
-                        </li>
-
-                        <li class="archive-group">
-                          <a href="/" class="archive-group-name-link">
-                            Імбирне тісто
-
+                          </li>
+                          <li>
+                            <a
+                              href="#short-pastry"
+                              class="archive-group-name-link multilingual-text"
+                              data-filter="short-pastry"
+                            >
+                              Пісочне тісто..Shortcrust Pastry..Ciasto
+                              kruche..Тесто песочное </a
+                            ><span class="archive-group-count">(9)</span>
+                          </li>
+                          <li>
+                            <a
+                              href="#dumpling-wrappers"
+                              class="archive-group-name-link multilingual-text"
+                              data-filter="dumpling-wrappers"
+                            >
+                              Кружечки для пельменів..Dumpling Wrappers..Ciasto
+                              na uszka..Кружочки для пельменей </a
+                            ><span class="archive-group-count">(4)</span>
+                          </li>
+                          <li>
+                            <a
+                              href="#gingerbread-dough"
+                              class="archive-group-name-link multilingual-text"
+                              data-filter="gingerbread-dough"
+                            >
+                              Імбирне тісто..Gingerbread Dough..Ciasto
+                              piernikowe..Имбирное тесто
+                            </a>
                             <span class="archive-group-count">(3)</span>
-                          </a>
-                        </li>
-
-                        <li class="archive-group">
-                          <a href="/" class="archive-group-name-link">
-                            Локшина домашня
-
+                          </li>
+                          <li>
+                            <a
+                              href="#homemade-noodles"
+                              class="archive-group-name-link multilingual-text"
+                              data-filter="homemade-noodles"
+                            >
+                              Локшина домашня..Homemade Noodles..Domowy
+                              Makaron..Домашняя лапша </a
+                            ><span class="archive-group-count">(3)</span>
+                          </li>
+                          <li>
+                            <a
+                              href="#strudel-dough"
+                              class="archive-group-name-link multilingual-text"
+                              data-filter="strudel-dough"
+                            >
+                              Тісто для штруделя..Strudel Dough..Ciasto na
+                              Strudel..Тесто для штруделя
+                            </a>
                             <span class="archive-group-count">(3)</span>
-                          </a>
-                        </li>
-
-                        <li class="archive-group">
-                          <a href="/" class="archive-group-name-link">
-                            Тісто для штруделя
-
-                            <span class="archive-group-count">(3)</span>
-                          </a>
-                        </li>
-
-                        <li class="archive-group">
-                          <a href="/" class="archive-group-name-link">
-                            Паста папарделе
-
+                          </li>
+                          <li>
+                            <a
+                              href="#pappardelle-pasta"
+                              class="archive-group-name-link multilingual-text"
+                              data-filter="pappardelle-pasta"
+                            >
+                              Паста папарделе..Pappardelle Pasta..Makaron
+                              Pappardelle..Паста паппарделле
+                            </a>
                             <span class="archive-group-count">(2)</span>
-                          </a>
-                        </li>
-
-                        <li class="archive-group">
-                          <a href="/" class="archive-group-name-link">
-                            Канелоні
-
+                          </li>
+                          <li>
+                            <a
+                              href="#canelloni"
+                              class="archive-group-name-link multilingual-text"
+                              data-filter="canelloni"
+                            >
+                              Канелоні..Canelloni..Cannelloni..Канелони
+                            </a>
                             <span class="archive-group-count">(1)</span>
-                          </a>
-                        </li>
-
-                        <li class="archive-group">
-                          <a href="/" class="archive-group-name-link">
-                            Капеліні
-
+                          </li>
+                          <li>
+                            <a
+                              href="#cappellini"
+                              class="archive-group-name-link multilingual-text"
+                              data-filter="cappellini"
+                            >
+                              Капеліні..Cappellini..Cappellini..Капеллини
+                            </a>
                             <span class="archive-group-count">(1)</span>
-                          </a>
-                        </li>
-
-                        <li class="archive-group">
-                          <a href="/" class="archive-group-name-link">
-                            Кольорова паста
-
+                          </li>
+                          <li>
+                            <a
+                              href="#colored-pasta"
+                              class="archive-group-name-link multilingual-text"
+                              data-filter="colored-pasta"
+                            >
+                              Кольорова паста..Colored Pasta..Kolorowy
+                              Makaron..Цветная паста </a
+                            ><span class="archive-group-count">(1)</span>
+                          </li>
+                          <li>
+                            <a
+                              href="#black-pasta"
+                              class="archive-group-name-link multilingual-text"
+                              data-filter="black-pasta"
+                            >
+                              Чорна паста..Black Pasta..Czarny Makaron..Черная
+                              паста </a
+                            ><span class="archive-group-count">(1)</span>
+                          </li>
+                          <li>
+                            <a
+                              href="#chocolate-pasta"
+                              class="archive-group-name-link multilingual-text"
+                              data-filter="chocolate-pasta"
+                            >
+                              Шоколадна паста..Chocolate Pasta..Czekoladowy
+                              Makaron..Шоколадная паста
+                            </a>
                             <span class="archive-group-count">(1)</span>
-                          </a>
-                        </li>
-
-                        <li class="archive-group">
-                          <a href="/" class="archive-group-name-link">
-                            Чорна паста
-
+                          </li>
+                          <li>
+                            <a
+                              href="#chocolate-pasta"
+                              class="archive-group-name-link multilingual-text"
+                              data-filter="ravioli"
+                            >
+                              Равіолі..Ravioli..Ravioli..Равиоли
+                            </a>
                             <span class="archive-group-count">(1)</span>
-                          </a>
-                        </li>
-
-                        <li class="archive-group">
-                          <a href="/" class="archive-group-name-link">
-                            Шоколадна паста
-
-                            <span class="archive-group-count">(1)</span>
-                          </a>
-                        </li>
-                      </ul>
+                          </li>
+                        </ul> -->
+                      </nav>
                     </div>
                     <div class="col-12 col-md-5">
-                      <p class="multilingual-text" style="margin-left: -25px">
-                        Вiдео рецепти для імпровізацій і кулінарних варіацій!
-                        Пропонуємо колекцію смачної рецептури, зібраної з усього
-                        світу, скориставшись якою, ви відчуєте красу
-                        різноманітних національних традицій..Video recipes for
-                        improvisations and culinary variations! We offer a
-                        collection of tasty recipes collected from all over the
-                        world, using which you will feel the beauty of diverse
-                        national traditions..Wideo przepisy na improwizacje i
-                        kulinarne odmiany! Oferujemy zbiór smacznych przepisów
-                        zebranych z całego świata, dzięki którym poczujesz
-                        piękno różnorodnych narodowych tradycji..Видео рецепты
-                        для импровизаций и кулинарных вариаций! Предлагаем
-                        коллекцию вкусной рецептуры, собранной со всего мира,
-                        воспользовавшись которой, вы почувствуете красоту
-                        различных национальных традиций
+                      <p
+                        class="mb-0 multilingual-text"
+                      >
+                        Вiдео рецепти!..Video Recipes!..Wideo przepisy!..Видео
+                        рецепты!
+                      </p>
+                      <p
+                        class="multilingual-text align-middle"
+                      >
+                        Ідеї для імпровізацій і кулінарних варіацій! Пропонуємо
+                        колекцію смачної рецептури, зібраної з усього світу,
+                        скориставшись якою, ви відчуєте красу різноманітних
+                        національних традицій..Ideas for your improvisations and
+                        culinary variations! We offer a collection of tasty
+                        recipes collected from all over the world, using which
+                        you will feel the beauty of diverse national
+                        traditions..Pomysły na improwizacje i kulinarne odmiany!
+                        Oferujemy zbiór smacznych przepisów zebranych z całego
+                        świata, dzięki którym poczujesz piękno różnorodnych
+                        narodowych tradycji..Идеи для импровизаций и кулинарных
+                        вариаций! Предлагаем коллекцию вкусной рецептуры,
+                        собранной со всего мира, воспользовавшись которой, вы
+                        почувствуете красоту различных национальных традиций
                       </p>
                     </div>
                   </div>
@@ -736,9 +883,28 @@
               <!-- Recipe cards - links to detailed pages -->
               <div class="video-recipes text-start pt-5">
                 <div
-                  class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-2"
+                  class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-2 isotope-container" id="recipe-grid"
                 >
-                  <div class="col video-recipes--card-page">
+                  <div
+                    class="col video-recipes--card-page isotope-item dumpling-wrappers"
+                    data-category="dumpling-wrappers"
+                  >
+                    <img
+                      src="/assets/images/recipes/white+fish+and+sea+cabbage+dumplings.webp"
+                      alt="chicken-and-mushroom-cannelloni"
+                      class="img-fluid"
+                    />
+                    <p
+                      class="regular-recipe-title multilingual-text text-center mt-3"
+                    >
+                      Вареники з рибою та морською капустою..Dumplings with Fish
+                      and Seaweed..Pierogi z rybą i wodorostami..Пельмени с
+                      рыбой и морской капустой
+                    </p>
+                  </div>
+                  <div
+                    class="col video-recipes--card-page isotope-item canelloni"
+                  >
                     <img
                       src="/assets/images/recipes/chicken-and-mushroom-cannelloni.webp"
                       alt="chicken-and-mushroom-cannelloni"
@@ -752,7 +918,9 @@
                       курицей и грибами
                     </p>
                   </div>
-                  <div class="col video-recipes--card-page">
+                  <div
+                    class="col video-recipes--card-page isotope-item black-pasta"
+                  >
                     <img
                       src="/assets/images/recipes/squid-ink-seafood-pasta.webp"
                       alt="squid-ink-seafood-pasta"
@@ -766,7 +934,9 @@
                       морепродуктов
                     </p>
                   </div>
-                  <div class="col video-recipes--card-page">
+                  <div
+                    class="col video-recipes--card-page isotope-item gingerbread-dough"
+                  >
                     <img
                       src="/assets/images/recipes/mixed-berry-and-mascarpone-tarts.webp"
                       alt="mixed-berry-and-mascarpone-tarts"
@@ -780,7 +950,9 @@
                       Tarts..Тарталетки із сиром маскарпоне та ягодами
                     </p>
                   </div>
-                  <div class="col video-recipes--card-page">
+                  <div
+                    class="col video-recipes--card-page isotope-item pappardelle-pasta"
+                  >
                     <img
                       src="/assets/images/recipes/papardelle-broccoli-salmon.webp"
                       alt="pappardelle-with-salmon-and-broccoli"
@@ -794,7 +966,9 @@
                       з броколі і лососем
                     </p>
                   </div>
-                  <div class="col video-recipes--card-page">
+                  <div
+                    class="col video-recipes--card-page isotope-item pappardelle-pasta"
+                  >
                     <img
                       src="/assets/images/recipes/pappardelle-with-pesto.webp"
                       alt="pappardelle-with-pesto-sauce"
@@ -808,7 +982,9 @@
                       песто
                     </p>
                   </div>
-                  <div class="col video-recipes--card-page">
+                  <div
+                    class="col video-recipes--card-page isotope-item cappellini"
+                  >
                     <img
                       src="/assets/images/recipes/cappellini-muffins.webp"
                       alt="cappellini-muffins"
@@ -821,7 +997,118 @@
                       muffins..Мафіни з капеліні
                     </p>
                   </div>
-                  <div class="col video-recipes--card-page">
+                  <div
+                    class="col video-recipes--card-page isotope-item chocolate-pasta"
+                  >
+                    <img
+                      src="/assets/images/recipes/chocolate-pasta-casserole.webp"
+                      alt="chocolate-pasta-casserole"
+                      class="img-fluid"
+                    />
+                    <p
+                      class="regular-recipe-title multilingual-text text-center mt-3"
+                    >
+                      Запіканка з шоколадної пасти..Chocolate Pasta
+                      Casserole..Zapiekanka z czekoladowego makaronu..Запеканка
+                      из шоколадной пасты
+                    </p>
+                  </div>
+                  <div
+                    class="col video-recipes--card-page isotope-item gingerbread-dough"
+                  >
+                    <img
+                      src="/assets/images/recipes/pear-tart.webp"
+                      alt="chocolate-pasta-casserole"
+                      class="img-fluid"
+                    />
+                    <p
+                      class="regular-recipe-title multilingual-text text-center mt-3"
+                    >
+                      Грушевий тарт..Pear Tart..Pear Tart..Грушевий тарт
+                    </p>
+                  </div>
+                  <div
+                    class="col video-recipes--card-page isotope-item puff-pastry"
+                  >
+                    <img
+                      src="/assets/images/recipes/napoleon.webp"
+                      alt="chocolate-pasta-casserole"
+                      class="img-fluid"
+                    />
+                    <p
+                      class="regular-recipe-title multilingual-text text-center mt-3"
+                    >
+                      Наполеон..Napoleon..Napoleon..Наполеон
+                    </p>
+                  </div>
+                  <div
+                    class="col video-recipes--card-page isotope-item short-pastry"
+                  >
+                    <img
+                      src="/assets/images/recipes/cocoa_raspberry_cheescake.webp"
+                      alt="chocolate-pasta-casserole"
+                      class="img-fluid"
+                    />
+                    <p
+                      class="regular-recipe-title multilingual-text text-center mt-3"
+                    >
+                      Кокосовий чізкейк з малиною..Coconut Raspberry
+                      Cheesecake..Coconut Raspberry Cheesecake..Sernik kokosowy
+                      z malinami..Кокосовий чизкейк с малиной
+                    </p>
+                  </div>
+                  <div
+                    class="col video-recipes--card-page isotope-item puff-pastry"
+                  >
+                    <img
+                      src="/assets/images/recipes/apricot-tart-with-almond-cream.webp"
+                      alt="chocolate-pasta-casserole"
+                      class="img-fluid"
+                    />
+                    <p
+                      class="regular-recipe-title multilingual-text text-center mt-3"
+                    >
+                      Листковий пиріг з мигдальним кремом та абрикосами..Puff
+                      Pastry Cake with Almond Cream and Apricots..Ciasto
+                      francuskie z kremem migdałowym i morelami..Слоеный пирог с
+                      миндальным кремом и абрикосами
+                    </p>
+                  </div>
+                  <div
+                    class="col video-recipes--card-page isotope-item short-pastry"
+                  >
+                    <img
+                      src="/assets/images/recipes/basket-with-fruits-and-nuts.webp"
+                      alt="strawberry-cheesecake"
+                      class="img-fluid"
+                    />
+                    <p
+                      class="regular-recipe-title multilingual-text text-center mt-3"
+                    >
+                      Кошик із фруктами та горіхами..Fruit and Nut
+                      Basket..Koszyk z owocami i orzechami..Корзинка с фруктами
+                      и орехами
+                    </p>
+                  </div>
+                  <div
+                    class="col video-recipes--card-page isotope-item short-pastry"
+                  >
+                    <img
+                      src="/assets/images/recipes/mint-cheesecake-with-strawberry-compote.webp"
+                      alt="strawberry-cheesecake"
+                      class="img-fluid"
+                    />
+                    <p
+                      class="regular-recipe-title multilingual-text text-center mt-3"
+                    >
+                      М'ятний чізкейк із полуничним компотем..Mint Cheesecake
+                      with Strawberry Compote..Sernik miętowy z kompotem
+                      truskawkowym..Мятный чизкейк с клубничным компотом
+                    </p>
+                  </div>
+                  <div
+                    class="col video-recipes--card-page isotope-item short-pastry"
+                  >
                     <img
                       src="/assets/images/recipes/strawberry-cheesecake.webp"
                       alt="strawberry-cheesecake"
@@ -834,18 +1121,84 @@
                       Cheesecake..Полуничний чізкейк
                     </p>
                   </div>
-                  <div class="col video-recipes--card-page">
+                  <div
+                    class="col video-recipes--card-page isotope-item strudel-dough"
+                  >
                     <img
-                      src="/assets/images/recipes/chocolate-pasta-casserole.webp"
-                      alt="chocolate-pasta-casserole"
+                      src="/assets/images/recipes/cherry-and-pear-strudel.webp"
+                      alt="strawberry-cheesecake"
                       class="img-fluid"
                     />
                     <p
                       class="regular-recipe-title multilingual-text text-center mt-3"
                     >
-                      Запіканка з шоколадної пасти..chocolate pasta
-                      casserole..chocolate pasta casserole..Запіканка з
-                      шоколадної пасти
+                      Штрудель з грушею та вишнею..Strudel with Pear and
+                      Cherry..Strudel z gruszką i wiśnią..Штрудель с грушей и
+                      вишней
+                    </p>
+                  </div>
+                  <div
+                    class="col video-recipes--card-page isotope-item short-pastry"
+                  >
+                    <img
+                      src="/assets/images/recipes/strawberry-lemon-tart.webp"
+                      alt="strawberry-cheesecake"
+                      class="img-fluid"
+                    />
+                    <p
+                      class="regular-recipe-title multilingual-text text-center mt-3"
+                    >
+                      Лимонний тарт із полуницею..Lemon Tart with
+                      Strawberries..Tarta z Lemonom i truskawkami..Лимонный тарт
+                      с клубникой
+                    </p>
+                  </div>
+                  <div
+                    class="col video-recipes--card-page isotope-item puff-pastry"
+                  >
+                    <img
+                      src="/assets/images/recipes/apple-tart-upside.webp"
+                      alt="strawberry-cheesecake"
+                      class="img-fluid"
+                    />
+                    <p
+                      class="regular-recipe-title multilingual-text text-center mt-3"
+                    >
+                      Перегорнутий тарт з яблуками..Upside Down Apple
+                      Tart..Tarta z jabłkami do góry nogami..Перевернутый тарт с
+                      яблоками
+                    </p>
+                  </div>
+                  <div
+                    class="col video-recipes--card-page isotope-item puff-pastry"
+                  >
+                    <img
+                      src="/assets/images/recipes/crunch-with-dried-fruit-and-nuts.webp"
+                      alt="strawberry-cheesecake"
+                      class="img-fluid"
+                    />
+                    <p
+                      class="regular-recipe-title multilingual-text text-center mt-3"
+                    >
+                      Кранч з горіхами та сухофруктами..Crunch with Nuts and
+                      Dried Fruits..Kruszonka z orzechami i suszonymi
+                      owocami..Кранч с орехами и сухофруктами
+                    </p>
+                  </div>
+                  <div
+                    class="col video-recipes--card-page isotope-item ravioli"
+                  >
+                    <img
+                      src="/assets/images/recipes/chicken-liver-ravioli-with-pear.webp"
+                      alt="strawberry-cheesecake"
+                      class="img-fluid"
+                    />
+                    <p
+                      class="regular-recipe-title multilingual-text text-center mt-3"
+                    >
+                      Равіолі з курячою печінкою та грушею..Ravioli with Chicken
+                      Liver and Pear..Ravioli z wątróbką drobiową i
+                      gruszką..Равиоли с куриной печенью и грушей
                     </p>
                   </div>
                 </div>
@@ -914,7 +1267,34 @@
 
     <script src="src/vendor/jquery/jquery.min.js"></script>
     <script src="src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="src/js/lang-switcher.js"></script>
     <script src="src/js/index.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var grid = document.querySelector('#recipe-grid');
+          var iso = new Isotope(grid, {
+              itemSelector: '.isotope-item',
+              layoutMode: 'fitRows',
+              percentPosition: true,
+              transitionDuration: '0.3s'
+          });
+
+          var filterButtons = document.querySelectorAll('.isotope-filters li');
+          
+          filterButtons.forEach(function(button) {
+              button.addEventListener('click', function() {
+                  var filterValue = this.getAttribute('data-filter');
+                  
+                  filterButtons.forEach(function(btn) {
+                      btn.classList.remove('filter-active');
+                  });
+                  
+                  this.classList.add('filter-active');
+                  iso.arrange({ filter: filterValue });
+              });
+          });
+      });
+    </script>
   </body>
 </html>

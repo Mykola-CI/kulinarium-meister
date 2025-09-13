@@ -391,9 +391,9 @@ class MultilingualSwitcher {
   }
 
   /**
- * Hide element completely when language text is empty
- * Finds the appropriate container to hide based on element hierarchy
- */
+   * Hide element completely when language text is empty
+   * Finds the appropriate container to hide based on element hierarchy
+   */
   hideElementCompletely(element) {
     const containerToHide = this.findContainerToHide(element)
     if (containerToHide) {

@@ -469,7 +469,7 @@ header {
   line-height: 1.2em;
   letter-spacing: .03em;
   font-weight: 300;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .video-recipes--card img {
@@ -607,6 +607,31 @@ header {
   object-fit: cover;
 }
 
+/* Isotope Layout */
+.isotope-filters li {
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.isotope-filters li.filter-active {
+  background: hsl(0, 0%, 56%);
+  color: white;
+}
+
+.isotope-filters li:hover {
+  background: hsl(0, 0%, 90%);
+  color: black;
+}
+
+/* Target touch devices only */
+@media (hover: none) and (pointer: coarse) {
+  .isotope-filters li:hover {
+    background: hsl(0, 0%, 56%);
+    color: white;
+  }
+}
+
+
 @media (max-width: 1200px) {
   .parallax-video {
     min-height: 150%;
@@ -618,7 +643,7 @@ header {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .artwork-image {
     min-height: 250%;
     bottom: 0;
@@ -659,6 +684,11 @@ header {
 
   .dough-hero-title {
     padding-top: 60px;
+  }
+
+  .recipes--list-filter {
+    columns: 2;
+    column-gap: 20px;
   }
 }
 
