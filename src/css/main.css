@@ -465,7 +465,7 @@ header {
 }
 
 .regular-recipe-title {
-  font-size: 14px;
+  font-size: clamp(16px, 6vw - 16px, 18px);
   line-height: 1.2em;
   letter-spacing: .03em;
   font-weight: 300;
@@ -593,18 +593,42 @@ header {
 
 /* OUR RECIPES PAGE */
 .our-recipes--page {
-  margin-top: clamp(60px, 10vw - 23px, 80px);
+  margin-top: clamp(40px, 10vw - 23px, 80px);
   padding: 20px 6%;
 }
 
 .recipes--list-filter {
   columns: 3;
   column-gap: 30px;
+  line-height: normal;
+
+}
+
+.video-recipes--card-page {
+  height: 440px;
+  /* Adjust based on your tallest card */
+  position: relative;
+  overflow: hidden;
+}
+
+.video-recipes--card-page .isotope-filters {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: 0;
 }
 
 .video-recipes--card-page img {
   aspect-ratio: 4/3;
   object-fit: cover;
+}
+
+.regular-recipe-title--page {
+  font-size: clamp(18px, 6vw - 16px, 20px);
+  line-height: 1.2em;
+  letter-spacing: .03em;
+  font-weight: 300;
 }
 
 /* Isotope Layout */
@@ -615,7 +639,7 @@ header {
 
 .isotope-filters li.filter-active {
   background: hsl(0, 0%, 56%);
-  color: white;
+  color: white !important;
 }
 
 .isotope-filters li:hover {
@@ -631,6 +655,17 @@ header {
   }
 }
 
+@media (max-width: 1800px) {
+  .video-recipes--card-page {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .video-recipes--card-page {
+    height: 335px;
+  }
+}
 
 @media (max-width: 1200px) {
   .parallax-video {
@@ -640,8 +675,11 @@ header {
   .product-image-container {
     margin-top: -55px;
   }
-}
 
+  .video-recipes--card-page {
+    height: 385px;
+  }
+}
 
 @media (max-width: 768px) {
   .artwork-image {
@@ -690,7 +728,13 @@ header {
     columns: 2;
     column-gap: 20px;
   }
+
+  .video-recipes--card-page {
+    height: 360px;
+  }
 }
+
+
 
 @media (max-width: 575px) {
   .video-recipes--card img {
@@ -721,5 +765,9 @@ header {
 
   .product-image-container {
     margin-top: -25px;
+  }
+
+  .video-recipes--card-page {
+    height: 380px;
   }
 }
