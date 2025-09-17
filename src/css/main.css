@@ -625,10 +625,11 @@ header {
 }
 
 .regular-recipe-title--page {
-  font-size: clamp(18px, 6vw - 16px, 20px);
+  font-size: clamp(16px, 6vw - 16px, 20px);
   line-height: 1.2em;
   letter-spacing: .03em;
   font-weight: 300;
+  text-align: center;
 }
 
 /* Isotope Layout */
@@ -647,6 +648,81 @@ header {
   color: black;
 }
 
+/* RECIPE DETAILS PAGES */
+.recipe-detail--container {
+  /* padding: 0 6%; */
+  margin-top: clamp(40px, 3vw, 80px);
+  margin-bottom: clamp(40px, 3vw, 80px);
+}
+
+.recipe-detail--title  h1 {
+  font-family: Gabriela;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(22px, 3vw, 40px);
+  letter-spacing: 0em;
+  line-height: 1.12em;
+  text-transform: none;
+  color: #262524;
+}
+
+.video-container {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.recipe-content h2 {
+  font-family: Cormorant Infant;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(24px, 6vw - 14px, 36px);
+  letter-spacing: 0em;
+  line-height: 1.2em;
+  text-transform: none;
+  color: #262524;
+  margin-top: 20px;
+}
+
+.recipe--ingredients-list li {
+  list-style: disc;
+  font-size: inherit;
+  font-family: inherit;
+  font-style: italic;
+  line-height: inherit;
+  padding-left: 1.2em;
+  padding-bottom: 10px;
+}
+
+.recipe--ingredients-list li::marker {
+  font-size: 0.7em;
+}
+
+.recipe--preparation-list li {
+  list-style: decimal;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  padding-left: 1.2em;
+  padding-bottom: 10px;
+}
+
+.recipe--avatars {
+  padding: 20px 6%;
+}
+
+
 /* Target touch devices only */
 @media (hover: none) and (pointer: coarse) {
   .isotope-filters li:hover {
@@ -657,7 +733,7 @@ header {
 
 @media (max-width: 1800px) {
   .video-recipes--card-page {
-    height: 400px;
+    height: 390px;
   }
 }
 
