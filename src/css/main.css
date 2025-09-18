@@ -722,6 +722,17 @@ header {
   padding: 20px 6%;
 }
 
+.recipe--avatars h5 {
+  font-family: Cormorant Infant;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(20px, 6vw - 14px, 28px);
+  letter-spacing: 0em;
+  line-height: 1.2em;
+  text-transform: none;
+  color: #262524;
+}
+
 
 /* Target touch devices only */
 @media (hover: none) and (pointer: coarse) {
