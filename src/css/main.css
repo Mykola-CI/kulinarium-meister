@@ -405,6 +405,7 @@ header {
   /* Initial position, controlled by JS */
   transition: transform 0.1s ease-out;
   /* Smooth movement */
+  pointer-events: none;
 }
 
 /* Section recipes */
@@ -655,7 +656,7 @@ header {
   margin-bottom: clamp(40px, 3vw, 80px);
 }
 
-.recipe-detail--title  h1 {
+.recipe-detail--title h1 {
   font-family: Gabriela;
   font-weight: 400;
   font-style: normal;
