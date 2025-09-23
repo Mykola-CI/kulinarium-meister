@@ -379,7 +379,7 @@ header {
 /* Video Section - Responsive TV Screen */
 .video-section {
   width: 100%;
-  height: clamp(225px, 35.4vw, 500px);
+  height: clamp(225px, 20vw + 50px, 500px);
   /* Responsive height as requested */
   position: relative;
   overflow: hidden;
