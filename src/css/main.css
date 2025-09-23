@@ -594,7 +594,7 @@ header {
 
 /* OUR RECIPES PAGE */
 .our-recipes--page {
-  margin-top: clamp(40px, 10vw - 23px, 80px);
+  margin-top: clamp(20px, 10vw - 23px, 80px);
   padding: 20px 6%;
 }
 
