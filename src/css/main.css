@@ -206,9 +206,11 @@ header {
 }
 
 .Header-nav--offcanvas button:focus,
-.Header-nav--offcanvas button:hover {
+.Header-nav--offcanvas button:hover,
+.Header-nav--offcanvas a:focus,
+.Header-nav--offcanvas a:hover {
   text-decoration: none;
-  transform: translateY(-2px) scale(1.08);
+  transform: translateY(-1px) scale(1.04);
 }
 
 .no-outline-btn .current-language-flag {
