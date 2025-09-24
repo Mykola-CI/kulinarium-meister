@@ -3,6 +3,11 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   /* overflow-x: hidden; */
+  scroll-padding-top: 200px;
+  /* Adjust to match your header height */
+  scroll-behavior: smooth;
+  /* Optional: adds smooth scrolling */
+
 }
 
 body {
@@ -735,6 +740,102 @@ header {
   text-transform: none;
   color: #262524;
 }
+
+/* INDEX NAVIGATOR ON HOME PAGE */
+.Index-nav {
+  margin-right: 3rem;
+}
+
+.Index-nav-indicator {
+  box-sizing: border-box;
+  /* Include border in dimensions */
+  border-radius: 50%;
+  /* Always perfectly circular */
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, .5);
+  width: 11px;
+  height: 11px;
+  transform: scale(.95);
+  -webkit-transform: scale(.95);
+  -moz-transform: scale(.95);
+  -ms-transform: scale(.95);
+  -o-transform: scale(.95);
+  transform: scale(.95);
+  -webkit-transition: border-color 170ms ease-out, transform 170ms ease-out, margin 170ms ease-out;
+  -moz-transition: border-color 170ms ease-out, transform 170ms ease-out, margin 170ms ease-out;
+  -ms-transition: border-color 170ms ease-out, transform 170ms ease-out, margin 170ms ease-out;
+  -o-transition: border-color 170ms ease-out, transform 170ms ease-out, margin 170ms ease-out;
+  transition: border-color 170ms ease-out, transform 170ms ease-out, margin 170ms ease-out;
+}
+
+.Index-nav-text span {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* line-height: 100%; */
+}
+
+.Index-nav-text {
+  white-space: nowrap;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  color: #111;
+  padding-right: 0.8rem;
+  opacity: 0;
+  -webkit-transition: opacity 170ms ease-out, transform 170ms ease-out, right 0s 170ms;
+  -moz-transition: opacity 170ms ease-out, transform 170ms ease-out, right 0s 170ms;
+  -ms-transition: opacity 170ms ease-out, transform 170ms ease-out, right 0s 170ms;
+  -o-transition: opacity 170ms ease-out, transform 170ms ease-out, right 0s 170ms;
+  transition: opacity 170ms ease-out, transform 170ms ease-out, right 0s 170ms;
+}
+
+.Index-nav-text:hover,
+.Index-nav-text:focus {
+  opacity: 1;
+}
+
+.Index-nav-indicator:hover + .Index-nav-text,
+.Index-nav-indicator:focus + .Index-nav-text {
+  opacity: 1;
+}
+
+.Index-nav-item.active .Index-nav-indicator {
+  position: relative;
+  /* Remove transform: scale(1.4) */
+  width: 15px;
+  height: 15px;
+  margin: -2px;
+  /* Compensate for the size increase to keep it centered */
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.Index-nav-item.active .Index-nav-indicator::before {
+  content: '';
+  position: absolute;
+  /* Change from display: block */
+  width: 3px;
+  height: 3px;
+  left: 50%;
+  /* Center horizontally */
+  top: 50%;
+  /* Center vertically */
+  transform: translate(-50%, -50%);
+  /* Perfect centering */
+  border-radius: 300px;
+  background-color: #111;
+}
+
 
 
 /* Target touch devices only */
