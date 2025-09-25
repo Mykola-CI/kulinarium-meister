@@ -1039,51 +1039,70 @@
           <nav
             class="Index-nav position-fixed top-50 end-0 translate-middle-y z-3 d-none d-xl-block"
           >
-            <div class="Index-nav-inner">
-              <a
-                href="#hero-ua"
-                class="Index-nav-item active d-flex flex-row-reverse align-items-center justify-content-start"
-              >
-                <div class="Index-nav-indicator"></div>
-                <div class="Index-nav-text">
+            <a href="#hero-ua" class="Index-nav-item active mb-3">
+              <div class="d-flex align-items-center">
+                <div class="Index-nav-text text-end pe-3" style="width: 150px">
                   <span class="multilingual-text"
                     >Живе тісто..Fresh Dough..Świeże ciasto..Живое тесто</span
                   >
                 </div>
-              </a>
+                <div
+                  class="Index-nav-indicator-wrapper d-flex justify-content-center align-items-center"
+                  style="width: 24px"
+                >
+                  <div class="Index-nav-indicator"></div>
+                </div>
+              </div>
+            </a>
 
-              <a
-                href="#products"
-                class="Index-nav-item d-flex flex-row-reverse align-items-center justify-content-start"
-              >
-                <div class="Index-nav-indicator"></div>
-                <div class="Index-nav-text">
+            <a href="#products" class="Index-nav-item mb-3">
+              <div class="d-flex align-items-center">
+                <div class="Index-nav-text text-end pe-3" style="width: 150px">
                   <span class="multilingual-text">
                     Продукцiя..Products..Produkty..Продукция
                   </span>
                 </div>
-              </a>
-
-              <a
-                href="#video-section"
-                class="Index-nav-item d-flex flex-row-reverse align-items-center justify-content-start"
-              >
-                <div class="Index-nav-indicator"></div>
-                <div class="Index-nav-text">
-                  <span class="multilingual-text">Виробництво..Manufacture..Produkcja..Производство</span>
+                <div
+                  class="Index-nav-indicator-wrapper d-flex justify-content-center align-items-center"
+                  style="width: 24px"
+                >
+                  <div class="Index-nav-indicator"></div>
                 </div>
-              </a>
+              </div>
+            </a>
 
-              <a
-                href="#featured-recipes"
-                class="Index-nav-item d-flex flex-row-reverse align-items-center justify-content-start"
-              >
-                <div class="Index-nav-indicator"></div>
-                <div class="Index-nav-text">
-                  <span class="multilingual-text">Рецепти..Recipes..Przepisy..Рецепты</span>
+            <a href="#video-section" class="Index-nav-item mb-3">
+              <div class="d-flex align-items-center">
+                <div class="Index-nav-text text-end pe-3" style="width: 150px">
+                  <span class="multilingual-text"
+                    >Виробництво..Manufacture..Produkcja..Производство</span
+                  >
                 </div>
-              </a>
-            </div>
+
+                <div
+                  class="Index-nav-indicator-wrapper d-flex justify-content-center align-items-center"
+                  style="width: 24px"
+                >
+                  <div class="Index-nav-indicator"></div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#featured-recipes" class="Index-nav-item mb-3">
+              <div class="d-flex align-items-center">
+                <div class="Index-nav-text text-end pe-3" style="width: 150px">
+                  <span class="multilingual-text"
+                    >Рецепти..Recipes..Przepisy..Рецепты</span
+                  >
+                </div>
+                <div
+                  class="Index-nav-indicator-wrapper d-flex justify-content-center align-items-center"
+                  style="width: 24px"
+                >
+                  <div class="Index-nav-indicator"></div>
+                </div>
+              </div>
+            </a>
           </nav>
         </main>
       </div>
@@ -1142,59 +1161,5 @@
     <script src="src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="src/js/lang-switcher.js"></script>
     <script src="src/js/index.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        // Select all navigation items and convert NodeList to array for easier handling
-        const navItems = Array.from(
-          document.querySelectorAll('.Index-nav-item')
-        )
-
-        // Get all section elements that the nav items link to
-        const sections = navItems.map((item) => {
-          // Extract the ID from the href attribute
-          const targetId = item.getAttribute('href').substring(1)
-          return document.getElementById(targetId)
-        })
-
-        // Create the Intersection Observer instance
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              // If the section is in view (or near view)
-              if (entry.isIntersecting) {
-                // Get the section ID
-                const targetId = entry.target.id
-
-                // Remove active class from all nav items
-                navItems.forEach((item) => {
-                  item.classList.remove('active')
-                })
-
-                // Add active class to the matching nav item
-                const activeItem = document.querySelector(
-                  `.Index-nav-item[href="#${targetId}"]`
-                )
-                if (activeItem) {
-                  activeItem.classList.add('active')
-                }
-              }
-            })
-          },
-          {
-            // Options for the observer
-            threshold: 0.3, // Trigger when at least 30% of the section is visible
-            rootMargin: '-10% 0px -10% 0px', // Adjust the effective viewport slightly
-          }
-        )
-
-        // Start observing all sections
-        sections.forEach((section) => {
-          if (section) {
-            // Check if section exists
-            observer.observe(section)
-          }
-        })
-      })
-    </script>
   </body>
 </html>

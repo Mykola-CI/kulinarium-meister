@@ -748,20 +748,14 @@ header {
 
 .Index-nav-indicator {
   box-sizing: border-box;
-  /* Include border in dimensions */
+
   border-radius: 50%;
-  /* Always perfectly circular */
+
   border-width: 1px;
   border-style: solid;
   border-color: rgba(0, 0, 0, .5);
-  width: 11px;
-  height: 11px;
-  transform: scale(.95);
-  -webkit-transform: scale(.95);
-  -moz-transform: scale(.95);
-  -ms-transform: scale(.95);
-  -o-transform: scale(.95);
-  transform: scale(.95);
+  width: 12px;
+  height: 12px;
   -webkit-transition: border-color 170ms ease-out, transform 170ms ease-out, margin 170ms ease-out;
   -moz-transition: border-color 170ms ease-out, transform 170ms ease-out, margin 170ms ease-out;
   -ms-transition: border-color 170ms ease-out, transform 170ms ease-out, margin 170ms ease-out;
@@ -799,25 +793,27 @@ header {
   transition: opacity 170ms ease-out, transform 170ms ease-out, right 0s 170ms;
 }
 
-.Index-nav-text:hover,
+/* .Index-nav-text:hover,
 .Index-nav-text:focus {
   opacity: 1;
-}
+} */
 
-.Index-nav-indicator:hover + .Index-nav-text,
-.Index-nav-indicator:focus + .Index-nav-text {
+.Index-nav-item:hover .Index-nav-text,
+.Index-nav-item:focus .Index-nav-text {
   opacity: 1;
 }
 
 .Index-nav-item.active .Index-nav-indicator {
   position: relative;
   /* Remove transform: scale(1.4) */
-  width: 15px;
-  height: 15px;
-  margin: -2px;
+  width: 17px;
+  height: 17px;
+  border-width: 1.8px;
+  /* margin: -2px; */
   /* Compensate for the size increase to keep it centered */
   box-sizing: border-box;
   border-radius: 50%;
+  border-color: #111;
 }
 
 .Index-nav-item.active .Index-nav-indicator::before {
