@@ -124,7 +124,7 @@ h3 {
 /* HEADER */
 header {
   background-color: #fff;
-  z-index: 200;
+  z-index: 100;
   opacity: 0.9;
 }
 
@@ -746,11 +746,14 @@ header {
   margin-right: 3rem;
 }
 
+.Index-nav--mobile {
+  width: 100%;
+  height: 74px;
+}
+
 .Index-nav-indicator {
   box-sizing: border-box;
-
   border-radius: 50%;
-
   border-width: 1px;
   border-style: solid;
   border-color: rgba(0, 0, 0, .5);
@@ -803,7 +806,8 @@ header {
   opacity: 1;
 }
 
-.Index-nav-item.active .Index-nav-indicator {
+.Index-nav-item.active .Index-nav-indicator,
+.Index-nav-item--mobile.active .Index-nav-indicator {
   position: relative;
   /* Remove transform: scale(1.4) */
   width: 17px;
@@ -816,7 +820,8 @@ header {
   border-color: #111;
 }
 
-.Index-nav-item.active .Index-nav-indicator::before {
+.Index-nav-item.active .Index-nav-indicator::before,
+.Index-nav-item--mobile.active .Index-nav-indicator::before {
   content: '';
   position: absolute;
   /* Change from display: block */
