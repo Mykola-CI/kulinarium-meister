@@ -124,7 +124,7 @@ h3 {
 /* HEADER */
 header {
   background-color: #fff;
-  z-index: 100;
+  z-index: 150;
   opacity: 0.9;
 }
 

@@ -89,11 +89,11 @@ class MultilingualSwitcher {
     // Language selection from dropdown
     document.querySelectorAll('.language-option').forEach((option) => {
       option.addEventListener('click', (e) => {
-        e.preventDefault();
+        e.preventDefault()
         const langIndex = parseInt(e.currentTarget.dataset.lang)
         this.switchLanguage(langIndex)
-      });
-    });
+      })
+    })
 
     // Handle dynamic content loading
     const observer = new MutationObserver((mutations) => {
