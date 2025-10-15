@@ -8,34 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="initial-scale=1" />
 
+    <!-- This is Squarespace. -->
     <!-- kulinarium-meister -->
+    <base href="" />
     <meta charset="utf-8" />
     <title>Kulinarium Meister</title>
-    <link rel="icon" href="./assets/images/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/images/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/images/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/images/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="./assets/images/safari-pinned-tab.svg"
-      color="#000000"
-    />
-    <meta name="theme-color" content="#ffffff" />
     <meta
       http-equiv="Accept-CH"
       content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model"
@@ -110,8 +87,11 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,700&family=Libre+Baskerville:ital,wght@0,700&family=Cormorant+Infant:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400&family=Gabriela:ital,wght@0,400"
     />
-    <link rel="stylesheet" href="src/vendor/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="src/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="../src/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../src/css/main.css" />
     <meta
       name="google-site-verification"
       content="4QMEQxu0VzZlCxrxJMTn_HbX8W0jvG6f47cIIThGKSE"
@@ -131,9 +111,11 @@
   <!-- ---------------------------------- -->
   <body>
     <!-- Outer Container for everything -->
-    <div class="outer-container-body container-fluid">
+    <div
+      class="outer-container-body container-fluid d-flex flex-column min-vh-100"
+    >
       <!--  Header and Main -->
-      <div class="position-relative">
+      <div class="position-relative flex-grow-1">
         <!-- Header -->
         <header
           class="w-100 d-flex flex-row justify-content-center position-sticky top-0 start-0"
@@ -145,7 +127,7 @@
             <div class="Header-branding">
               <a href="/">
                 <img
-                  src="assets/images/logo_png_black@2x.png"
+                  src="../assets/images/logo_png_black@2x.png"
                   alt="Kulinarium Meister"
                   class="img-fluid"
                   style="display: block"
@@ -154,53 +136,6 @@
                 />
               </a>
             </div>
-            <nav
-              class="Index-nav--mobile d-flex justify-content-center d-md-none pt-2"
-            >
-              <a href="#hero-ua" class="Index-nav-item--mobile active me-2">
-                <div
-                  class="Index-nav-indicator-wrapper d-flex justify-content-center align-items-center h-100"
-                  style="width: 24px"
-                >
-                  <div class="Index-nav-indicator"></div>
-                </div>
-              </a>
-
-              <a href="#products" class="Index-nav-item--mobile me-2">
-                <div
-                  class="Index-nav-indicator-wrapper d-flex justify-content-center align-items-center h-100"
-                  style="width: 24px"
-                >
-                  <div class="Index-nav-indicator"></div>
-                </div>
-              </a>
-
-              <a href="#video-section" class="Index-nav-item--mobile me-2">
-                <div
-                  class="Index-nav-indicator-wrapper d-flex justify-content-center align-items-center h-100"
-                  style="width: 24px"
-                >
-                  <div class="Index-nav-indicator"></div>
-                </div>
-              </a>
-
-              <a href="#featured-recipes" class="Index-nav-item--mobile me-2">
-                <div
-                  class="Index-nav-indicator-wrapper d-flex justify-content-center align-items-center h-100"
-                  style="width: 24px"
-                >
-                  <div class="Index-nav-indicator"></div>
-                </div>
-              </a>
-              <a href="#footer-index" class="Index-nav-item--mobile">
-                <div
-                  class="Index-nav-indicator-wrapper d-flex justify-content-center align-items-center h-100"
-                  style="width: 24px"
-                >
-                  <div class="Index-nav-indicator"></div>
-                </div>
-              </a>
-            </nav>
             <div class="icon-bars">
               <button
                 class="btn btn-primary"
@@ -247,7 +182,7 @@
               >
                 <h5 class="offcanvas-title" id="offcanvasMainLabel">
                   <img
-                    src="assets/images/logo_png_black@2x.png"
+                    src="../assets/images/logo_png_black@2x.png"
                     alt="Kulinarium Meister"
                     class="img-fluid"
                     style="display: block; width: 50px"
@@ -456,7 +391,7 @@
             <div class="Header-branding">
               <a href="/">
                 <img
-                  src="assets/images/logo_png_black@2x.png"
+                  src="../assets/images/logo_png_black@2x.png"
                   alt="Kulinarium Meister"
                   class="img-fluid"
                   style="display: block"
@@ -668,497 +603,205 @@
         </header>
         <!-- MAIN CONTENT -->
         <main>
-          <!-- Hero Section -->
-          <section class="hero-section" id="hero-ua">
-            <h1 hidden>hero section</h1>
-            <div id="kaleidoscope" class="text-center">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-10 col-lg-8 col-xl-6">
-                  <div class="hero-kaleidoscope" id="heroKaleidoscope">
-                    <img
-                      src="/assets/images/kaleidoscope/lazagnya_1.webp"
-                      alt="Hero Image 1"
-                      class="active"
-                    />
-                    <img
-                      src="/assets/images/kaleidoscope/loksh_dom_6.webp"
-                      alt="Hero Image 2"
-                    />
-                    <img
-                      src="/assets/images/kaleidoscope/cvet_pasta_8.webp"
-                      alt="Hero Image 3"
-                    />
-                    <img
-                      src="/assets/images/kaleidoscope/black_pasta_8.webp"
-                      alt="Hero Image 4"
-                    />
-                    <img
-                      src="/assets/images/kaleidoscope/cvet_pasta_10.webp"
-                      alt="Hero Image 5"
-                    />
-                    <img
-                      src="/assets/images/kaleidoscope/cvet_pasta_7.webp"
-                      alt="Hero Image 6"
-                    />
-                    <img
-                      src="/assets/images/kaleidoscope/choc_lapsha_6.webp"
-                      style="
-                        transform: scale(1.3);
-                        transform-origin: center center;
-                      "
-                      alt="Hero Image 7"
-                    />
-                    <img
-                      src="/assets/images/kaleidoscope/IMG_0051.webp"
-                      style="
-                        transform: scale(1.2);
-                        transform-origin: center center;
-                      "
-                      alt="Hero Image 8"
-                    />
-                    <img
-                      src="/assets/images/kaleidoscope/papardelle_4.webp"
-                      style="
-                        transform: scale(1.7);
-                        transform-origin: center center;
-                      "
-                      alt="Hero Image 9"
-                    />
-                    <img
-                      src="/assets/images/kaleidoscope/ravioli_3.webp"
-                      style="
-                        transform: scale(1.2);
-                        transform-origin: center center;
-                      "
-                      alt="Hero Image 10"
-                    />
-                  </div>
+          <div class="main-content--product-detail">
+            <div class="row row-product-detail-1">
+              <div class="col-xl-8 col-12">
+                <div class="product-image-container--zoom">
+                  <img
+                    src="../assets/images/dough/testo_pizza_new_roll.webp"
+                    alt="Product"
+                    class="product-image--zoom"
+                  />
+                  <div class="zoom-hint">🔍</div>
                 </div>
               </div>
-              <div class="row justify-content-center align-items-center">
-                <div class="col-10 hero-subtitle">
-                  <h2 class="text-center multilingual-text">
-                    “Ми не заморожуємо наші вироби, саме тому ми називаємо наше
-                    тісто — живим!”.."We do not freeze our products, that's why
-                    we call our dough - alive!".."Nie zamrażamy naszych
-                    produktów, dlatego nazywamy nasze ciasto - żywe!".."Мы не
-                    замораживаем наши продукты, поэтому мы называем наше тесто -
-                    живым!"
-                  </h2>
-                  <p class="text-center">— Kulinarium Meister</p>
+              <div class="col-xl-4 col-12">
+                <h1 class="product-details-title multilingual-text">
+                  Пікантне тісто для піци з травами Kulinarium Meister.. Pizza
+                  Dough with Herbs Kulinarium Meister..Ciasto na pizzę z ziołami
+                  Kulinarium Meister..Пикантное тесто для пиццы с травами
+                  Kulinarium Meister
+                </h1>
+                <div class="ProductItem-details-excerpt">
+                  <p class="multilingual-text mb-0">
+                    500г та 250г..500g and 250g..500g i 250g..500г и 250г
+                  </p>
+                  <p class="multilingual-text mb-0">
+                    Охолоджений продукт..Refrigerated product..Produkt
+                    chłodzony..Охлажденный продукт
+                  </p>
+                  <p class="multilingual-text">
+                    Не містить компонентів тваринного походження (пісне).. Does
+                    not contain animal-derived components (Lenten).. Nie zawiera
+                    składników pochodzenia zwierzęcego (postne)..Не содержит
+                    компонентов животного происхождения (постное)
+                  </p>
+                  <p>
+                    <strong class="multilingual-text fw-bold"
+                      >Склад:..Ingredients:..Składniki:..Состав:</strong
+                    >&nbsp;<span class="multilingual-text"
+                      >борошно пшеничне вищого ґатунку, вода питна, маргарин,
+                      олія соняшникова рафінована, порошок пекарський, сіль
+                      кухонна харчова. ..high-grade wheat flour, water,
+                      margarine, sunflower oil, baking powder, salt. ..mąka
+                      pszenna wyższego gatunku, woda, margaryna, olej
+                      słonecznikowy, proszek do pieczenia, sól kuchenna. ..мука
+                      пшеничная высшего сорта, вода питьевая, маргарин, масло
+                      подсолнечное рафинированное, порошок пекарский, соль
+                      кухонная пищевая.</span
+                    >
+                  </p>
+                  <p>
+                    <strong class="multilingual-text fw-bold"
+                      >Харчова цінність..Nutritional
+                      info..Wartość&nbsp;odżywcza..Пищевая ценность </strong
+                    >&nbsp;<span class="multilingual-text">
+                      на 100 г: білки – 6,9 г; жири – 8,4 г; вуглеводи – 47 г.
+                      ..Per 100 g: proteins – 6.9 g; fats – 8.4 g; carbohydrates
+                      – 47 g ..Na 100 g: białka – 6,9 g; tłuszcze – 8,4 g;
+                      węglowodany – 47 g ..На 100 г: белки – 6,9 г; жиры – 8,4
+                      г; углеводы – 47 г.
+                    </span>
+                  </p>
+                  <p>
+                    <strong class="multilingual-text fw-bold"
+                      >Енергетична цінність..Energy..Wartość
+                      energetyczna..Энергетическая ценность</strong
+                    >&nbsp;<span class="multilingual-text">
+                      289 ккал (1209 кДж) ..289 kcal (1209 kJ) ..289 kcal (1209
+                      kJ) ..289 ккал (1209 кДж).
+                    </span>
+                  </p>
+                  <p>
+                    <strong class="multilingual-text fw-bold"
+                      >Умови зберігання:..Storage:..Przechowywanie:..Условия
+                      хранения:</strong
+                    >
+                    <span class="multilingual-text">
+                      &nbsp;зберігати в охолодженому стані при t від +2 до +4 °C
+                      45 діб. Після відкриття упаковки використати протягом 3
+                      діб. При бажанні та необхідності продукт може бути
+                      заморожений і зберігатися додатково упродовж 90 діб при t
+                      від –18 до –25 °C. ..keep refrigerated at +2°C — +4°C for
+                      45 days. Use within 3 days of opening. If desired or
+                      required, the product may be frozen and stored
+                      additionally for 90 days at –18°C – 25°C. ..przechowywać w
+                      lodówce w temperaturze od +2 do &nbsp;+ 4 ° C 45 dni. Po
+                      otwarciu opakowania zużyć w ciągu 3 dni. W razie potrzeby
+                      produkt może być zamrożony i przechowywany w ciągu
+                      kolejnych 90 dni w temperaturze od -18 do -25 ° C.
+                      ..хранить в охлажденном состоянии при t от +2 до +4
+                      °&nbsp;C 45&nbsp;суток. После открытия использовать в
+                      течение 3 суток. При желании и необходимости продукт может
+                      быть заморожен и храниться дополнительно в течение 90
+                      суток при t от –18 до –25 ° C.
+                    </span>
+                  </p>
                 </div>
               </div>
             </div>
-          </section>
-          <!-- Product Categories -->
-          <section class="product-categories" id="products">
-            <h2 class="d-none">Product Categories</h2>
-            <div class="text-center">
-              <div class="categories-1st-row row gx-0">
-                <article
-                  id="main-dough"
-                  class="Index-gallery-item col-md-8 col-12 position-relative"
-                >
-                  <a href="/dough-for-baking.html" class="stretched-link">
-                    <div
-                      class="Index-gallery-item-content position-absolute top-50 start-0 ms-4 ps-2 translate-middle-y"
-                    >
-                      <!-- override max-width: 8ch -->
-                      <h2
-                        class="Index-gallery-item-content-heading multilingual-text"
-                        style="max-width: inherit"
-                      >
-                        Тiсто для випічки..Dough for baking..Ciasto do
-                        pieczenia..Тесто для выпечки
-                      </h2>
-                    </div>
-                  </a>
-                </article>
-
-                <div class="col-md-4 col-12 d-flex flex-column">
-                  <article
-                    id="main-wrappers"
-                    class="Index-gallery-item position-relative"
-                  >
-                    <a href="/tisto-dlya-pelmeniv.html" class="stretched-link">
-                      <div
-                        class="Index-gallery-item-content position-absolute top-50 start-0 ms-4 translate-middle-y ps-2"
-                      >
-                        <h2
-                          class="Index-gallery-item-content-heading multilingual-text"
-                        >
-                          Кружечки для пельменів..Dumpling wrappers..Ciasto na
-                          uszka..Кружочки для пельменей
-                        </h2>
-                      </div>
-                    </a>
-                  </article>
-
-                  <article
-                    id="main-filled"
-                    class="Index-gallery-item position-relative"
-                  >
-                    <a href="/ready-to-cook.html" class="stretched-link">
-                      <div
-                        class="Index-gallery-item-content position-absolute top-50 start-0 ms-4 translate-middle-y ps-2"
-                      >
-                        <h2
-                          class="Index-gallery-item-content-heading multilingual-text"
-                        >
-                          Тiсто з начинкою..Filled dough..Ciasto z
-                          nadzieniem..Тесто с начинкой
-                        </h2>
-                      </div>
-                    </a>
-                  </article>
+            <div class="row row-product-detail-2 justify-content-center pt-4">
+              <div class="col-xl-6 col-lg-10 col-12">
+                <div class="product-image-container--zoom">
+                  <img
+                    src="../assets/images/dough/testo_pizza_new_box.webp"
+                    alt="Product"
+                    class="product-image--zoom"
+                  />
+                  <div class="zoom-hint text-black">🔍 500g</div>
                 </div>
               </div>
-
-              <div class="categories-2nd-row row gx-0">
-                <article
-                  id="main-pasta"
-                  class="Index-gallery-item col-md-6 col-12 position-relative"
-                >
-                  <a href="/pasta.html" class="stretched-link">
-                    <div
-                      class="Index-gallery-item-content position-absolute top-50 start-0 ms-4 translate-middle-y ps-2"
-                    >
-                      <h2
-                        class="Index-gallery-item-content-heading multilingual-text"
-                      >
-                        Паста..Pasta..Makaron..Паста
-                      </h2>
-                    </div>
-                  </a>
-                </article>
-
-                <article
-                  id="main-ravioli"
-                  class="Index-gallery-item col-12 col-md-6 position-relative"
-                >
-                  <a href="/ravioli.html" class="stretched-link">
-                    <div class="Index-gallery-item-content">
-                      <h2
-                        class="Index-gallery-item-content-heading multilingual-text position-absolute top-50 start-0 ms-4 translate-middle-y ps-2"
-                      >
-                        Равiолi..Ravioli..Ravioli..Равиоли
-                      </h2>
-                    </div>
-                  </a>
-                </article>
+              <div class="col-xl-6 col-lg-10 col-12">
+                <div class="product-image-container--zoom">
+                  <img
+                    src="../assets/images/dough/testo_sloenoe_250.webp"
+                    alt="Product"
+                    class="product-image--zoom"
+                  />
+                  <div class="zoom-hint text-black">🔍 250g</div>
+                </div>
               </div>
             </div>
-          </section>
-
-          <!-- WORKSHOP PRESENTATION -->
-          <!-- Main Video Parallax Section -->
-          <section class="workshop video-section" id="video-section">
-            <video
-              class="parallax-video"
-              id="parallax-video"
-              autoplay
-              muted
-              loop
-              playsinline
-              preload="metadata"
-            >
-              <source
-                src="https://github.com/user-attachments/assets/7361e61b-4e0d-43b7-81a6-d542018dbd14"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
-            <!-- <img
-              src="/assets/images/parallax/social_share_artwork.webp"
-              class="artwork-image d-md-none img-fluid"
-              alt="Kulinarium Meister Artwork"
-            /> -->
-          </section>
-
-          <!-- VIDEO RECIPES -->
-          <section class="our-recipes">
-            <div class="my-recipes-container">
-              <div class="row justify-content-end mx-0">
-                <div class="col-md-10 col-12">
-                  <div class="recipe-title">
-                    <h1 class="multilingual-text" id="featured-recipes">
-                      Наша кулінарна відео майстерня..Our cooking video
-                      workshop..Nasze warsztaty kulinarne wideo..Наша кулинарная
-                      видео мастерская
-                    </h1>
-                  </div>
-                  <div class="recipe-text">
-                    <p class="multilingual-text">
-                      Вiдео рецепти для імпровізацій і кулінарних варіацій!
-                      Пропонуємо колекцію смачної рецептури, зібраної з усього
-                      світу, скориставшись якою, ви відчуєте красу різноманітних
-                      національних традицій..Video recipes for improvisations
-                      and culinary variations! We offer a collection of tasty
-                      recipes collected from all over the world, using which you
-                      will feel the beauty of diverse national traditions..Wideo
-                      przepisy na improwizacje i kulinarne odmiany! Oferujemy
-                      zbiór smacznych przepisów zebranych z całego świata,
-                      dzięki którym poczujesz piękno różnorodnych narodowych
-                      tradycji..Видео рецепты для импровизаций и кулинарных
-                      вариаций! Предлагаем коллекцию вкусной рецептуры,
-                      собранной со всего мира, воспользовавшись которой, вы
-                      почувствуете красоту различных национальных традиций
+            <div class="row row-product-detail-1">
+              <div class="col-xl-6 col-12">
+                <div class="product-image-container--zoom">
+                  <img
+                    src="../assets/images/dough/herb_pizza_art4.webp"
+                    alt="Product"
+                    class="product-image--zoom"
+                  />
+                  <div class="zoom-hint" style="top: 0px">🔍</div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-12">
+                <div class="h-100 d-flex align-items-center">
+                  <div class="ProductItem-details-excerpt w-100 p-4">
+                    <p class="multilingual-text mb-0">
+                      Два рулони&nbsp;тонкого ароматного тіста з часником,
+                      базиліком, орегано і розмарином на оливковій олії.
+                      Ідеально підійде як для піци, так і для пирогів. ..Two
+                      rolls of delicate fragrant dough with garlic, basil,
+                      oregano and rosemary in olive oil. Ideal for both pizza
+                      and pies. ..Dwie rolki delikatnego pachnącego ciasta z
+                      czosnkiem, bazylią, oregano i rozmarynem w oliwie z
+                      oliwek. Idealny do pizzy i ciast. ..Два рулона тонкого
+                      ароматного теста с чесноком, базиликом, орегано и
+                      розмарином на оливковом масле. Идеально подойдет как для
+                      пиццы, так и для пирогов.
                     </p>
-                  </div>
-                  <div class="recipe-divider">
-                    <hr />
-                  </div>
-                </div>
-              </div>
-              <!-- Recipe cards - links to detailed pages -->
-              <div class="video-recipes text-start">
-                <div class="row gx-4 mx-0">
-                  <div class="recipe-hero col-xxl-4 col-xl-5 col-lg-5 col-12">
-                    <a href="/recipe_details/fish_seaweed_dumplers.html">
-                      <div class="mt-4">
-                        <img
-                          src="/assets/images/recipes/white+fish+and+sea+cabbage+dumplings.webp"
-                          alt="white-fish-and-sea-cabbage-dumplings"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="recipe-hero-card-content">
-                        <p
-                          class="main-recipe-subtitle multilingual-text mb-1 mt-3"
-                        >
-                          12 червня, 2018..June 12, 2018..June 12, 2018..12
-                          июня, 2018
-                        </p>
-                        <h2 class="main-recipe-title multilingual-text">
-                          Вареники з рибою та морською капустою..White Fish And
-                          Sea Cabbage Dumplings..Pierogi z rybą i algami
-                          morskimi..Вареники с рыбой и морской капустой
-                        </h2>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    class="recipe-multiple col-xl-7 col-xxl-8 col-lg-7 col-12"
-                  >
-                    <div
-                      class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-5 g-4"
-                    >
-                      <article class="col video-recipes--card">
-                        <a
-                          href="/recipe_details/chicken_and_mushroom_cannelloni.html"
-                        >
-                          <img
-                            src="/assets/images/recipes/chicken-and-mushroom-cannelloni.webp"
-                            alt="chicken-and-mushroom-cannelloni"
-                            class="img-fluid"
-                          />
-                          <p
-                            class="regular-recipe-title multilingual-text text-center mt-3"
-                          >
-                            Канелоні з куркою та грибами..Chicken and Mushroom
-                            Canelloni..Canelloni z kurczakiem i
-                            pieczarkami..Канелони с курицей и грибами
-                          </p>
-                        </a>
-                      </article>
-                      <article class="col video-recipes--card">
-                        <a href="/recipe_details/squid_ink_seafood_pasta.html">
-                          <img
-                            src="/assets/images/recipes/squid-ink-seafood-pasta.webp"
-                            alt="squid-ink-seafood-pasta"
-                            class="img-fluid"
-                          />
-                          <p
-                            class="regular-recipe-title multilingual-text text-center mt-3"
-                          >
-                            Чорна паста під соусом з морепродуктів..Squid Ink
-                            Seafood Pasta..Makaron z czarnej mąki z owocami
-                            morza..Черная паста с морепродуктами
-                          </p>
-                        </a>
-                      </article>
-                      <article class="col video-recipes--card">
-                        <a href="/recipe_details/berry_mascarpone_tart.html">
-                          <img
-                            src="/assets/images/recipes/mixed-berry-and-mascarpone-tarts.webp"
-                            alt="mixed-berry-and-mascarpone-tarts"
-                            class="img-fluid"
-                          />
-                          <p
-                            class="regular-recipe-title multilingual-text text-center mt-3"
-                          >
-                            Тарталетки із сиром маскарпоне та ягодами..Mixed
-                            Berry and Mascarpone Tarts..Tartaletki z serem
-                            mascarpone i jagodami..Тарталетки с сыром маскарпоне
-                            и ягодами
-                          </p>
-                        </a>
-                      </article>
-                      <article class="col video-recipes--card">
-                        <a
-                          href="/recipe_details/papardelle_with_broccoli_and_salmon.html"
-                        >
-                          <img
-                            src="/assets/images/recipes/papardelle-broccoli-salmon.webp"
-                            alt="pappardelle-with-salmon-and-broccoli"
-                            class="img-fluid"
-                          />
-                          <p
-                            class="regular-recipe-title multilingual-text text-center mt-3"
-                          >
-                            Папарделе з броколі і лососем..Pappardelle with
-                            Broccoli and Salmon..Papardelle z brokułami i
-                            łososiem..Папарделле с брокколи и лососем
-                          </p>
-                        </a>
-                      </article>
-                      <article class="col video-recipes--card">
-                        <a href="/recipe_details/pappardelle_with_pesto.html">
-                          <img
-                            src="/assets/images/recipes/pappardelle-with-pesto.webp"
-                            alt="pappardelle-with-pesto-sauce"
-                            class="img-fluid"
-                          />
-                          <p
-                            class="regular-recipe-title multilingual-text text-center mt-3"
-                          >
-                            Папарделе із соусом песто..Pappardelle With Pesto
-                            Sauce..Pappardelle z sosem pesto..Папарделле с
-                            соусом песто
-                          </p>
-                        </a>
-                      </article>
-                      <article class="col video-recipes--card">
-                        <a href="/recipe_details/cappellini_muffins.html">
-                          <img
-                            src="/assets/images/recipes/cappellini-muffins.webp"
-                            alt="cappellini-muffins"
-                            class="img-fluid"
-                          />
-                          <p
-                            class="regular-recipe-title multilingual-text text-center mt-3"
-                          >
-                            Мафіни з капеліні..Cappellini muffins..Muffiny z
-                            kapelini..Маффины с капеллини
-                          </p>
-                        </a>
-                      </article>
-                      <article class="col video-recipes--card">
-                        <a href="/recipe_details/strawberry_cheesecake.html">
-                          <img
-                            src="/assets/images/recipes/strawberry-cheesecake.webp"
-                            alt="strawberry-cheesecake"
-                            class="img-fluid"
-                          />
-                          <p
-                            class="regular-recipe-title multilingual-text text-center mt-3"
-                          >
-                            Полуничний чізкейк..Strawberry Cheesecake..Sernik
-                            truskawkowy..Клубничный чизкейк
-                          </p>
-                        </a>
-                      </article>
-                      <article class="col video-recipes--card">
-                        <a
-                          href="/recipe_details/chocolate_pasta_casserole.html"
-                        >
-                          <img
-                            src="/assets/images/recipes/chocolate-pasta-casserole.webp"
-                            alt="chocolate-pasta-casserole"
-                            class="img-fluid"
-                          />
-                          <p
-                            class="regular-recipe-title multilingual-text text-center mt-3"
-                          >
-                            Запіканка з шоколадної пасти..chocolate pasta
-                            casserole..Czekoladowa zapiekanka z
-                            makaronu..Запеканка из шоколадной пасты
-                          </p>
-                        </a>
-                      </article>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div
-              class="button-recipe-container d-flex justify-content-center p-4 mt-5 mb-3"
+              class="row preparation-and-recipes justify-content-center pt-5"
             >
-              <a href="/recipes.html" class="d-inline-block">
-                <div class="button-recipe-more m-auto multilingual-text">
-                  більше..MORE recipes..MORE recipes..больше
-                </div>
-              </a>
+              <div class="col-xl-6 mb-4">
+                <h3 class="multilingual-text mb-4">
+                  Рекомендації по приготуванню..Preparation
+                  Guidelines&nbsp;..Wskazówki do gotowania..Рекомендации по
+                  приготовлению
+                </h3>
+                <p class="multilingual-text">
+                  1. За 15-20 хвилин перед приготуванням рекомендуємо викласти
+                  тісто з холодильника для відновлення еластичних властивостей.
+                  ..1. In 15-20 minutes before cooking, we recommend putting the
+                  dough from the refrigerator to restore elastic properties.
+                  ..1. W ciągu 15-20 minut przed gotowaniem zalecamy wyjęcie
+                  ciasta z lodówki w celu przywrócenia elastycznych właściwości.
+                  ..1. За 15-20 минут до приготовления рекомендуем достать тесто
+                  из холодильника для восстановления эластичных свойств.
+                </p>
+                <p class="multilingual-text">
+                  2. Використовуйте пергамент, в який загорнуте тісто. ..2. Use
+                  the parchment in which the dough is wrapped. ..2. Użyj
+                  pergaminu, w którym ciasto jest owijane. ..2. Используйте
+                  пергамент, в который завернуто тесто.
+                </p>
+                <p class="multilingual-text">
+                  3. За бажанням зробити надрізи, розділивши круг на сектори.
+                  ..3. If you want to make cuts, divide the circle into sectors.
+                  ..3. Jeśli chcesz wykonać cięcia, podziel kółko na sektory..3.
+                  По желанию сделать надрезы, разделив круг на секторы.
+                </p>
+                <p class="multilingual-text">
+                  4. Змастити тісто рослинною олією. ..4. Lubricate the dough
+                  with vegetable oil. ..4. Nasmaruj ciasto olejem roślinnym..4.
+                  Смазать тесто растительным маслом.
+                </p>
+                <p class="multilingual-text">
+                  5. Обирайте начинку за власним бажанням й запікайте в
+                  попередньо-розігрітій до 180 °С духовці до готовності. ..5.
+                  Select the filling on your own and bake in a pre-heated oven
+                  at 180 ° C until ready. ..5. Wybierz nadzienie na własną rękę
+                  i piecz w rozgrzanym piekarniku w temperaturze 180 ° C, aż
+                  będzie gotowe. ..5. Выбирайте начинку по собственному желанию
+                  и запекайте в предварительно разогретой до 180 ° С духовке до
+                  готовности.
+                </p>
+              </div>
             </div>
-          </section>
-          <nav
-            class="Index-nav position-fixed top-50 end-0 translate-middle-y z-3 d-none d-xl-block"
-          >
-            <a href="#hero-ua" class="Index-nav-item active mb-3">
-              <div class="d-flex align-items-center">
-                <div class="Index-nav-text text-end pe-3" style="width: 150px">
-                  <span class="multilingual-text"
-                    >Живе тісто..Fresh Dough..Świeże ciasto..Живое тесто</span
-                  >
-                </div>
-                <div
-                  class="Index-nav-indicator-wrapper d-flex justify-content-center align-items-center"
-                  style="width: 24px"
-                >
-                  <div class="Index-nav-indicator"></div>
-                </div>
-              </div>
-            </a>
-
-            <a href="#products" class="Index-nav-item mb-3">
-              <div class="d-flex align-items-center">
-                <div class="Index-nav-text text-end pe-3" style="width: 150px">
-                  <span class="multilingual-text">
-                    Продукцiя..Products..Produkty..Продукция
-                  </span>
-                </div>
-                <div
-                  class="Index-nav-indicator-wrapper d-flex justify-content-center align-items-center"
-                  style="width: 24px"
-                >
-                  <div class="Index-nav-indicator"></div>
-                </div>
-              </div>
-            </a>
-
-            <a href="#video-section" class="Index-nav-item mb-3">
-              <div class="d-flex align-items-center">
-                <div class="Index-nav-text text-end pe-3" style="width: 150px">
-                  <span class="multilingual-text"
-                    >Виробництво..Manufacture..Produkcja..Производство</span
-                  >
-                </div>
-
-                <div
-                  class="Index-nav-indicator-wrapper d-flex justify-content-center align-items-center"
-                  style="width: 24px"
-                >
-                  <div class="Index-nav-indicator"></div>
-                </div>
-              </div>
-            </a>
-
-            <a href="#featured-recipes" class="Index-nav-item mb-3">
-              <div class="d-flex align-items-center">
-                <div class="Index-nav-text text-end pe-3" style="width: 150px">
-                  <span class="multilingual-text"
-                    >Рецепти..Recipes..Przepisy..Рецепты</span
-                  >
-                </div>
-                <div
-                  class="Index-nav-indicator-wrapper d-flex justify-content-center align-items-center"
-                  style="width: 24px"
-                >
-                  <div class="Index-nav-indicator"></div>
-                </div>
-              </div>
-            </a>
-          </nav>
+          </div>
         </main>
       </div>
 
@@ -1212,10 +855,11 @@
       </footer>
     </div>
 
-    <script src="src/vendor/jquery/jquery.min.js"></script>
-    <script src="src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="src/js/lang-switcher.js"></script>
-    <script src="src/js/index.js"></script>
-    <script src="src/js/mobile_paginator_for_home_pg.js"></script>
+    <script src="../src/vendor/jquery/jquery.min.js"></script>
+    <script src="../src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/js/lang-switcher.js"></script>
+    <script src="../src/js/index.js"></script>
+    <script src="../src/js/mobile_paginator_for_home_pg.js"></script>
+    <script src="../src/js/zoom_effect.js"></script>
   </body>
 </html>
