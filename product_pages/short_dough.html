@@ -11,28 +11,28 @@
     <!-- kulinarium-meister -->
     <meta charset="utf-8" />
     <title>Kulinarium Meister</title>
-    <link rel="icon" href="./assets/images/favicon.ico" />
+    <link rel="icon" href="../assets/images/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./assets/images/apple-touch-icon.png"
+      href="../assets/images/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="../assets/images/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./assets/images/favicon-16x16.png"
+      href="../assets/images/favicon-16x16.png"
     />
-    <link rel="manifest" href="./assets/images/site.webmanifest" />
+    <link rel="manifest" href="../assets/images/site.webmanifest" />
     <link
       rel="mask-icon"
-      href="./assets/images/safari-pinned-tab.svg"
+      href="../assets/images/safari-pinned-tab.svg"
       color="#000000"
     />
     <meta
@@ -109,8 +109,11 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,700&family=Libre+Baskerville:ital,wght@0,700&family=Cormorant+Infant:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400&family=Gabriela:ital,wght@0,400"
     />
-    <link rel="stylesheet" href="src/vendor/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="src/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="../src/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../src/css/main.css" />
     <meta
       name="google-site-verification"
       content="4QMEQxu0VzZlCxrxJMTn_HbX8W0jvG6f47cIIThGKSE"
@@ -130,7 +133,9 @@
   <!-- ---------------------------------- -->
   <body>
     <!-- Outer Container for everything -->
-    <div class="min-vh-100 outer-container-body container-fluid d-flex flex-column justify-content-between p-0">
+    <div
+      class="outer-container-body container-fluid d-flex flex-column min-vh-100"
+    >
       <!--  Header and Main -->
       <div class="position-relative flex-grow-1">
         <!-- Header -->
@@ -144,7 +149,7 @@
             <div class="Header-branding">
               <a href="/">
                 <img
-                  src="assets/images/logo_png_black@2x.png"
+                  src="../assets/images/logo_png_black@2x.png"
                   alt="Kulinarium Meister"
                   class="img-fluid"
                   style="display: block"
@@ -199,7 +204,7 @@
               >
                 <h5 class="offcanvas-title" id="offcanvasMainLabel">
                   <img
-                    src="assets/images/logo_png_black@2x.png"
+                    src="../assets/images/logo_png_black@2x.png"
                     alt="Kulinarium Meister"
                     class="img-fluid"
                     style="display: block; width: 50px"
@@ -408,7 +413,7 @@
             <div class="Header-branding">
               <a href="/">
                 <img
-                  src="assets/images/logo_png_black@2x.png"
+                  src="../assets/images/logo_png_black@2x.png"
                   alt="Kulinarium Meister"
                   class="img-fluid"
                   style="display: block"
@@ -620,70 +625,434 @@
         </header>
         <!-- MAIN CONTENT -->
         <main>
-          <div class="dough-page-container">
-            <div class="dough-hero-title text-center mt-4 position-relative" style="z-index: 100">
-              <h1 class="multilingual-text m-auto">
-                Кружечки для пельменів&nbsp;Kulinarium Meister..Dumpling
-                wrappers Kulinarium Meister..Najlepsze ciasto na uszka
-                Kulinarium Meister..Кружочки&nbsp;для пельменей Kulinarium
-                Meister
-              </h1>
-            </div>
-            <section class="dough--products text-center">
-              <div class="dough--row row gx-4 justify-content-center" style="margin-top: 0">
-                <div class="col-lg-4 col-6">
-                  <div
-                    class="product-image-container position-relative"
-                    style="padding-top: 0; margin-top: 0;"
-                  >
-                    <img
-                      src="/assets/images/stuffed_dough/dough_pelmeni_box.webp"
-                      class="img-fluid product-image primary"
-                      alt=""
-                    />
-                    <img
-                      src="/assets/images/stuffed_dough/dough_pelmeni.webp"
-                      class="img-fluid product-image secondary"
-                      style="top: 0"
-                      alt=""
-                    />
-                  </div>
-                  <div class="multilingual-text">
-                    Тісто для пельменів та вареників..Dumpling wrappers..Ciasto
-                    na uszka..Тесто для пельменей
-                  </div>
+          <div class="main-content--product-detail">
+            <div class="row row-product-detail-1">
+              <div class="col-xl-8 col-12">
+                <div class="product-image-container--zoom">
+                  <img
+                    src="../assets/images/dough/testo_sloenoe.webp"
+                    alt="Product"
+                    class="product-image--zoom"
+                  />
+                  <div class="zoom-hint">🔍</div>
                 </div>
-                <div class="col-lg-4 col-6">
-                  <div
-                    class="product-image-container position-relative"
-                    style="padding-top: 0; margin-top: 0;"
-                  >
-                    <img
-                      src="/assets/images/stuffed_dough/color_pelmeni_box.webp"
-                      class="img-fluid product-image primary"
-                      alt=""
-                    />
-                    <img
-                      src="/assets/images/stuffed_dough/color_pelmeni.webp"
-                      class="img-fluid product-image secondary"
-                      style="top: 0"
-                      alt=""
-                    />
-                  </div>
-                  <div class="multilingual-text">
-                    Тісто кольорове для пельменів..Rainbow colored dumpling
-                    wrappers..Kolorowe ciasto na uszka..Цветное тесто для
-                    пельменей
+              </div>
+              <div class="col-xl-4 col-12">
+                <h1 class="product-details-title multilingual-text">
+                  Пісочне тісто Kulinarium Meister..Shortcrust Pastry Kulinarium
+                  Meister..Ciasto kruche Kulinarium Meister..Песочное тесто
+                  Kulinarium Meister
+                </h1>
+                <div class="ProductItem-details-excerpt">
+                  <p class="multilingual-text mb-0">
+                    500г та 250г..500g and 250g..500g i 250g..500г и 250г
+                  </p>
+                  <p class="multilingual-text mb-0">
+                    Охолоджений продукт..Refrigerated product..Produkt
+                    chłodzony..Охлажденный продукт
+                  </p>
+                  <p class="multilingual-text">
+                    Не містить компонентів тваринного походження (пісне).. Does
+                    not contain animal-derived components (Lenten).. Nie zawiera
+                    składników pochodzenia zwierzęcego (postne)..Не содержит
+                    компонентов животного происхождения (постное)
+                  </p>
+                  <p>
+                    <strong class="multilingual-text fw-bold"
+                      >Склад:..Ingredients:..Składniki:..Состав:</strong
+                    >&nbsp;<span class="multilingual-text"
+                      >борошно пшеничне вищого ґатунку, маргарин, цукор, вода
+                      питна, порошок пекарський, цукор ванільний. ..high-grade
+                      wheat flour, margarine, sugar, water, baking powder,
+                      vanilla sugar. .. mąka pszenna wyższego gatunku,
+                      margaryna, cukier, proszek do pieczenia, woda pitna,
+                      cukier waniliowy. ..мука пшеничная высшего сорта,
+                      маргарин, сахар, вода питьевая, порошок пекарский, сахар
+                      ванильный.</span
+                    >
+                  </p>
+                  <p>
+                    <strong class="multilingual-text fw-bold"
+                      >Харчова цінність..Nutritional
+                      info..Wartość&nbsp;odżywcza..Пищевая ценность </strong
+                    >&nbsp;<span class="multilingual-text">
+                      на 100 г: білки – 5,7 г; жири – 25,7 г; вуглеводи – 49,2
+                      г. ..Per 100 g: proteins – 5.7 g; fats – 25.7 g;
+                      carbohydrates – 49.2 g ..w 100 g: białka - 5,7 g; tłuszcze
+                      — 25,7 g; węglowodany — 49,2 g ..на 100 г продукта: белки
+                      – 5,7 г; жиры – 25,7 г; углеводы – 49,2 г.</span
+                    >
+                  </p>
+                  <p>
+                    <strong class="multilingual-text fw-bold"
+                      >Енергетична цінність..Energy..Wartość
+                      energetyczna..Энергетическая ценность</strong
+                    >&nbsp;<span class="multilingual-text">
+                      - 452 ккал (1891 кДж). ..Per 100 g: energy – 452 kcal
+                      (1891 kJ). ..w 100 g: energia — 452 kcal (1891 kJ). ..-
+                      452 ккал (1891 кДж).
+                    </span>
+                  </p>
+                  <p>
+                    <strong class="multilingual-text fw-bold"
+                      >Умови зберігання:..Storage:..Przechowywanie:..Условия
+                      хранения:</strong
+                    >
+                    <span class="multilingual-text">
+                      &nbsp;зберігати в охолодженому стані при t від +2 до +4 °C
+                      45 діб. Після відкриття упаковки використати протягом 3
+                      діб. При бажанні та необхідності продукт може бути
+                      заморожений і зберігатися додатково упродовж 90 діб при t
+                      від –18 до –25 °C. ..keep refrigerated at +2°C — +4°C for
+                      45 days. Use within 3 days of opening. If desired or
+                      required, the product may be frozen and stored
+                      additionally for 90 days at –18°C – 25°C. ..przechowywać w
+                      lodówce w temperaturze od +2 do &nbsp;+ 4 ° C 45 dni. Po
+                      otwarciu opakowania zużyć w ciągu 3 dni. W razie potrzeby
+                      produkt może być zamrożony i przechowywany w ciągu
+                      kolejnych 90 dni w temperaturze od -18 do -25 ° C.
+                      ..хранить в охлажденном состоянии при t от +2 до +4
+                      °&nbsp;C 45&nbsp;суток. После открытия использовать в
+                      течение 3 суток. При желании и необходимости продукт может
+                      быть заморожен и храниться дополнительно в течение 90
+                      суток при t от –18 до –25 ° C.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row row-product-detail-2 justify-content-center pt-4">
+              <div class="col-xl-6 col-lg-10 col-12">
+                <div class="product-image-container--zoom">
+                  <img
+                    src="../assets/images/dough/testo_sloenoe_packed.webp"
+                    alt="Product"
+                    class="product-image--zoom"
+                  />
+                  <div class="zoom-hint text-black">🔍 500g</div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-10 col-12">
+                <div class="product-image-container--zoom">
+                  <img
+                    src="../assets/images/dough/testo_sloenoe_250.webp"
+                    alt="Product"
+                    class="product-image--zoom"
+                  />
+                  <div class="zoom-hint text-black">🔍 250g</div>
+                </div>
+              </div>
+            </div>
+            <div class="row row-product-detail-1">
+              <div class="col-xl-6 col-12">
+                <div class="product-image-container--zoom">
+                  <img
+                    src="../assets/images/dough/testo_sloenoe_unwrapped.webp"
+                    alt="Product"
+                    class="product-image--zoom"
+                  />
+                  <div class="zoom-hint" style="top: 0px">🔍</div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-12">
+                <div class="h-100 d-flex align-items-center">
+                  <div class="ProductItem-details-excerpt w-100 p-4">
+                    <p
+                      class="multilingual-text mb-0 fst-italic"
+                      style="font-family: Gabriela; font-weight: 500"
+                    >
+                      "Пропонуємо попередньо протягом 10-15 хвилин випекти
+                      корзинку з тіста, використовуючи горох або квасолю для
+                      формування бортів. Потім викласти начинку й випікати до
+                      готовності, пісочне тісто однаково смакує як з солодкими
+                      начинками,так і з м’ясними, рибними та овочевими.
+                      Експерементуйте!".."As a start we suggest to make a basket
+                      of dough for 10-15 minutes, using peas or beans to form
+                      the sides. Then put the stuffing and bake until ready, the
+                      sand dough is equally tasted both with sweet stuffings,
+                      and with meat, fish and vegetable. Let’s
+                      experiment!".."Proponujemy zrobić kosz ciasta na 10-15
+                      minut, używając groszku lub fasoli, aby uformować boki.
+                      Następnie ułóż farsz i upiecz, aż ciasto będzie gotowe, a
+                      ciasto piaskowe będzie smakowało zarówno z słodkimi
+                      nadzieniami, jak iz mięsem, rybą i warzywami.
+                      Eksperymentuj!".."Предлагаем предварительно в течение
+                      10-15 минут испечь корзинку из теста, используя горох или
+                      фасоль для формирования бортов. Затем выложить начинку и
+                      выпекать до готовности, песочное тесто одинаково подходит
+                      как со сладкими начинками, так и с мясными, рыбными и
+                      овочевими. Експерементуйте!"
+                    </p>
+                    <br />
+                    <p class="multilingual-text mb-0">
+                      ⸺ &nbsp;Kulinarium Meister
+                    </p>
                   </div>
                 </div>
               </div>
-            </section>
+            </div>
+            <div class="row preparation-and-recipes">
+              <div class="col-xl-6 mb-4">
+                <h3 class="multilingual-text mb-4">
+                  Рекомендації по приготуванню..Preparation
+                  Guidelines&nbsp;..Wskazówki do gotowania..Рекомендации по
+                  приготовлению
+                </h3>
+                <p class="multilingual-text">
+                  1. За 20–30 хв перед приготуванням виробів рекомендуємо
+                  викласти тісто з холодильника і потримати його при кімнатній
+                  температурі для відновлення еластичних властивостей. ..1.
+                  20-30 minutes before cooking the products, we recommend taking
+                  the dough out of the refrigerator and holding it at room
+                  temperature to restore its elastic properties. ..1. 20-30
+                  minut przed przygotowaniem produktów zalecamy wyjęcie ciasta z
+                  lodówki i trzymanie go w temperaturze pokojowej, aby
+                  przywrócić jego elastyczne właściwości..1. За 20-30 минут
+                  перед приготовлением изделий рекомендуем достать тесто из
+                  холодильника и подержать его при комнатной температуре для
+                  восстановления эластичных свойств.
+                </p>
+                <p class="multilingual-text">
+                  2. Випікайте на пергаменті, в який було загорнуте тісто. ..2.
+                  Bake on the parchment into which the dough was wrapped. ..2.
+                  Piec na pergaminie, w który było zawinięte ciasto..2.
+                  Выпекайте на пергаменте, в который было завернуто тесто.
+                </p>
+                <p class="multilingual-text">
+                  3. Якщо при розгортанні тісто потріскалось, його легко можна
+                  зліпити руками за умов, що воно нагрілось до кімнатної
+                  температури. ..3. If the dough cracks when rolled out, it can
+                  be easily molded by hand provided it has warmed to room
+                  temperature. ..3. Jeśli ciasto pęka podczas wałkowania, można
+                  je łatwo uformować ręcznie, pod warunkiem, że ogrzało się do
+                  temperatury pokojowej..3. Если тесто трескается при
+                  раскатывании, его можно легко слепить руками при условии, что
+                  оно нагрелось до комнатной температуры.
+                </p>
+                <p class="multilingual-text">
+                  4. У разі необхідності для роботи з тістом використовуйте
+                  борошно. ..4. If necessary, use flour to work with dough. ..4.
+                  Jeśli to konieczne, używaj mąki do pracy z ciastem..4. В
+                  случае необходимости для работы с тестом используйте муку.
+                </p>
+                <p class="multilingual-text">
+                  5. Не використовуйте гарячу начинку. ..5. Do not use hot
+                  filling. ..5. Nie używaj gorącego nadzienia..5. Не используйте
+                  горячую начинку.
+                </p>
+                <p class="multilingual-text">
+                  6. Рекомендована температура випікання 160° С. ..6. The
+                  recommended baking temperature is 160° C. ..6. Zalecana
+                  temperatura pieczenia to 160° C. ..6. Рекомендуемая
+                  температура выпекания 160° C.
+                </p>
+              </div>
+              <div class="col-xl-6 position-relative">
+                <h3 class="multilingual-text mb-5">
+                  Рецепти з використанням листкового тіста..Recipes Using Puff
+                  Pastry..Przepisy z użyciem ciasta francuskiego..Рецепты с
+                  использованием слоеного теста
+                </h3>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselRecipes"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselRecipes"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <div id="carouselRecipes" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="d-flex flex-row gap-3">
+                        <article
+                          class="col video-recipes--card-page text-center pb-3 bg-white"
+                        >
+                          <a
+                            href="/recipe_details/basket_with_fruits_and_nuts.html"
+                          >
+                            <img
+                              src="/assets/images/recipes/basket-with-fruits-and-nuts.webp"
+                              alt="Fruit and Nut
+                        Basket"
+                              class="img-fluid"
+                            />
+                            <p
+                              class="regular-recipe-title--page multilingual-text mt-3 mb-2"
+                            >
+                              Кошик із фруктами та горіхами..Fruit and Nut
+                              Basket..Koszyk z owocami i orzechami..Корзинка с
+                              фруктами и орехами
+                            </p>
+                          </a>
+                        </article>
+                        <article
+                          class="col video-recipes--card-page text-center pb-3 bg-white"
+                        >
+                          <a href="/recipe_details/mint_cheesecake.html">
+                            <img
+                              src="/assets/images/recipes/mint-cheesecake-with-strawberry-compote.webp"
+                              alt="Mint Cheesecake
+                        with Strawberry Compote"
+                              class="img-fluid"
+                            />
+                            <p
+                              class="regular-recipe-title--page multilingual-text mt-3 mb-2"
+                            >
+                              М'ятний чізкейк із полуничним компоте..Mint
+                              Cheesecake with Strawberry Compote..Sernik miętowy
+                              z kompotem truskawkowym..Мятный чизкейк с
+                              клубничным компотом
+                            </p>
+                          </a>
+                        </article>
+                        <article
+                          class="col video-recipes--card-page text-center pb-3 bg-white"
+                        >
+                          <a href="/recipe_details/strawberry_cheesecake.html">
+                            <img
+                              src="/assets/images/recipes/strawberry-cheesecake.webp"
+                              alt="strawberry-cheesecake"
+                              class="img-fluid"
+                            />
+                            <p
+                              class="regular-recipe-title--page multilingual-text mt-3 mb-2"
+                            >
+                              Полуничний чізкейк..Strawberry Cheesecake..Sernik
+                              truskawkowy..Клубничный чизкейк
+                            </p>
+                          </a>
+                        </article>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex flex-row gap-3">
+                        <article
+                          class="col video-recipes--card-page text-center pb-3 bg-white"
+                        >
+                          <a
+                            href="/recipe_details/lemon_tart_strawberries.html"
+                          >
+                            <img
+                              src="/assets/images/recipes/strawberry-lemon-tart.webp"
+                              alt="Lemon Tart with
+                        Strawberries"
+                              class="img-fluid"
+                            />
+                            <p
+                              class="regular-recipe-title--page multilingual-text mt-3 mb-2"
+                            >
+                              Лимонний тарт із полуницею..Lemon Tart with
+                              Strawberries..Limonkowa tarta z
+                              truskawkami..Лимонный тарт с клубникой
+                            </p>
+                          </a>
+                        </article>
+                        <article
+                          class="col video-recipes--card-page text-center pb-3 bg-white"
+                        >
+                          <a href="/recipe_details/quiche_crab_spinach.html">
+                            <img
+                              src="/assets/images/recipes/quiche-with-crab-and-spinach.webp"
+                              alt="Quiche with Crab
+                        Sticks and Spinach"
+                              class="img-fluid"
+                            />
+                            <p
+                              class="regular-recipe-title--page multilingual-text mt-3 mb-2"
+                            >
+                              Кіш із крабовими паличками та шпинатом..Quiche
+                              with Crab Sticks and Spinach..Quiche z paluszkami
+                              krabowymi i szpinakiem..Киш с крабовыми палочками
+                              и шпинатом
+                            </p>
+                          </a>
+                        </article>
+                        <article
+                          class="col video-recipes--card-page text-center pb-3 bg-white"
+                        >
+                          <a href="/recipe_details/quiche_salmon_broccoli.html">
+                            <img
+                              src="/assets/images/recipes/quiche-with-salmon-and-broccoli.webp"
+                              alt="Quiche with Salmon and
+                        Broccoli"
+                              class="img-fluid"
+                            />
+                            <p
+                              class="regular-recipe-title--page multilingual-text mt-3 mb-2"
+                            >
+                              Кіш з лососем та брокколі..Quiche with Salmon and
+                              Broccoli..Quiche z łososiem i brokułami..Киш с
+                              лососем и брокколи
+                            </p>
+                          </a>
+                        </article>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex flex-row gap-3">
+                        <article
+                          class="col-4 video-recipes--card-page text-center pb-3 bg-white"
+                        >
+                          <a href="/recipe_details/chicken_pie.html">
+                            <img
+                              src="/assets/images/recipes/chicken-pie.webp"
+                              alt="Chicken Pie"
+                              class="img-fluid"
+                            />
+                            <p
+                              class="regular-recipe-title--page multilingual-text mt-3 mb-2"
+                            >
+                              Кіш з курячим філе..Chicken Pie..Quiche z filetem
+                              z kurczaka..Киш с куриным филе
+                            </p>
+                          </a>
+                        </article>
+                        <article
+                          class="col-4 video-recipes--card-page text-center pb-3 bg-white"
+                        >
+                          <a href="/recipe_details/berry_tart.html">
+                            <img
+                              src="/assets/images/recipes/berry-tart.webp"
+                              alt="Berry Tart"
+                              class="img-fluid"
+                            />
+                            <p
+                              class="regular-recipe-title multilingual-text text-center mt-3"
+                            >
+                              Ягідний тарт..Berry Tart..Tarta z
+                              jagodami..Ягодный тарт
+                            </p>
+                          </a>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </main>
       </div>
 
       <!-- Footer -->
-      <footer>
+      <footer id="footer-index">
         <div class="footer-container">
           <nav
             id="footer-nav"
@@ -732,9 +1101,11 @@
       </footer>
     </div>
 
-    <script src="src/vendor/jquery/jquery.min.js"></script>
-    <script src="src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="src/js/lang-switcher.js"></script>
-    <script src="src/js/index.js"></script>
+    <script src="../src/vendor/jquery/jquery.min.js"></script>
+    <script src="../src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/js/lang-switcher.js"></script>
+    <script src="../src/js/index.js"></script>
+    <script src="../src/js/mobile_paginator_for_home_pg.js"></script>
+    <script src="../src/js/zoom_effect.js"></script>
   </body>
 </html>
