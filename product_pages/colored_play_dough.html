@@ -11,28 +11,28 @@
     <!-- kulinarium-meister -->
     <meta charset="utf-8" />
     <title>Kulinarium Meister</title>
-    <link rel="icon" href="./assets/images/favicon.ico" />
+    <link rel="icon" href="../assets/images/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./assets/images/apple-touch-icon.png"
+      href="../assets/images/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="../assets/images/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./assets/images/favicon-16x16.png"
+      href="../assets/images/favicon-16x16.png"
     />
-    <link rel="manifest" href="./assets/images/site.webmanifest" />
+    <link rel="manifest" href="../assets/images/site.webmanifest" />
     <link
       rel="mask-icon"
-      href="./assets/images/safari-pinned-tab.svg"
+      href="../assets/images/safari-pinned-tab.svg"
       color="#000000"
     />
     <meta
@@ -109,8 +109,11 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,700&family=Libre+Baskerville:ital,wght@0,700&family=Cormorant+Infant:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400&family=Gabriela:ital,wght@0,400"
     />
-    <link rel="stylesheet" href="src/vendor/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="src/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="../src/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../src/css/main.css" />
     <meta
       name="google-site-verification"
       content="4QMEQxu0VzZlCxrxJMTn_HbX8W0jvG6f47cIIThGKSE"
@@ -130,9 +133,11 @@
   <!-- ---------------------------------- -->
   <body>
     <!-- Outer Container for everything -->
-    <div class="outer-container-body container-fluid">
+    <div
+      class="outer-container-body container-fluid d-flex flex-column min-vh-100"
+    >
       <!--  Header and Main -->
-      <div class="position-relative mb-5">
+      <div class="position-relative flex-grow-1">
         <!-- Header -->
         <header
           class="w-100 d-flex flex-row justify-content-center position-sticky top-0 start-0"
@@ -144,7 +149,7 @@
             <div class="Header-branding">
               <a href="/">
                 <img
-                  src="assets/images/logo_png_black@2x.png"
+                  src="../assets/images/logo_png_black@2x.png"
                   alt="Kulinarium Meister"
                   class="img-fluid"
                   style="display: block"
@@ -199,7 +204,7 @@
               >
                 <h5 class="offcanvas-title" id="offcanvasMainLabel">
                   <img
-                    src="assets/images/logo_png_black@2x.png"
+                    src="../assets/images/logo_png_black@2x.png"
                     alt="Kulinarium Meister"
                     class="img-fluid"
                     style="display: block; width: 50px"
@@ -408,7 +413,7 @@
             <div class="Header-branding">
               <a href="/">
                 <img
-                  src="assets/images/logo_png_black@2x.png"
+                  src="../assets/images/logo_png_black@2x.png"
                   alt="Kulinarium Meister"
                   class="img-fluid"
                   style="display: block"
@@ -620,287 +625,238 @@
         </header>
         <!-- MAIN CONTENT -->
         <main>
-          <div class="dough-page-container">
-            <div
-              class="dough-hero-title text-center position-relative"
-              style="z-index: 100"
-            >
-              <h1 class="multilingual-text m-auto">
-                Живе тісто Kulinarium Meister для творчих господинь..The
-                Kulinarium Meister fresh dough for creative cooking..Świeże
-                ciasto Kulinarium Meister dla kreatywnych gospodyń
-                domowych..Живое тесто&nbsp;Kulinarium Meister для креативных
-                хозяек
-              </h1>
+          <div class="main-content--product-detail">
+            <div class="row row-product-detail-1">
+              <div class="col-xl-8 col-12">
+                <div class="product-image-container--zoom">
+                  <img
+                    src="../assets/images/dough/testo_colored.webp"
+                    alt="Product"
+                    class="product-image--zoom"
+                  />
+                  <div class="zoom-hint">🔍</div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-12">
+                <h1 class="product-details-title multilingual-text">
+                  Тісто пісочне кольорове для творчостi Kulinarium
+                  Meister..Colored play dough Kulinarium Meister.. Kolorowa masa
+                  plastyczna dla dzieci Kulinarium Meister..Песочное тесто для
+                  лепки Kulinarium Meister
+                </h1>
+                <div class="ProductItem-details-excerpt">
+                  <p class="multilingual-text mb-0">
+                    7 кольорів у наборі..7 colors in the set..7 kolorów w
+                    zestawie..7 цветов в наборе
+                  </p>
+                  <p class="multilingual-text mb-0">
+                    Охолоджений продукт..Refrigerated product..Produkt
+                    chłodzony..Охлажденный продукт
+                  </p>
+                  <p class="multilingual-text">
+                    Не містить компонентів тваринного походження (пісне).. Does
+                    not contain animal-derived components (Lenten).. Nie zawiera
+                    składników pochodzenia zwierzęcego (postne)..Не содержит
+                    компонентов животного происхождения (постное)
+                  </p>
+                  <p>
+                    <strong class="multilingual-text fw-bold"
+                      >Склад:..Ingredients:..Składniki:..Состав:</strong
+                    >&nbsp;<span class="multilingual-text"
+                      >борошно пшеничне вищого сорту 54%, маргарин (містить
+                      рослинні жири) 19,1%, цукор 14,25%, вода питна 10,8%,
+                      порошок пекарський (сода харчова Е500, крохмаль
+                      кукурудзяний, емульгатор Е472е), ароматизатор, ідентичний
+                      натуральному: ванілін, антиоксидант: аскорбінова кислота
+                      Е300, барвники: куркумін, концентрат соку буряка,
+                      бета-каротин, карміну екстракт, діамантовий синій, діоксид
+                      титану, чорний вугільний, консервант сорбат калію.
+                      ..high-grade wheat flour 54%, margarine (contains
+                      vegetable fats) 19.1%, sugar 14.25%, drinking water 10.8%,
+                      baking powder (food soybean E500, corn starch, emulsifier
+                      E472e), flavoring identical natural: vanillin,
+                      antioxidant: ascorbic acid E300, dyes: curcumin, beet
+                      juice concentrate, beta-carotene, carmine extract,
+                      brilliant blue, titanium dioxide, black coal, preservative
+                      potassium sorbate. ..wysokogatunkowa mąka pszenna 54%,
+                      margaryna (zawiera tłuszcze roślinne) 19,1%, cukier
+                      14,25%, woda pitna 10,8%, proszek do pieczenia (soja
+                      spożywcza E500, skrobia kukurydziana, emulgator E472e),
+                      aromat identyczny naturalny: wanilina, przeciwutleniacz:
+                      kwas askorbinowy E300, barwniki: kurkumina, koncentrat
+                      soku z buraków, beta-karoten, ekstrakt karminowy, błękit
+                      brylantowy, dwutlenek tytanu, czarny węgiel, konserwujący
+                      sorbinian potasu. ..мука пшеничная высшего сорта 54%,
+                      маргарин (содержит растительные жиры) 19,1%, сахар 14,25%,
+                      вода питьевая 10,8%, порошок пекарский (сода пищевая Е500,
+                      крахмал кукурузный, эмульгатор Е472е), ароматизатор,
+                      идентичный натуральному: ванилин, антиоксидант:
+                      аскорбиновая кислота Е300, красители: куркумин, концентрат
+                      сока свеклы, бета-каротин, кармина экстракт, бриллиантовый
+                      синий, диоксид титана, черный угольный, консервант сорбат
+                      калия.
+                    </span>
+                  </p>
+                  <p>
+                    <strong class="multilingual-text fw-bold"
+                      >Харчова цінність..Nutritional
+                      info..Wartość&nbsp;odżywcza..Пищевая ценность </strong
+                    >&nbsp;<span class="multilingual-text">
+                      на 100 г: білки – 5,7 г; жири – 15,3 г; вуглеводи – 52 г.
+                      ..per 100 g: proteins – 5.7 g; fats – 15.3 g;
+                      carbohydrates – 52 g ..Na 100 g: białka – 5,7 g; tłuszcze
+                      – 15,3 g; węglowodany – 52 g ..На 100 г: белки – 5,7 г;
+                      жиры – 15,3 г; углеводы – 52 г.
+                    </span>
+                  </p>
+                  <p>
+                    <strong class="multilingual-text fw-bold"
+                      >Енергетична цінність..Energy..Wartość
+                      energetyczna..Энергетическая ценность</strong
+                    >&nbsp;<span class="multilingual-text">
+                      368,5 ккал (1541,8 кДж). ..368.5 kcal (1541.8 kJ). ..368,5
+                      kcal (1541,8 kJ). ..368,5 ккал (1541,8 кДж).
+                    </span>
+                  </p>
+                  <p>
+                    <strong class="multilingual-text fw-bold"
+                      >Умови зберігання:..Storage:..Przechowywanie:..Условия
+                      хранения:</strong
+                    >
+                    <span class="multilingual-text">
+                      &nbsp;зберігати в охолодженому стані при t від +2 до +4 °C
+                      45 діб. Після відкриття упаковки використати протягом 3
+                      діб. При бажанні та необхідності продукт може бути
+                      заморожений і зберігатися додатково упродовж 90 діб при t
+                      від –18 до –25 °C. ..keep refrigerated at +2°C — +4°C for
+                      45 days. Use within 3 days of opening. If desired or
+                      required, the product may be frozen and stored
+                      additionally for 90 days at –18°C – 25°C. ..przechowywać w
+                      lodówce w temperaturze od +2 do &nbsp;+ 4 ° C 45 dni. Po
+                      otwarciu opakowania zużyć w ciągu 3 dni. W razie potrzeby
+                      produkt może być zamrożony i przechowywany w ciągu
+                      kolejnych 90 dni w temperaturze od -18 do -25 ° C.
+                      ..хранить в охлажденном состоянии при t от +2 до +4
+                      °&nbsp;C 45&nbsp;суток. После открытия использовать в
+                      течение 3 суток. При желании и необходимости продукт может
+                      быть заморожен и храниться дополнительно в течение 90
+                      суток при t от –18 до –25 ° C.
+                    </span>
+                  </p>
+                </div>
+              </div>
             </div>
-            <section class="dough--products text-center">
-              <div class="dough--row row gx-4">
-                <div class="col-lg-4 col-6">
-                  <a href="/product_pages/puff_pastry_roll.html">
-                    <div
-                      class="product-image-container position-relative"
-                      style="z-index: 90"
-                    >
-                      <img
-                        src="/assets/images/dough/testo_sloenoe_packed.webp"
-                        class="img-fluid product-image primary"
-                        style="z-index: 90"
-                        alt=""
-                      />
-                      <img
-                        src="/assets/images/dough/testo_sloenoe.webp"
-                        class="img-fluid product-image secondary"
-                        style="z-index: 90"
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      class="multilingual-text position-relative"
-                      style="z-index: 100"
-                    >
-                      Листкове тісто Kulinarium Meister..Puff Pastry Kulinarium
-                      Meister..Ciasto Francuskie Kulinarium Meister..Слоеное
-                      тесто Kulinarium Meister
-                    </div>
-                  </a>
+            <div class="row row-product-detail-2 justify-content-center pt-4">
+              <div class="col-lg-10 col-12">
+                <div class="product-image-container--zoom">
+                  <img
+                    src="../assets/images/dough/testo_colored_box.webp"
+                    alt="Product"
+                    class="product-image--zoom"
+                  />
+                  <div class="zoom-hint text-black">🔍 500g</div>
                 </div>
-                <div class="col-lg-4 col-6">
-                  <a href="/product_pages/strudel.html">
-                    <div
-                      class="product-image-container position-relative"
-                      style="z-index: 85"
-                    >
-                      <img
-                        src="/assets/images/dough/testo_strudel.webp"
-                        class="img-fluid product-image primary"
-                        style="z-index: 85"
-                        alt=""
-                      />
-                      <img
-                        src="/assets/images/dough/testo_sloenoe.webp"
-                        class="img-fluid product-image secondary"
-                        style="z-index: 85"
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      class="multilingual-text position-relative"
-                      style="z-index: 100"
-                    >
-                      Тісто для штруделя Kulinarium Meister..Strudel Dough
-                      Kulinarium Meister..Ciasto na Strudel Kulinarium
-                      Meister..Тесто для штруделя Kulinarium Meister
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-4 col-6">
-                  <a href="/product_pages/pizza.html">
-                    <div
-                      class="product-image-container position-relative"
-                      style="z-index: 80"
-                    >
-                      <img
-                        src="/assets/images/dough/testo_pizza.webp"
-                        class="img-fluid product-image primary"
-                        style="z-index: 80"
-                        alt=""
-                      />
-                      <img
-                        src="/assets/images/dough/testo_pizza_stripped.webp"
-                        class="img-fluid product-image secondary"
-                        style="z-index: 80"
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      class="multilingual-text position-relative"
-                      style="z-index: 100"
-                    >
-                      Тісто для піци Kulinarium Meister..Pizza Dough Kulinarium
-                      Meister..Ciasto na pizzę Kulinarium Meister..Тесто для
-                      пиццы Kulinarium Meister
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-lg-4 col-6">
-                  <a href="/product_pages/herb_pizza.html">
-                    <div
-                      class="product-image-container position-relative"
-                      style="z-index: 75"
-                    >
-                      <img
-                        src="/assets/images/dough/testo_pizza_new_box.webp"
-                        class="img-fluid product-image primary"
-                        style="z-index: 75"
-                        alt=""
-                      />
-                      <img
-                        src="/assets/images/dough/testo_pizza_new_roll.webp"
-                        class="img-fluid product-image secondary"
-                        style="z-index: 75"
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      class="multilingual-text position-relative"
-                      style="z-index: 100"
-                    >
-                      Пікантне тісто для піци з травами Kulinarium
-                      Meister..Pizza Dough with Herbs Kulinarium Meister..Ciasto
-                      na pizzę z ziołami Kulinarium Meister..Пикантное тесто для
-                      пиццы с травами Kulinarium Meister
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-4 col-6">
-                  <a href="/product_pages/short_dough.html">
-                    <div
-                      class="product-image-container position-relative"
-                      style="z-index: 70"
-                    >
-                      <img
-                        src="/assets/images/dough/pisochne_tisto_packed.webp"
-                        class="img-fluid product-image primary"
-                        alt=""
-                      />
-                      <img
-                        src="/assets/images/dough/pisochne_tisto.webp"
-                        class="img-fluid product-image secondary"
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      class="multilingual-text position-relative"
-                      style="z-index: 100"
-                    >
-                      Пісочне тісто Kulinarium Meister..Shortcrust Pastry
-                      Kulinarium Meister..Ciasto kruche Kulinarium
-                      Meister..Песочное тесто Kulinarium Meister
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-4 col-6">
-                  <a href="/product_pages/cocoa_short_pastry.html">
-                    <div
-                      class="product-image-container position-relative"
-                      style="z-index: 65"
-                    >
-                      <img
-                        src="/assets/images/dough/pisochne-tisto-z-kakao-packed.webp"
-                        class="img-fluid product-image primary"
-                        alt=""
-                      />
-                      <img
-                        src="/assets/images/dough/pisochne-tisto-z-kakao.webp"
-                        class="img-fluid product-image secondary"
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      class="multilingual-text position-relative"
-                      style="z-index: 100"
-                    >
-                      Пiсочне тісто з какао Kulinarium Meister..Chocolate
-                      Shortcrust Pastry Kulinarium Meister..Kruche ciasto
-                      kakaowe Kulinarium Meister..Песочное тесто с какао
-                      Kulinarium Meister
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-lg-4 col-6">
-                  <a href="/product_pages/lasagna.html">
-                    <div
-                      class="product-image-container position-relative"
-                      style="z-index: 60"
-                    >
-                      <img
-                        src="/assets/images/dough/lazania-packed.webp"
-                        class="img-fluid product-image primary"
-                        alt=""
-                      />
-                      <img
-                        src="/assets/images/dough/lazagnya_1.webp"
-                        class="img-fluid product-image secondary"
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      class="multilingual-text position-relative"
-                      style="z-index: 100"
-                    >
-                      Лазанья і канелоні Kulinarium Meister..Lasagna and
-                      cannelloni sheets Kulinarium Meister..Ciasto na lazanię i
-                      cannelloni Kulinarium Meister..Тесто для лазаньи и
-                      каннеллони Kulinarium Meister
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-4 col-6">
-                  <a href="/product_pages/ginger.html">
-                    <div
-                      class="product-image-container position-relative"
-                      style="z-index: 55"
-                    >
-                      <img
-                        src="/assets/images/dough/ginger_box.webp"
-                        class="img-fluid product-image primary"
-                        alt=""
-                      />
-                      <img
-                        src="/assets/images/dough/ginger_roll.webp"
-                        class="img-fluid product-image secondary"
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      class="multilingual-text position-relative"
-                      style="z-index: 100"
-                    >
-                      Імбирне тісто з медом та прянощами Kulinarium
-                      Meister..Gingerbread Dough Kulinarium Meister.. Ciasto
-                      imbirowe z miodem i przyprawami Kulinarium
-                      Meister..Имбирное тесто с медом Kulinarium Meister
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-4 col-6">
-                  <a href="/product_pages/colored_play_dough.html">
-                    <div
-                      class="product-image-container position-relative"
-                      style="z-index: 50"
-                    >
-                      <img
-                        src="/assets/images/dough/testo_colored_box.webp"
-                        class="img-fluid product-image primary"
-                        alt=""
-                      />
-                      <img
-                        src="/assets/images/dough/testo_colored.webp"
-                        class="img-fluid product-image secondary"
-                        alt=""
-                      />
-                    </div>
-                  </a>
-                  <div
-                    class="multilingual-text position-relative"
-                    style="z-index: 100"
-                  >
-                    Тісто пісочне кольорове для творчостi Kulinarium
-                    Meister..Colored play dough Kulinarium Meister.. Kolorowa
-                    masa plastyczna dla dzieci Kulinarium Meister..Песочное
-                    тесто для лепки Kulinarium Meister
+              </div>
+            </div>
+            <div class="row row-product-detail-1 justify-content-center pt-4">
+              <div class="col-xl-8 col-12">
+                <div class="h-100 d-flex align-items-center">
+                  <div class="ProductItem-details-excerpt w-100 p-4">
+                    <p class="multilingual-text mb-0">
+                      Не вірите? А це дійсно тісто. І тепер ви вже точно знаєте,
+                      чим зацікавити дитину у вільний час. Кольорова фантазія
+                      заполонить ваш&nbsp;домашній&nbsp;творчий&nbsp;простір. З
+                      цих радісних грудочок діти охоче будуть ліпити плоскі і
+                      об'ємні фігурки, які потім висушуються або випікаються в
+                      духовці і з'їдаються в одну мить. ..Don't believe it? But
+                      it is really dough. And now you definitely know how to
+                      interest your child in their free time. Colorful fantasy
+                      will fill your home creative space. From these joyful
+                      lumps, children will gladly sculpt flat and voluminous
+                      figures, which are then dried or baked in the oven and
+                      eaten in one moment. ..Nie wierzysz? A to naprawdę ciasto.
+                      I teraz na pewno wiesz, jak zainteresować dziecko w wolnym
+                      czasie. Kolorowa fantazja wypełni twoją domową przestrzeń
+                      twórczą. Z tych radosnych grudek dzieci chętnie będą lepić
+                      płaskie i przestrzenne figurki, które następnie są suszone
+                      lub pieczone w piekarniku i zjadane w jednej chwili. ..Не
+                      верите? А это действительно тесто. И теперь вы точно
+                      знаете, чем заинтересовать ребенка в свободное время.
+                      Цветная фантазия заполнит ваше домашнее творческое
+                      пространство. Из этих радостных комочков дети с
+                      удовольствием будут лепить плоские и объемные фигурки,
+                      которые затем высушиваются или выпекаются в духовке и
+                      съедаются в один миг.
+                    </p>
+                    <br />
+                    <p class="multilingual-text mb-0">
+                      Ароматне, солодке, веселе пісочне печиво, яке діти зможуть
+                      зробити власноруч, розвиваючи свою уяву і моторику. Тісто
+                      містить харчові барвники, які не шкодять здоров'ю і широко
+                      використовуються в харчовій промисловості. ..Aromatic,
+                      sweet, fun shortbread cookies that children can make
+                      themselves, developing their imagination and motor skills.
+                      The dough contains food colorings that do not harm health
+                      and are widely used in the food industry. ..Aromatyczne,
+                      słodkie, zabawne ciasteczka kruche, które dzieci mogą
+                      zrobić samodzielnie, rozwijając swoją wyobraźnię i
+                      motorykę. Ciasto zawiera barwniki spożywcze, które nie
+                      szkodzą zdrowiu i są szeroko stosowane w przemyśle
+                      spożywczym. ..Ароматное, сладкое, веселое песочное
+                      печенье, которое дети смогут сделать самостоятельно,
+                      развивая свое воображение и моторику. Тесто содержит
+                      пищевые красители, которые не вредят здоровью и широко
+                      используются в пищевой промышленности.
+                    </p>
                   </div>
                 </div>
               </div>
-            </section>
+            </div>
+            <div
+              class="row preparation-and-recipes justify-content-center pt-5"
+            >
+              <div class="col-xl-6 mb-4">
+                <h3 class="multilingual-text mb-4">
+                  Рекомендації по приготуванню..Preparation
+                  Guidelines&nbsp;..Wskazówki do gotowania..Рекомендации по
+                  приготовлению
+                </h3>
+                <p class="multilingual-text">
+                  1. За годину перед приготуванням виробів рекомендуємо викласти
+                  тісто з холодильника і потримати його при кімнатній
+                  температурі для відновлення еластичних властивостей. ..1. An
+                  hour before preparing the products, we recommend taking the
+                  dough out of the refrigerator and keeping it at room
+                  temperature to restore its elastic properties. ..1. Godzinę
+                  przed przygotowaniem produktów zalecamy wyjęcie ciasta z
+                  lodówki i trzymanie go w temperaturze pokojowej, aby
+                  przywrócić jego elastyczne właściwości. ..1. За час до
+                  приготовления изделий рекомендуем выложить тесто из
+                  холодильника и подержать его при комнатной температуре для
+                  восстановления эластичных свойств.
+                </p>
+                <p class="multilingual-text">
+                  2. У попередньо розігрітій духовці випікайте 15 хв при
+                  температурі 150 ° С. ..2. In a preheated oven, bake for 15
+                  minutes at a temperature of 150 ° C. ..2. W rozgrzanym
+                  piekarniku piecz przez 15 minut w temperaturze 150 ° C. ..2. В
+                  предварительно разогретой духовке выпекайте 15 мин при
+                  температуре 150 ° С.
+                </p>
+                <p class="multilingual-text">
+                  3. Творіть і радійте з «Kulinarium Meister»! ..3. Create and
+                  rejoice with "Kulinarium Meister"! ..3. Twórz i raduj się z
+                  „Kulinarium Meister”! ..3. Творите и радуйтесь с
+                  «Kulinarium Meister»!
+                </p>
+              </div>
+            </div>
           </div>
         </main>
       </div>
 
       <!-- Footer -->
-      <footer>
+      <footer id="footer-index">
         <div class="footer-container">
           <nav
             id="footer-nav"
@@ -949,9 +905,11 @@
       </footer>
     </div>
 
-    <script src="src/vendor/jquery/jquery.min.js"></script>
-    <script src="src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="src/js/lang-switcher.js"></script>
-    <script src="src/js/index.js"></script>
+    <script src="../src/vendor/jquery/jquery.min.js"></script>
+    <script src="../src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/js/lang-switcher.js"></script>
+    <script src="../src/js/index.js"></script>
+    <script src="../src/js/mobile_paginator_for_home_pg.js"></script>
+    <script src="../src/js/zoom_effect.js"></script>
   </body>
 </html>
