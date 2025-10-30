@@ -613,18 +613,11 @@ header {
 }
 
 .video-recipes--card-page {
-  height: 440px;
-  /* Adjust based on your tallest card */
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-between;
   overflow: hidden;
-}
-
-.video-recipes--card-page .isotope-filters {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  margin: 0;
 }
 
 .video-recipes--card-page img {
@@ -940,6 +933,7 @@ header {
   right: 70px;
   left: auto;
 }
+
 .carousel-control-next {
   right: 10px;
   left: auto;
@@ -961,18 +955,8 @@ header {
 }
 
 @media (max-width: 1800px) {
-  .video-recipes--card-page {
-    height: 390px;
-  }
-
   .product-image-container--zoom {
     height: 500px;
-  }
-}
-
-@media (max-width: 1400px) {
-  .video-recipes--card-page {
-    height: 335px;
   }
 }
 
@@ -983,10 +967,6 @@ header {
 
   .product-image-container {
     margin-top: -55px;
-  }
-
-  .video-recipes--card-page {
-    height: 385px;
   }
 
   .product-image-container--zoom {
@@ -1050,16 +1030,12 @@ header {
     column-gap: 20px;
   }
 
-  .video-recipes--card-page {
-    height: 360px;
-  }
-
   .product-image-container--zoom {
     height: 250px;
   }
 
   .main-content--product-detail {
-    padding: 0 6%;
+    padding: 20px 6%;
   }
 
   .zoom-hint {
@@ -1100,8 +1076,8 @@ header {
     margin-top: -25px;
   }
 
-  .video-recipes--card-page {
-    height: 380px;
+  .video-recipes--card-page .isotope-filters {
+    padding-top: 20px;
   }
 
   .product-image-container--zoom {
