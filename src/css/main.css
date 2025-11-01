@@ -386,7 +386,7 @@ header {
 /* Video Section - Responsive TV Screen */
 .video-section {
   width: 100%;
-  height: clamp(225px, 20vw + 50px, 500px);
+  height: clamp(225px, 28vw + 90px, 700px);
   /* Responsive height as requested */
   position: relative;
   overflow: hidden;
@@ -892,8 +892,8 @@ header {
 /* Optional zoom hint */
 .zoom-hint {
   position: absolute;
-  top: 15%;
-  left: 130px;
+  top: 12%;
+  left: 25%;
   background: transparent;
   color: white;
   padding: 5px 8px;
