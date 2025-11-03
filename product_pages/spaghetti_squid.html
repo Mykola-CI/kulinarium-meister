@@ -11,28 +11,28 @@
     <!-- kulinarium-meister -->
     <meta charset="utf-8" />
     <title>Kulinarium Meister</title>
-    <link rel="icon" href="./assets/images/favicon.ico" />
+    <link rel="icon" href="../assets/images/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./assets/images/apple-touch-icon.png"
+      href="../assets/images/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="../assets/images/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./assets/images/favicon-16x16.png"
+      href="../assets/images/favicon-16x16.png"
     />
-    <link rel="manifest" href="./assets/images/site.webmanifest" />
+    <link rel="manifest" href="../assets/images/site.webmanifest" />
     <link
       rel="mask-icon"
-      href="./assets/images/safari-pinned-tab.svg"
+      href="../assets/images/safari-pinned-tab.svg"
       color="#000000"
     />
     <meta
@@ -109,8 +109,11 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,700&family=Libre+Baskerville:ital,wght@0,700&family=Cormorant+Infant:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400&family=Gabriela:ital,wght@0,400"
     />
-    <link rel="stylesheet" href="src/vendor/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="src/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="../src/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../src/css/main.css" />
     <meta
       name="google-site-verification"
       content="4QMEQxu0VzZlCxrxJMTn_HbX8W0jvG6f47cIIThGKSE"
@@ -130,9 +133,11 @@
   <!-- ---------------------------------- -->
   <body>
     <!-- Outer Container for everything -->
-    <div class="min-vh-100 outer-container-body container-fluid d-flex flex-column justify-content-between p-0">
+    <div
+      class="outer-container-body container-fluid d-flex flex-column min-vh-100"
+    >
       <!--  Header and Main -->
-      <div class="position-relative mb-5">
+      <div class="position-relative flex-grow-1">
         <!-- Header -->
         <header
           class="w-100 d-flex flex-row justify-content-center position-sticky top-0 start-0"
@@ -144,7 +149,7 @@
             <div class="Header-branding">
               <a href="/">
                 <img
-                  src="assets/images/logo_png_black@2x.png"
+                  src="../assets/images/logo_png_black@2x.png"
                   alt="Kulinarium Meister"
                   class="img-fluid"
                   style="display: block"
@@ -199,7 +204,7 @@
               >
                 <h5 class="offcanvas-title" id="offcanvasMainLabel">
                   <img
-                    src="assets/images/logo_png_black@2x.png"
+                    src="../assets/images/logo_png_black@2x.png"
                     alt="Kulinarium Meister"
                     class="img-fluid"
                     style="display: block; width: 50px"
@@ -408,7 +413,7 @@
             <div class="Header-branding">
               <a href="/">
                 <img
-                  src="assets/images/logo_png_black@2x.png"
+                  src="../assets/images/logo_png_black@2x.png"
                   alt="Kulinarium Meister"
                   class="img-fluid"
                   style="display: block"
@@ -620,272 +625,316 @@
         </header>
         <!-- MAIN CONTENT -->
         <main>
-          <div class="dough-page-container">
-            <div class="dough-hero-title text-center position-relative" style="z-index: 100">
-              <h1 class="multilingual-text m-auto">
-                Паста Kulinarium Meister.&nbsp;Розмаїття смаку та кольору..Pasta
-                Kulinarium Meister.&nbsp;Diversity of taste and color..Makaron
-                Kulinarium Meister.&nbsp;Różnorodność smaku i
-                koloru..Паста&nbsp;Kulinarium Meister.&nbsp;Разнообразие вкусов
-                и цвета
-              </h1>
+          <div class="main-content--product-detail">
+            <div class="row row-product-detail-1">
+              <div class="col-xl-8 col-12">
+                <div class="product-image-container--zoom">
+                  <img
+                    src="../assets/images/pasta/black_pasta_art.webp"
+                    alt="Product"
+                    class="product-image--zoom"
+                  />
+                  <div class="zoom-hint">🔍</div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-12">
+                <h1 class="product-details-title multilingual-text">
+                  Чорна паста з чорнилом каракатицi Kulinarium
+                  Meister..Spaghetti with squid Ink Kulinarium
+                  Meister..Spaghetti czarny makaron z mątwą Kulinarium
+                  Meister..Паста с чернилами каракатицы Kulinarium Meister
+                </h1>
+                <div class="ProductItem-details-excerpt">
+                  <p class="multilingual-text mb-0">
+                    300 г..300 g..300 g..300 г
+                  </p>
+                  <p class="multilingual-text mb-0">
+                    Охолоджений продукт..Refrigerated product..Produkt
+                    chłodzony..Охлажденный продукт
+                  </p>
+                  <p class="multilingual-text">
+                    Не містить компонентів тваринного походження (пісне).. Does
+                    not contain animal-derived components (Lenten).. Nie zawiera
+                    składników pochodzenia zwierzęcego (postne)..Не содержит
+                    компонентов животного происхождения (постное)
+                  </p>
+                  <p>
+                    <strong class="multilingual-text fw-bold"
+                      >Склад:..Ingredients:..Składniki:..Состав:</strong
+                    >&nbsp;<span class="multilingual-text"
+                      >борошно з пшениці твердих сортів (дурум), борошно з
+                      пшениці м’яких сортів, вода питна, оливкова олія, чорнило
+                      каракатиці, сіль кухонна харчова, кислота аскорбінова.
+                      ..durum wheat flour, soft wheat flour, drinking water,
+                      olive oil, cuttlefish oil, food salt, acid ascorbic acid.
+                      ..mąka z pszenicy durum 50%, mąka pszenna najwyższej
+                      jakości 50%, woda, oliwa z oliwek, atrament z mątwy, sól,
+                      kwas askorbinowy. ..мука из пшеницы твердых сортов
+                      (дурум), мука из пшеницы мягких сортов, питьевая вода,
+                      оливковое масло, чернило каракатицы, пищевая соль, кислота
+                      аскорбиновая.</span
+                    >
+                  </p>
+                  <p>
+                    <strong class="multilingual-text fw-bold"
+                      >Харчова цінність..Nutritional
+                      info..Wartość&nbsp;odżywcza..Пищевая ценность </strong
+                    >&nbsp;<span class="multilingual-text">
+                      100 г продукту: білки – 9,3 г; жири – 0,15 г; вуглеводи –
+                      60,3 г. ..Per 100 g: proteins – 9,3 g; fats – 0,15 g;
+                      carbohydrates – 60,3 g. ..100 g produktu: białka – 9,3 g;
+                      tłuszcze – 0,15 g; węglowodany – 60,3 g. ..100 г продукта:
+                      белки – 9,3 г; жиры – 0,15 г; углеводы – 60,3 г.
+                    </span>
+                  </p>
+                  <p>
+                    <strong class="multilingual-text fw-bold"
+                      >Енергетична цінність..Energy..Wartość
+                      energetyczna..Энергетическая ценность</strong
+                    >&nbsp;<span class="multilingual-text">
+                      – 286 ккал (1196 кДж). ..per 100 g: energy – 286 kcal
+                      (1196 kJ). ..100 g produktu: energia – 286 kcal (1196 kJ).
+                      ..100 г продукта: энергия – 286 ккал (1196 кДж).
+                    </span>
+                  </p>
+                  <p>
+                    <strong class="multilingual-text fw-bold"
+                      >Умови зберігання:..Storage:..Przechowywanie:..Условия
+                      хранения:</strong
+                    >
+                    <span class="multilingual-text">
+                      зберігати в охолодженому стані при t від +2 до +4 °C 45
+                      діб. При бажанні та необхідності продукт можна висушити
+                      при кімнатній температурі (пакувальну плівку при цьому
+                      треба зняти) і зберігати додатково впродовж 120 діб у
+                      сухому прохолодному місці, як усі сухі макаронні вироби.
+                      ..store refrigerated at t from +2 to +4 °C for 45 days. If
+                      desired and necessary, the product can be dried at room
+                      temperature (the packaging film must be removed) and
+                      stored for an additional 120 days in a dry cool place,
+                      like all dry pasta products. ..przechowywać w stanie
+                      schłodzonym w temperaturze od +2 do +4 °C przez 45 dni. W
+                      razie potrzeby produkt można wysuszyć w temperaturze
+                      pokojowej (należy zdjąć folię opakowaniową) i przechowywać
+                      dodatkowo przez 120 dni w suchym, chłodnym miejscu, jak
+                      wszystkie suche produkty makaronowe. ..хранить в
+                      охлажденном состоянии при t от +2 до +4 °C 45 дней. При
+                      желании и необходимости продукт можно высушить при
+                      комнатной температуре (упаковочную пленку при этом нужно
+                      снять) и хранить дополнительно в течение 120 дней в сухом
+                      прохладном месте, как все сухие макаронные изделия.
+                    </span>
+                  </p>
+                </div>
+              </div>
             </div>
-            <section class="dough--products text-center">
-              <h2 class="d-none">Pasta varieties</h2>
-              <div class="dough--row row gx-4">
-                <div class="col-lg-4 col-6">
-                  <a href="/product_pages/fettuccine.html">
-                    <div class="product-image-container position-relative" style="z-index: 90;">
-                      <img
-                        src="/assets/images/pasta/home-pasta-box.webp"
-                        class="img-fluid product-image primary"
-                        alt=""
-                      />
-                      <img
-                        src="/assets/images/pasta/home-pasta.webp"
-                        class="img-fluid product-image secondary"
-                        alt=""
-                      />
-                    </div>
-                    <div class="multilingual-text position-relative" style="z-index: 100">
-                      Локшина домашня Kulinarium Meister..Special fettuccine
-                      Kulinarium Meister..Makaron domowy Kulinarium Meister..Лапша
-                      домашняя Kulinarium Meister
-                    </div>
-                  </a>
+            <div class="row row-product-detail-2 justify-content-center pt-4">
+              <div class="col-xl-8 col-lg-10 col-12">
+                <div class="product-image-container--zoom">
+                  <img
+                    src="../assets/images/pasta/black_pasta_box.webp"
+                    alt="Product"
+                    class="product-image--zoom"
+                  />
+                  <div class="zoom-hint text-black">🔍 300g</div>
                 </div>
-                <div class="col-lg-4 col-6">
-                  <a href="/product_pages/capellini.html">
-                    <div class="product-image-container position-relative" style="z-index: 85;">
-                      <img
-                        src="/assets/images/pasta/capellini_box.webp"
-                        class="img-fluid product-image primary"
-                        alt=""
-                      />
-                      <img
-                        src="/assets/images/pasta/capellini_4.webp"
-                        class="img-fluid product-image secondary"
-                        alt=""
-                      />
-                    </div>
-                    <div class="multilingual-text position-relative" style="z-index: 100">
-                      Капелiнi паста Kulinarium Meister..Capellini Kulinarium
-                      Meister..Capellini Kulinarium Meister..Капеллини Kulinarium
-                      Meister..
-                    </div>
-                  </a>
+              </div>
+            </div>
+            <div
+              class="row row-product-detail-1 justify-content-center pb-xl-5 pb-4"
+            >
+              <div class="col-xl-8 col-12">
+                <div class="h-100 d-flex align-items-center">
+                  <div class="ProductItem-details-excerpt w-100 p-4">
+                    <p class="multilingual-text mb-2">
+                      Чорнило каракатиці – продукт, який не тільки змінює колір
+                      і аромат страви, надає їй яскравого морського смаку, а й
+                      збагачує організм вітамінами та мінералами. Паста з
+                      чорнилом каракатиці вдало поєднується з легкими соусами,
+                      рибою, морепродуктами. До її складу входять борошно із
+                      твердих сортів пшениці та оливкова олія – незамінні
+                      компоненти середземноморської дієти. її вишуканий смак
+                      відносить нас у ті краї, де владарюють сонце і морський
+                      бриз. ..Cuttlefish ink is a product that not only changes
+                      the color and aroma of the dish, giving it a bright sea
+                      flavor, but also enriches the body with vitamins and
+                      minerals. Pasta with cuttlefish ink goes well with light
+                      sauces, fish, seafood. It contains durum wheat flour and
+                      olive oil – indispensable components of the Mediterranean
+                      diet. Its exquisite taste takes us to those lands where
+                      the sun and sea breeze reign. ..Atrament z mątwy to
+                      produkt, który nie tylko zmienia kolor i aromat potrawy,
+                      nadając jej wyrazisty morski smak, ale także wzbogaca
+                      organizm w witaminy i minerały. Makaron z atramentem z
+                      mątwy doskonale komponuje się z lekkimi sosami, rybami,
+                      owocami morza. W jego skład wchodzą mąka z pszenicy durum
+                      i oliwa z oliwek – niezastąpione składniki diety
+                      śródziemnomorskiej. Jego wyrafinowany smak przenosi nas do
+                      tych krain, gdzie władają słońce i morska bryza. ..Чернило
+                      каракатицы – продукт, который не только меняет цвет и
+                      аромат блюда, придавая ему яркий морской вкус, но и
+                      обогащает организм витаминами и минералами. Паста с
+                      чернилами каракатицы удачно сочетается с легкими соусами,
+                      рыбой, морепродуктами. В ее состав входят мука из твердых
+                      сортов пшеницы и оливковое масло – незаменимые компоненты
+                      средиземноморской диеты. ее изысканный вкус переносит нас
+                      в те края, где властвуют солнце и морской бриз...
+                    </p>
+                  </div>
                 </div>
-                <div class="col-lg-4 col-6">
-                  <a href="/product_pages/mafaldine.html">
-                    <div class="product-image-container position-relative" style="z-index: 80;">
-                      <img
-                        src="/assets/images/pasta/mafaldine_box.webp"
-                        class="img-fluid product-image primary"
-                        alt=""
-                      />
-                      <img
-                        src="/assets/images/pasta/mafaldine_7.webp"
-                        class="img-fluid product-image secondary"
-                        alt=""
-                      />
+              </div>
+            </div>
+            <div class="row preparation-and-recipes">
+              <div class="col-xl-6 mb-4">
+                <h3 class="multilingual-text mb-4">
+                  Рекомендації по приготуванню..Preparation
+                  Guidelines&nbsp;..Wskazówki do gotowania..Рекомендации по
+                  приготовлению
+                </h3>
+                <p class="multilingual-text">
+                  1. Кидати в окріп. На 100 г локшини рекомендуємо 1 л води і 10
+                  г солі. ..1. Drop into boiling water. For 100 g of noodles, we
+                  recommend 1 liter of water and 10 g of salt. ..1. Wrzucić do
+                  wrzącej wody. На 100 г makaronu zalecamy 1 l wody i 10 g
+                  soli..1. Бросить в кипяток. На 100 г лапши рекомендуем 1 л
+                  воды и 10 г соли.
+                </p>
+                <p class="multilingual-text">
+                  2. Для приготування пасти аль денте варити 1–2 хв. Воду злити.
+                  Пасту не промивати. ..2. To cook pasta al dente, boil for 1-2
+                  minutes. Drain the water. Do not rinse the pasta. ..2. Aby
+                  ugotować makaron al dente, gotuj przez 1-2 minuty. Odcedź
+                  wodę. Nie płucz makaronu..2. Для приготовления пасты аль денте
+                  варить 1–2 мин. Воду слить. Пасту не промывать.
+                </p>
+                <p class="multilingual-text">
+                  3. Додати масло або соус, щоб запобігти злипанню. ..3. Add oil
+                  or sauce to prevent sticking. ..3. Dodaj olej lub sos, aby
+                  zapobiec sklejaniu się..3. Добавить масло или соус, чтобы
+                  предотвратить слипание.
+                </p>
+              </div>
+              <div class="col-xl-6 position-relative d-none d-lg-block">
+                <h3 class="multilingual-text mb-5">
+                  Рецепти з використанням цього продукту..Recipes Using This
+                  Product..Przepisy z wykorzystaniem tego produktu..Рецепты с
+                  использованием этого продукта
+                </h3>
+                <button
+                  class="carousel-control-prev d-none"
+                  type="button"
+                  data-bs-target="#carouselRecipes"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next d-none"
+                  type="button"
+                  data-bs-target="#carouselRecipes"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <div id="carouselRecipes" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="d-flex flex-row gap-3">
+                        <article
+                          class="col video-recipes--card-page text-center pb-3 bg-white"
+                        >
+                          <a
+                            href="/recipe_details/squid_ink_seafood_pasta.html"
+                          >
+                            <img
+                              src="/assets/images/recipes/squid-ink-seafood-pasta.webp"
+                              alt="squid-ink-seafood-pasta"
+                              class="img-fluid"
+                            />
+                            <p
+                              class="regular-recipe-title--page multilingual-text mt-3 mb-2"
+                            >
+                              Чорна паста під соусом з морепродуктів..Squid Ink
+                              Seafood Pasta..Makaron z czarnej mąki z owocami
+                              morza..Черная паста с морепродуктами
+                            </p>
+                          </a>
+                        </article>
+                        <article
+                          class="col video-recipes--card-page text-center pb-3 bg-white"
+                        ></article>
+                        <article
+                          class="col video-recipes--card-page text-center pb-3 bg-white"
+                        ></article>
+                      </div>
                     </div>
-                    <div class="multilingual-text position-relative" style="z-index: 100">
-                      Мафальдине фігурна паста Kulinarium Meister..Mafaldine
-                      Kulinarium Meister..Makaron mafaldine Kulinarium
-                      Meister..Паста мафальдине Kulinarium Meister
-                    </div>
-                  </a>
+                  </div>
                 </div>
+              </div>
+              <div class="col-xl-6 position-relative d-block d-lg-none">
+                <h3 class="multilingual-text mb-5">
+                  Рецепти з використанням цього тіста..Recipes Using This type
+                  Of Dough..Przepisy z użyciem tego rodzaju ciasta..Рецепты с
+                  использованием этого теста
+                </h3>
 
-                <div class="col-lg-4 col-6">
-                  <a href="/product_pages/spaghetti_squid.html">
-                    <div class="product-image-container position-relative" style="z-index: 75;">
-                      <img
-                        src="/assets/images/pasta/black_pasta_box.webp"
-                        class="img-fluid product-image primary"
-                        alt=""
-                      />
-                      <img
-                        src="/assets/images/pasta/black_pasta_7.webp"
-                        class="img-fluid product-image secondary"
-                        alt=""
-                      />
+                <div id="carouselRecipes2" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="d-flex flex-row gap-3">
+                        <article
+                          class="col video-recipes--card-page text-center pb-3 bg-white"
+                        >
+                          <a
+                            href="/recipe_details/squid_ink_seafood_pasta.html"
+                          >
+                            <img
+                              src="/assets/images/recipes/squid-ink-seafood-pasta.webp"
+                              alt="squid-ink-seafood-pasta"
+                              class="img-fluid"
+                            />
+                            <p
+                              class="regular-recipe-title--page multilingual-text mt-3 mb-2"
+                            >
+                              Чорна паста під соусом з морепродуктів..Squid Ink
+                              Seafood Pasta..Makaron z czarnej mąki z owocami
+                              morza..Черная паста с морепродуктами
+                            </p>
+                          </a>
+                        </article>
+                        <article
+                          class="col video-recipes--card-page text-center pb-3 bg-white"
+                        ></article>
+                      </div>
                     </div>
-                    <div class="multilingual-text position-relative" style="z-index: 100">
-                      Чорна паста з чорнилом каракатицi Kulinarium
-                      Meister..Spaghetti with squid Ink Kulinarium
-                      Meister..Spaghetti czarny makaron z mątwą Kulinarium
-                      Meister..Паста с чернилами каракатицы Kulinarium Meister
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-4 col-6">
-                  <div class="product-image-container position-relative" style="z-index: 70;">
-                    <img
-                      src="/assets/images/pasta/papardelle_box.webp"
-                      class="img-fluid product-image primary"
-                      alt=""
-                    />
-                    <img
-                      src="/assets/images/pasta/papardelle_5.webp"
-                      class="img-fluid product-image secondary"
-                      alt=""
-                    />
-                  </div>
-                  <div class="multilingual-text position-relative" style="z-index: 100">
-                    Паста папарделе Kulinarium Meister..Pasta pappardelle
-                    Kulinarium Meister..Makaron pappardelle Kulinarium
-                    Meister..Паста папарделле Kulinarium Meister
-                  </div>
-                </div>
-                <div class="col-lg-4 col-6">
-                  <div class="product-image-container position-relative" style="z-index: 65;">
-                    <img
-                      src="/assets/images/pasta/cvet_pasta_box.webp"
-                      class="img-fluid product-image primary"
-                      alt=""
-                    />
-                    <img
-                      src="/assets/images/pasta/cvet_pasta_6.webp"
-                      class="img-fluid product-image secondary"
-                      alt=""
-                    />
-                  </div>
-                  <div class="multilingual-text position-relative" style="z-index: 100">
-                    Кольорова паста Kulinarium Meister..Colored pasta Kulinarium
-                    Meister..Kolorowy makaron Kulinarium Meister..Разноцветная
-                    паста Kulinarium Meister..
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-6">
-                  <div
-                    class="product-image-container position-relative" style="z-index: 60;"
-                  >
-                    <img
-                      src="/assets/images/pasta/choc_lapsha_box.webp"
-                      class="img-fluid product-image primary"
-                      alt=""
-                    />
-                    <img
-                      src="/assets/images/pasta/choc_lapsha_6.webp"
-                      class="img-fluid product-image secondary"
-                      alt=""
-                    />
-                  </div>
-                  <div class="multilingual-text position-relative" style="z-index: 100">
-                    Шоколадна локшина Kulinarium Meister..Chocolate paste
-                    Kulinarium Meister..Czekoladowy makaron Kulinarium
-                    Meister..Шоколадная паста Kulinarium Meister
                   </div>
                 </div>
               </div>
-            </section>
-            <section class="pasta-text mt-5 pt-4">
-              <div class="row justify-content-center">
-                <div class="col-md-10 col-xl-8 px-4">
-                  <h6 class="fw-bold multilingual-text my-4">
-                    Свіжа паста – сила справжнього смаку..Fresh pasta – the
-                    power of true taste..Świeży makaron – siła prawdziwego
-                    smaku.. Свежая паста – сила настоящего вкуса
-                  </h6>
-                  <p class="multilingual-text">
-                    Тільки свіжа паста зберігає увесь букет смакових якостей та
-                    біологічно активних властивостей. Тому вона є однією з
-                    головних складових знаменитої середземноморської дієти.
-                    Італійці впевнені, що без пасти, оливкової олії та келиха
-                    вина – день прожитий даремно. ..Fresh pasta retains the full
-                    bouquet of flavors and biologically active properties. That
-                    is why it is one of the main components of the famous
-                    Mediterranean diet. Italians are sure that without pasta,
-                    olive oil and a glass of wine – the day is lived in vain..
-                    Świeży makaron zachowuje pełen bukiet smaków i właściwości
-                    biologicznie czynnych. Dlatego jest jednym z głównych
-                    składników słynnej diety śródziemnomorskiej. Włosi są pewni,
-                    że bez makaronu, oliwy z oliwek i kieliszka wina – dzień
-                    jest przeżyty na próżno.. Свежая паста сохраняет весь букет
-                    вкусовых качеств и биологически активных свойств. Поэтому
-                    она является одной из главных составляющих знаменитой
-                    средиземноморской диеты. Итальянцы уверены, что без пасты,
-                    оливкового масла и бокала вина – день прожит зря.
-                  </p>
-                  <p class="multilingual-text">
-                    Для виготовлення пасти ми використовуємо лише високоякісне
-                    борошно із твердих сортів пшениці, яке відоме своєю
-                    здатністю не додавати зайвої ваги. Завдяки йому паста має
-                    апетитний золотавий колір з вкрапленнями частинок оболонки
-                    зерна. ..For the production of pasta, we use only
-                    high-quality flour from durum wheat, which is known for its
-                    ability not to add extra weight. Thanks to it, the pasta has
-                    an appetizing golden color with inclusions of grain shell
-                    particles.. Do produkcji makaronu używamy tylko wysokiej
-                    jakości mąki z pszenicy durum, która jest znana ze swojej
-                    zdolności do nie dodawania dodatkowej wagi. Dzięki niej
-                    makaron ma apetyczny złocisty kolor z inkluzjami cząstek
-                    łuski ziarna.. Для производства пасты мы используем только
-                    высококачественную муку из твердых сортов пшеницы, которая
-                    известна своей способностью не добавлять лишний вес.
-                    Благодаря ей паста имеет аппетитный золотистый цвет с
-                    вкраплениями частиц оболочки зерна.
-                  </p>
+            </div>
+            <div
+              class="button-recipe-container d-flex justify-content-center my-4"
+            >
+              <a href="../pasta.html" class="d-inline-block">
+                <div class="button-recipe-more m-auto multilingual-text">
+                  Повернутись до асортименту ..Back to category ..Powrót do
+                  kategorii..Назад к ассортименту
                 </div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-md-10 col-xl-8 px-4">
-                  <h6 class="fw-bold multilingual-text my-4">
-                    Не лише смачно, а й корисно!..Not only tasty, but also
-                    healthy!..Nie tylko smaczne, ale także zdrowe!..Не только
-                    вкусно, но и полезно!
-                  </h6>
-                  <p class="multilingual-text">
-                    Звертаємо увагу тих, хто має великі фізичні або нервові чи
-                    емоційні навантаження: паста з твердих сортів пшениці
-                    містить багато комплексних вуглеводів, клітковини й вітаміну
-                    В1, які знімають втому і стрес. А ще ці елементи регулюють
-                    обмін речовин в організмі, нормалізують роботу органів
-                    травлення та знижують ризик виникнення серцево-судинних і
-                    навіть онкологічних захворювань! ..We draw the attention of
-                    those who have great physical or nervous or emotional
-                    stress: pasta from durum wheat contains many complex
-                    carbohydrates, fiber and vitamin B1, which relieve fatigue
-                    and stress. And these elements regulate the metabolism in
-                    the body, normalize the functioning of the digestive organs
-                    and reduce the risk of cardiovascular and even oncological
-                    diseases!.. Zwracamy uwagę tych, którzy mają duże obciążenia
-                    fizyczne lub nerwowe czy emocjonalne: makaron z pszenicy
-                    durum zawiera wiele złożonych węglowodanów, błonnika i
-                    witaminy B1, które łagodzą zmęczenie i stres. A te elementy
-                    regulują metabolizm w organizmie, normalizują funkcjonowanie
-                    narządów trawiennych i zmniejszają ryzyko chorób
-                    sercowo-naczyniowych, a nawet onkologicznych!.. Обращаем
-                    внимание тех, кто имеет большие физические или нервные или
-                    эмоциональные нагрузки: паста из твердых сортов пшеницы
-                    содержит много комплексных углеводов, клетчатки и витамина
-                    В1, которые снимают усталость и стресс. А еще эти элементы
-                    регулируют обмен веществ в организме, нормализуют работу
-                    органов пищеварения и снижают риск возникновения
-                    сердечно-сосудистых и даже онкологических заболеваний!
-                  </p>
-                  <p class="multilingual-text">
-                    Свіжа паста «Kulinarium Meister» – це джерело здоров’я у
-                    Вашому щоденному раціоні без жодної загрози зайвих
-                    кілограмів. ..Fresh pasta "Kulinarium Meister" is a source of
-                    health in your daily diet without any threat of extra
-                    pounds. ..Świeży makaron "Kulinarium Meister" to źródło
-                    zdrowia w Twojej codziennej diecie bez żadnego zagrożenia
-                    dodatkowymi kilogramami. ..Свежая паста "Kulinarium Meister"
-                    – это источник здоровья в вашем ежедневном рационе без
-                    какой-либо угрозы лишних килограммов.
-                  </p>
-                </div>
-              </div>
-            </section>
+              </a>
+            </div>
           </div>
         </main>
       </div>
 
       <!-- Footer -->
-      <footer>
+      <footer id="footer-index">
         <div class="footer-container">
           <nav
             id="footer-nav"
@@ -934,9 +983,11 @@
       </footer>
     </div>
 
-    <script src="src/vendor/jquery/jquery.min.js"></script>
-    <script src="src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="src/js/lang-switcher.js"></script>
-    <script src="src/js/index.js"></script>
+    <script src="../src/vendor/jquery/jquery.min.js"></script>
+    <script src="../src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/js/lang-switcher.js"></script>
+    <script src="../src/js/index.js"></script>
+    <script src="../src/js/mobile_paginator_for_home_pg.js"></script>
+    <script src="../src/js/zoom_effect.js"></script>
   </body>
 </html>
