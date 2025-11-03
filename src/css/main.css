@@ -121,6 +121,67 @@ h3 {
   padding: 0;
 }
 
+/* filepath: [main.css](http://_vscodecontentref_/2) */
+.mt-n1 {
+  margin-top: -0.25rem !important
+}
+
+.mt-n2 {
+  margin-top: -0.5rem !important
+}
+
+.mb-n1 {
+  margin-bottom: -0.25rem !important
+}
+
+.mb-n2 {
+  margin-bottom: -0.5rem !important
+}
+
+.ms-n1 {
+  margin-left: -0.25rem !important
+}
+
+.me-n1 {
+  margin-right: -0.25rem !important
+}
+
+.mt-n3 {
+  margin-top: -1rem !important
+}
+
+.mt-n4 {
+  margin-top: -1.5rem !important
+}
+
+.mt-n5 {
+  margin-top: -3rem !important
+}
+
+.mb-n3 {
+  margin-bottom: -1rem !important
+}
+
+.mb-n4 {
+  margin-bottom: -1.5rem !important
+}
+
+.mb-n5 {
+  margin-bottom: -3rem !important
+}
+
+.ms-n3 {
+  margin-left: -1rem !important
+}
+
+.ms-n4 {
+  margin-left: -1.5rem !important
+}
+
+.ms-n5 {
+  margin-left: -3rem !important
+}
+
 /* HEADER */
 header {
   background-color: #fff;
