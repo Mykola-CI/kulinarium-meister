@@ -139,6 +139,30 @@ class MultilingualSwitcher {
     }, 150)
   }
 
+
+  // Update placeholder text for form inputs
+
+  updatePlaceholders(langIndex) {
+    document
+      .querySelectorAll('.multilingual-placeholder')
+      .forEach((element) => {
+        const originalPlaceholder =
+          element.dataset.originalPlaceholder || element.placeholder
+
+        // Store original placeholder if not already stored
+        if (!element.dataset.originalPlaceholder) {
+          element.dataset.originalPlaceholder = originalPlaceholder
+        }
+
+        // Split by double dots and get the appropriate language
+        const placeholderParts = originalPlaceholder.split('..')
+
+        if (placeholderParts.length > langIndex) {
+          element.placeholder = placeholderParts[langIndex].trim()
+        }
+      })
+  }
+
   applyLanguage(langIndex) {
     // First, show all previously hidden elements
     document
@@ -158,6 +182,14 @@ class MultilingualSwitcher {
 
     // Update active language in dropdown
     this.updateActiveLanguage(langIndex)
+
+    // Update all multilingual text elements
+    document.querySelectorAll('.multilingual-text').forEach((element) => {
+      this.updateElementText(element, langIndex)
+    })
+
+    // Add this line to update placeholders
+    this.updatePlaceholders(langIndex)
 
     // Update page language attribute
     document.documentElement.lang = this.languages[langIndex].code
@@ -332,6 +364,16 @@ class MultilingualSwitcher {
     container.querySelectorAll('.multilingual-text').forEach((element) => {
       this.updateElementText(element, this.currentLanguage)
     })
+
+    // Also update placeholders in new elements
+    container
+      .querySelectorAll('.multilingual-placeholder')
+      .forEach((element) => {
+        const placeholderParts = element.placeholder.split('..')
+        if (placeholderParts.length > this.currentLanguage) {
+          element.placeholder = placeholderParts[this.currentLanguage].trim()
+        }
+      })
   }
 
   /**

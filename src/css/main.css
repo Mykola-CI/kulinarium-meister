@@ -77,6 +77,16 @@ a:hover {
   outline: 0;
 }
 
+.email-link {
+  color: blueviolet;
+  text-decoration: none;
+  transition: text-decoration 0.2s ease;
+}
+
+.email-link:hover {
+  text-decoration: underline !important;
+}
+
 
 .no-outline-btn {
   background: none;
@@ -551,9 +561,9 @@ header {
 }
 
 .button-recipe-more {
-  padding: 13px 26px;
+  padding: 13px 30px;
   width: fit-content;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
@@ -893,7 +903,7 @@ header {
 
 /* PRODUCT DETAIL PAGES */
 .main-content--product-detail {
-  padding: 100px 6%;
+  padding: 80px 6%;
   overflow: hidden;
   position: relative;
 }
@@ -983,7 +993,7 @@ header {
 }
 
 .image-set-to-condense {
-  width:100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   padding: 0;
@@ -1021,6 +1031,27 @@ header {
   filter: invert(1) grayscale(100);
 }
 
+
+/* FREQUENTLY ASKED QUESTIONS */
+.cormorant-infant-400 {
+  font-family: Cormorant Infant;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(38px, 4vw + 5px, 48px);
+  letter-spacing: 0em;
+  line-height: 1.2em;
+  text-transform: none;
+}
+
+.gabriela-400 {
+  font-family: Gabriela;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(18px, 4vw - 16px, 24px);
+  letter-spacing: 0em;
+  line-height: 1.26em;
+  text-transform: none;
+}
 
 
 /* Target touch devices only */
@@ -1142,10 +1173,6 @@ header {
 
   .video-recipes--card-page .isotope-filters {
     padding-top: 20px;
-  }
-
-  .main-content--product-detail {
-    padding: 0 6%;
   }
 
   .zoom-hint {
