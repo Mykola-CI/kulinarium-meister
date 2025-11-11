@@ -1,138 +1,13 @@
-<!doctype html>
-<html
-  xmlns:og="http://opengraphprotocol.org/schema/"
-  xmlns:fb="http://www.facebook.com/2008/fbml"
-  lang="en-US"
->
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="initial-scale=1" />
+#!/usr/bin/env python3
+"""
+Replace <header> elements in HTML files with the template from contact.html
+"""
+import os
+import re
+from pathlib import Path
 
-    <!-- kulinarium-meister -->
-    <meta charset="utf-8" />
-    <title>Kulinarium Meister</title>
-    <link rel="icon" href="./assets/images/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/images/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/images/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/images/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="./assets/images/safari-pinned-tab.svg"
-      color="#000000"
-    />
-    <meta
-      http-equiv="Accept-CH"
-      content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model"
-    />
-    <link rel="canonical" href="https://kulinariummeister.com" />
-    <meta property="og:site_name" content="Kulinarium Meister" />
-    <meta property="og:title" content="Kulinarium Meister" />
-    <meta property="og:url" content="https://kulinariummeister.com" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:description"
-      content="Продукт, який докорінно відрізняється від усіх пропонованих раніше видів тіста, оскільки повністю зберігає всі властивості щойно замішаного."
-    />
-    <meta
-      property="og:image"
-      content="http://static1.squarespace.com/static/58f6911f15d5dbcc64eaca88/t/59adc5c1bebafb5b868cda08/1504560578137/social_share_artwork.jpg?format=1500w"
-    />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta itemprop="name" content="Kulinarium Meister" />
-    <meta itemprop="url" content="https://kulinariummeister.com" />
-    <meta
-      itemprop="description"
-      content="Продукт, який докорінно відрізняється від усіх пропонованих раніше видів тіста, оскільки повністю зберігає всі властивості щойно замішаного."
-    />
-    <meta
-      itemprop="thumbnailUrl"
-      content="http://static1.squarespace.com/static/58f6911f15d5dbcc64eaca88/t/59adc5c1bebafb5b868cda08/1504560578137/social_share_artwork.jpg?format=1500w"
-    />
-    <meta
-      itemprop="image"
-      content="http://static1.squarespace.com/static/58f6911f15d5dbcc64eaca88/t/59adc5c1bebafb5b868cda08/1504560578137/social_share_artwork.jpg?format=1500w"
-    />
-    <meta name="twitter:title" content="Kulinarium Meister" />
-    <meta
-      name="twitter:image"
-      content="http://static1.squarespace.com/static/58f6911f15d5dbcc64eaca88/t/59adc5c1bebafb5b868cda08/1504560578137/social_share_artwork.jpg?format=1500w"
-    />
-    <meta name="twitter:url" content="https://kulinariummeister.com" />
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:description"
-      content="Продукт, який докорінно відрізняється від усіх пропонованих раніше видів тіста, оскільки повністю зберігає всі властивості щойно замішаного."
-    />
-    <meta name="description" content="" />
-    <link rel="preconnect" href="https://use.typekit.net" crossorigin />
-    <link rel="preconnect" href="https://p.typekit.net" crossorigin />
-    <script
-      type="text/javascript"
-      src="//use.typekit.net/ik/FsmnvdfenEGqr6iJD8F_i1Tzw6W6QPVi-m6GP7CObabfelvffFHN4UJLFRbh52jhWD9tZRjowQBcwQmqFAsKjhwhFemyjhIt5g7GMPG0-amC-AoySc8udPulZA8DiemkO1FUiABkZWF3jAF8OcFzdPUniAUTdcBk-WmlOAu8-WFXZWJ0SaBujW48Sagyjh90jhNlOelude80jW4TiAulZA8DiemkOcFzdPUCdhFydeyzSabCiaiaOclude80jW4TiAXldAmTSas8SKoDSWmyScmDSeBRZPoRdhXCiaiaOclude80jW4TiAulZA8DiemkOcFzdPJwSY4zpe8ljPu0daZyJ68ciWsuScIlSYb7fbRKHyMMeMw6MKG4fHvgIMMjgfMfH6GJCwbgIMMjgPMfH6qJK3IbMg6YJMJ7fbK3MsMMeMt6MKG4fJ3gIMMjIPMfH6qJy89bMs62JMJ7fbKImsMgeMb6MKG4fVN9IMIjgPMfH6qJ6m9bMs6YJMHbMp7Z8lCB.js"
-      async
-      fetchpriority="high"
-      onload="try{Typekit.load();}catch(e){} document.documentElement.classList.remove('wf-loading');"
-    ></script>
-    <script>
-      document.documentElement.classList.add('wf-loading')
-    </script>
-    <style>
-      @keyframes fonts-loading {
-        0%,
-        99% {
-          color: transparent;
-        }
-      }
-
-      html.wf-loading * {
-        animation: fonts-loading 3s;
-      }
-    </style>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,700&family=Libre+Baskerville:ital,wght@0,700&family=Cormorant+Infant:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400&family=Gabriela:ital,wght@0,400"
-    />
-    <link rel="stylesheet" href="src/vendor/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="src/css/main.css" />
-    <meta
-      name="google-site-verification"
-      content="4QMEQxu0VzZlCxrxJMTn_HbX8W0jvG6f47cIIThGKSE"
-    />
-    <meta
-      name="google-site-verification"
-      content="WS1gRtrk4p8oeXGDh6HslXcdDFgzDr4DEoNSOcYtLBk"
-    />
-    <meta
-      name="google-site-verification"
-      content="U7CPqsmTLUpPONoS1KMtu4bYTqwC13Krj6Fd73j7ePY"
-    />
-  </head>
-
-  <!-- ---------------------------------- -->
-  <!-- Begin Body -->
-  <!-- ---------------------------------- -->
-  <body>
-    <!-- Outer Container for everything -->
-    <div class="min-vh-100 outer-container-body container-fluid d-flex flex-column justify-content-between p-0">
-      <!--  Header and Main -->
-      <div class="position-relative mb-5">        <!-- Header -->
+# Template header from contact.html
+HEADER_TEMPLATE = '''        <!-- Header -->
         <header
           class="w-100 d-flex flex-row justify-content-center position-sticky top-0 start-0"
         >
@@ -569,203 +444,67 @@
               </div>
             </nav>
           </div>
-        </header>
-        <!-- MAIN CONTENT -->
-        <main>
-          <div class="dough-page-container">
-            <div
-              class="w-100 dough-hero-title text-center position-relative"
-              style="z-index: 100"
-            >
-              <h1 class="multilingual-text m-auto">
-                Тісто з начинкою.&nbsp;15 хвилин у печi i готово!..Stuffed
-                dough.&nbsp;Ready in 15 minutes!..Ciasto z nadzieniem.&nbsp;15
-                minut w piekarniku i gotowe!..Тесто с начинкой.&nbsp;15 минут в
-                духовке и готово!
-              </h1>
-            </div>
-            <section class="dough--products text-center">
-              <div class="dough--row row gx-4">
-                <div class="col-lg-4 col-6">
-                  <a href="/product_pages/pinwheels.html">
-                    <div
-                      class="product-image-container position-relative"
-                      style="z-index: 90"
-                    >
-                      <img
-                        src="/assets/images/stuffed_dough/ravlikli_box.webp"
-                        class="img-fluid product-image primary"
-                        alt=""
-                      />
-                      <img
-                        src="/assets/images/stuffed_dough/ravliki.webp"
-                        class="img-fluid product-image secondary"
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      class="multilingual-text position-relative"
-                      style="z-index: 100"
-                    >
-                      Равлики з шинкою та сиром Kulinarium Meister..Ham and cheese
-                      pinwheels Kulinarium Meister..Ślimaczki z szynką Kulinarium
-                      Meister..Булочки-улитки с ветчиной и сыром Kulinarium
-                      Meister
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-4 col-6">
-                  <a href="/product_pages/poppy_seed_pinwheels.html">
-                    <div
-                      class="product-image-container position-relative"
-                      style="z-index: 85"
-                    >
-                      <img
-                        src="/assets/images/stuffed_dough/ravliki_mak_box.webp"
-                        class="img-fluid product-image primary"
-                        alt=""
-                      />
-                      <img
-                        src="/assets/images/stuffed_dough/ravliki_mak.webp"
-                        class="img-fluid product-image secondary"
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      class="multilingual-text position-relative"
-                      style="z-index: 100"
-                    >
-                      Равлики з маком та родзинками Kulinarium Meister.. Poppy
-                      seed pinwheels Kulinarium Meister..Ślimaki z makiem
-                      Kulinarium Meister..Булочки-улитки с маком Kulinarium
-                      Meister
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-4 col-6">
-                  <a href="/product_pages/sausage_rolls.html">
-                    <div
-                      class="product-image-container position-relative"
-                      style="z-index: 80"
-                    >
-                      <img
-                        src="/assets/images/stuffed_dough/sosiski_box.webp"
-                        class="img-fluid product-image primary"
-                        alt=""
-                      />
-                      <img
-                        src="/assets/images/stuffed_dough/sosiski.webp"
-                        class="img-fluid product-image secondary"
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      class="multilingual-text position-relative"
-                      style="z-index: 100"
-                    >
-                      Сосиски в листковому тісті Kulinarium Meister..Sausage rolls
-                      Kulinarium Meister..Parówki w cieście francuskim Kulinarium
-                      Meister..Сосиски в слоеном тесте Kulinarium Meister
-                    </div>
-                  </a>
-                </div>
+        </header>'''
 
-                <div class="col-lg-4 col-6">
-                  <a href="/product_pages/twister_pastry.html">
-                    <div
-                      class="product-image-container position-relative"
-                      style="z-index: 75"
-                    >
-                      <img
-                        src="/assets/images/stuffed_dough/rogaliki_box.webp"
-                        class="img-fluid product-image primary"
-                        alt=""
-                      />
-                      <img
-                        src="/assets/images/stuffed_dough/rogaliki.webp"
-                        class="img-fluid product-image secondary"
-                        style="top: 10%"
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      class="multilingual-text position-relative"
-                      style="z-index: 100"
-                    >
-                      Рогалики з шоколадом Kulinarium Meister..Chocolate сrescents
-                      Kulinarium Meister..Rogaliki z czekoladą Kulinarium
-                      Meister..Рогалики с шоколадом Kulinarium Meister
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </section>
-          </div>
-        </main>
-      </div>
+def replace_header(file_path):
+    """Replace header in a single HTML file"""
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Pattern to match entire header element (including newlines and whitespace)
+        # This matches from the comment before header to </header>
+        pattern = r'(\s*)<!-- Header -->.*?</header>'
+        
+        # Check if header exists
+        if not re.search(pattern, content, re.DOTALL):
+            print(f"❌ No header found in: {file_path}")
+            return False
+        
+        # Replace the header
+        new_content = re.sub(pattern, HEADER_TEMPLATE, content, flags=re.DOTALL)
+        
+        # Write back
+        with open(file_path, 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        
+        print(f"✅ Updated: {file_path}")
+        return True
+        
+    except Exception as e:
+        print(f"❌ Error processing {file_path}: {e}")
+        return False
 
-      <!-- Footer -->
-      <footer id="footer-index">
-        <div class="footer-container">
-          <nav
-            id="footer-nav"
-            class="Header-nav d-flex flex-row gap-3 justify-content-center justify-content-lg-start"
-          >
-            <div class="header-nav--a-link">
-              <a
-                href="/faq.html"
-                class="Header-nav-item multilingual-text"
-                data-test="template-nav"
-                >Запитання та вiдповiдi..FAQ..PYTANIA I ODPOWIEDZI..Вопросы и
-                ответы</a
-              >
-            </div>
-            <div class="header-nav--a-link">
-              <a
-                href="/contact.html"
-                class="Header-nav-item multilingual-text"
-                data-test="template-nav"
-                >Контакти..Contacts..Kontakty..Контакты</a
-              >
-            </div>
-          </nav>
-          <div class="footer--company-details row mx-0">
-            <div class="col-12 col-lg-2 text-center pb-4">
-              <img
-                src="/assets/images/deutshe_qualitat@2x.png"
-                class="img-fluid"
-                alt="Mahlzeit logo"
-              />
-            </div>
-            <div class="col-12 col-lg-10">
-              <div class="footer--company-details-text ps-3">
-                <a href="/contact.html">Виробник: ТОВ «Мальцайт ГМБХ»</a>
-                <p>
-                  <span class="multilingual-text">
-                    Адреса: вул. Лісна, 6Б, с. Білогородка, Бучанський р-н,
-                    Київська обл., 08140, Україна..Lysna St., 6B, Bilohorodka
-                    village, Buchanskyi district, Kyiv region, 08140,
-                    Ukraine..ul. Leśna, 6B, wieś Biłogorodka, rejon Buchański,
-                    obwód Kijowski, 08140, Ukraina..ул. Лесная, 6Б, с.
-                    Белогородка, Бучанский р-н, Киевская обл., 08140, Украина
-                  </span>
-                  <br />
-                  <span class="multilingual-text"
-                    >тел. ..phone..telefon..тел.</span
-                  >
-                  +380 44 384 06 76, office@mahlzeit.com.ua ,
-                  https://kulinariummeister.com , https://kulinarium-meister.com
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
+def main():
+    base_dir = Path(__file__).parent
+    
+    # Collect all HTML files from specified directories
+    html_files = []
+    
+    # Root directory (excluding contact.html)
+    for file in base_dir.glob("*.html"):
+        if file.name != "contact.html":
+            html_files.append(file)
+    
+    # product_pages directory
+    product_pages = base_dir / "product_pages"
+    if product_pages.exists():
+        html_files.extend(product_pages.glob("*.html"))
+    
+    # recipe_details directory
+    recipe_details = base_dir / "recipe_details"
+    if recipe_details.exists():
+        html_files.extend(recipe_details.glob("*.html"))
+    
+    print(f"Found {len(html_files)} HTML files to process\n")
+    
+    # Process each file
+    success_count = 0
+    for file in sorted(html_files):
+        if replace_header(file):
+            success_count += 1
+    
+    print(f"\n✅ Successfully updated {success_count} out of {len(html_files)} files")
 
-    <script src="src/vendor/jquery/jquery.min.js"></script>
-    <script src="src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="src/js/lang-switcher.js"></script>
-    <script src="src/js/index.js"></script>
-  </body>
-</html>
+if __name__ == "__main__":
+    main()

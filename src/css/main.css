@@ -332,6 +332,26 @@ header {
   background-color: inherit;
 }
 
+/* Center language dropdown in offcanvas */
+.offcanvas-body .language-switcher .dropdown-menu {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  /* margin: 0; */
+  margin-top: 25px !important;
+  right: auto !important;
+}
+
+/* Ensure the dropdown container is centered */
+.offcanvas-body .language-switcher {
+  display: flex;
+  justify-content: center;
+}
+
+.offcanvas-body .language-switcher .dropdown {
+  position: relative;
+}
+
 
 /* ------------------------------------ */
 /* MAIN HOME PAGE CONTENT */

@@ -113,8 +113,7 @@
     <!-- Outer Container for everything -->
     <div class="outer-container-body container-fluid">
       <!--  Header and Main -->
-      <div class="position-relative">
-        <!-- Header -->
+      <div class="position-relative">        <!-- Header -->
         <header
           class="w-100 d-flex flex-row justify-content-center position-sticky top-0 start-0"
         >
@@ -195,10 +194,10 @@
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="offcanvas-body p-4">
+              <div class="offcanvas-body py-2 px-4">
                 <!-- Language Switcher Dropdown -->
                 <div class="language-switcher">
-                  <div class="dropdown">
+                  <div class="dropdown d-flex justify-content-center">
                     <button
                       class="btn dropdown-toggle language-btn no-outline-btn"
                       type="button"
@@ -219,7 +218,7 @@
                       >
                     </button>
                     <ul
-                      class="dropdown-menu Header-nav-folder w-100 px-5"
+                      class="dropdown-menu Header-nav-folder px-5"
                       aria-labelledby="languageDropdownOffcanvas"
                     >
                       <li>
@@ -312,6 +311,36 @@
                     >Равiолi..Ravioli..Ravioli..Равиоли</a
                   >
                 </div>
+                <!-- FROZEN DROPDOWN -->
+                <div class="dropdown mt-5">
+                  <button
+                    class="btn btn-primary dropdown-toggle multilingual-text no-outline-btn Header-nav-item"
+                    type="button"
+                    data-bs-offset="0,10"
+                    data-bs-toggle="dropdown"
+                    style="color: #212529"
+                  >
+                    Заморожені..Frozen Range..Mrożone..Замороженные
+                  </button>
+                  <!-- Dropdown body -->
+                  <ul class="dropdown-menu Header-nav-folder w-100 px-2">
+                    <li>
+                      <a
+                        href="/frozen.html"
+                        class="dropdown-item multilingual-text p-2"
+                        >Смаколики для випічки..Home-quality treats..Smakołyki
+                        do pieczenia..Вкусности для выпечки</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/frozen_ravioli.html"
+                        class="dropdown-item multilingual-text p-2"
+                        >Равіолі..Ravioli..Ravioli..Равиоли</a
+                      >
+                    </li>
+                  </ul>
+                </div>
                 <div class="header-nav--a-link mt-5">
                   <a
                     href="/recipes.html"
@@ -319,64 +348,18 @@
                     >Відео-рецепти..Video Recipes..Przepisy..Видео-рецепты</a
                   >
                 </div>
-                <!-- Dropdown Visible only in Ukrainian lang setting -->
-                <div class="dropdown mt-5">
-                  <button
-                    class="btn btn-primary dropdown-toggle multilingual-text no-outline-btn Header-nav-item"
-                    type="button"
-                    data-bs-offset="0,10"
-                    data-bs-toggle="dropdown"
+                <div class="header-nav--a-link mt-5">
+                  <a href="/faq.html" class="Header-nav-item multilingual-text"
+                    >Питання Вiдповiдi..FAQ..Pytania Odpowiedzi..Вопросы
+                    Ответы</a
                   >
-                    <a
-                      href="/places.html"
-                      class="Header-nav-folder-title multilingual-text"
-                      style="color: #212529"
-                      >Мiсця продажу.. .. ..</a
-                    >
-                  </button>
-                  <!-- Dropdown body -->
-                  <ul class="dropdown-menu Header-nav-folder w-100 px-2">
-                    <li>
-                      <a
-                        href="/kyiv.html"
-                        class="dropdown-item multilingual-text p-2"
-                        data-test="template-nav"
-                        >Київ та Північні області</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="/Dnipro.html"
-                        class="dropdown-item multilingual-text p-2"
-                        data-test="template-nav"
-                        >Днiпро та Центральні області</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="/Kharkiv.html"
-                        class="dropdown-item multilingual-text p-2"
-                        data-test="template-nav"
-                        >Харкiв та Східні області</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="/odesa.html"
-                        class="dropdown-item multilingual-text p-2"
-                        data-test="template-nav"
-                        >Одеса та Південні області</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="/lviv.html"
-                        class="dropdown-item multilingual-text p-2"
-                        data-test="template-nav"
-                        >Львів та Західні області</a
-                      >
-                    </li>
-                  </ul>
+                </div>
+                <div class="header-nav--a-link mt-5">
+                  <a
+                    href="/contact.html"
+                    class="Header-nav-item multilingual-text"
+                    >Контакти..Contacts..Kontakty..Контакты</a
+                  >
                 </div>
               </div>
             </div>
@@ -513,14 +496,6 @@
                     >Равiолi..Ravioli..Ravioli..Равиоли</a
                   >
                 </div>
-                <div class="header-nav--a-link">
-                  <a
-                    href="/recipes.html"
-                    class="Header-nav-item multilingual-text"
-                    >Відео-рецепти..Video Recipes..Przepisy..Видео-рецепты</a
-                  >
-                </div>
-                <!-- Visible only in Ukrainian lang setting -->
                 <div class="dropdown">
                   <button
                     class="btn btn-primary dropdown-toggle multilingual-text no-outline-btn Header-nav-item"
@@ -528,68 +503,45 @@
                     data-bs-offset="-12,8"
                     data-bs-toggle="dropdown"
                   >
-                    <a
-                      href="/places.html"
-                      class="Header-nav-folder-title multilingual-text"
-                      >Мiсця продажу.. .. ..</a
-                    >
+                    Заморожені..Frozen Range..Mrożone..Замороженные
                   </button>
                   <ul class="dropdown-menu Header-nav-folder">
                     <li>
                       <a
-                        href="/kyiv.html"
+                        href="/frozen.html"
                         class="Header-nav-folder-item multilingual-text"
-                        data-test="template-nav"
-                        >Київ та Північні області</a
+                        >Смаколики для випічки..Home-quality treats..Smakołyki
+                        do pieczenia..Вкусности для выпечки</a
                       >
                     </li>
                     <li>
                       <a
-                        href="/Dnipro.html"
+                        href="/frozen_ravioli.html"
                         class="Header-nav-folder-item multilingual-text"
-                        data-test="template-nav"
-                        >Днiпро та Центральні області</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="/Kharkiv.html"
-                        class="Header-nav-folder-item multilingual-text"
-                        data-test="template-nav"
-                        >Харкiв та Східні області</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="/odesa.html"
-                        class="Header-nav-folder-item multilingual-text"
-                        data-test="template-nav"
-                        >Одеса та Південні області</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="/lviv.html"
-                        class="Header-nav-folder-item multilingual-text"
-                        data-test="template-nav"
-                        >Львів та Західні області</a
+                        >Равіолі..Ravioli..Ravioli..Равиоли</a
                       >
                     </li>
                   </ul>
                 </div>
-                <!-- Temporarily blocked -->
-                <div style="display: none">
+                <div class="header-nav--a-link">
                   <a
-                    href="/faq"
+                    href="/recipes.html"
                     class="Header-nav-item multilingual-text"
-                    data-test="template-nav"
-                    >Запитання та вiдповiдi..FAQ..PYTANIA I ODPOWIEDZI..Вопросы
-                    и ответы</a
+                    >Відео-рецепти..Video Recipes..Przepisy..Видео-рецепты</a
                   >
                 </div>
-                <div style="display: none">
+                <div class="header-nav--a-link">
                   <a
-                    href="/contact"
+                    href="/faq.html"
+                    class="Header-nav-item multilingual-text"
+                    data-test="template-nav"
+                    >Питання Вiдповiдi..FAQ..Pytania Odpowiedzi..Вопросы
+                    Ответы</a
+                  >
+                </div>
+                <div class="header-nav--a-link">
+                  <a
+                    href="/contact.html"
                     class="Header-nav-item multilingual-text"
                     data-test="template-nav"
                     >Контакти..Contacts..Kontakty..Контакты</a
@@ -843,7 +795,7 @@
       </div>
 
       <!-- Footer -->
-      <footer>
+      <footer id="footer-index">
         <div class="footer-container">
           <nav
             id="footer-nav"
@@ -851,7 +803,7 @@
           >
             <div class="header-nav--a-link">
               <a
-                href="/faq"
+                href="/faq.html"
                 class="Header-nav-item multilingual-text"
                 data-test="template-nav"
                 >Запитання та вiдповiдi..FAQ..PYTANIA I ODPOWIEDZI..Вопросы и
@@ -860,7 +812,7 @@
             </div>
             <div class="header-nav--a-link">
               <a
-                href="/contact"
+                href="/contact.html"
                 class="Header-nav-item multilingual-text"
                 data-test="template-nav"
                 >Контакти..Contacts..Kontakty..Контакты</a
@@ -877,13 +829,22 @@
             </div>
             <div class="col-12 col-lg-10">
               <div class="footer--company-details-text ps-3">
-                <a href="/contact">Виробник: ТОВ «Мальцайт ГМБХ»</a>
+                <a href="/contact.html">Виробник: ТОВ «Мальцайт ГМБХ»</a>
                 <p>
-                  Адреса: вул. Лісна, 6Б, с. Білогородка, Києво-Святошинський
-                  р-н, Київська обл., 08140, Україна
+                  <span class="multilingual-text">
+                    Адреса: вул. Лісна, 6Б, с. Білогородка, Бучанський р-н,
+                    Київська обл., 08140, Україна..Lysna St., 6B, Bilohorodka
+                    village, Buchanskyi district, Kyiv region, 08140,
+                    Ukraine..ul. Leśna, 6B, wieś Biłogorodka, rejon Buchański,
+                    obwód Kijowski, 08140, Ukraina..ул. Лесная, 6Б, с.
+                    Белогородка, Бучанский р-н, Киевская обл., 08140, Украина
+                  </span>
                   <br />
-                  тел. +380 44 384 06 76, office@mahlzeit.com.ua ,
-                  https://kulinariummeister.com
+                  <span class="multilingual-text"
+                    >тел. ..phone..telefon..тел.</span
+                  >
+                  +380 44 384 06 76, office@mahlzeit.com.ua ,
+                  https://kulinariummeister.com , https://kulinarium-meister.com
                 </p>
               </div>
             </div>

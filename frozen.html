@@ -8,11 +8,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="initial-scale=1" />
 
-    <!-- This is Squarespace. -->
     <!-- kulinarium-meister -->
-    <base href="" />
     <meta charset="utf-8" />
     <title>Kulinarium Meister</title>
+    <link rel="icon" href="../assets/images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../assets/images/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../assets/images/safari-pinned-tab.svg"
+      color="#000000"
+    />
     <meta
       http-equiv="Accept-CH"
       content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model"
@@ -111,9 +133,11 @@
   <!-- ---------------------------------- -->
   <body>
     <!-- Outer Container for everything -->
-    <div class="outer-container-body container-fluid">
+    <div
+      class="outer-container-body container-fluid d-flex flex-column min-vh-100"
+    >
       <!--  Header and Main -->
-      <div class="position-relative">        <!-- Header -->
+      <div class="position-relative flex-grow-1">        <!-- Header -->
         <header
           class="w-100 d-flex flex-row justify-content-center position-sticky top-0 start-0"
         >
@@ -553,237 +577,32 @@
         </header>
         <!-- MAIN CONTENT -->
         <main>
-          <div class="recipe-detail--container">
-            <div class="container mb-3">
-              <section class="recipe-detail--title mb-4">
-                <h1
-                  class="container text-center multilingual-text"
-                  id="video-recipe-iframe"
-                >
-                  Кошик із фруктами та горіхами..Fruit and Nut Basket..Koszyk z
-                  owocami i orzechami..Корзинка с фруктами и орехами
-                </h1>
-                <a href="#recipe--avatars">
-                  <p
-                    class="text-secondary text-center multilingual-text p-xl-4"
-                  >
-                    Пісочне тісто..Shortcrust Pastry..Ciasto kruche..Тесто
-                    песочное
-                  </p>
-                </a>
-              </section>
-              <!-- VIDEO RECIPES -->
-              <section class="recipe-video mb-4">
-                <div class="container">
-                  <div class="ratio ratio-16x9">
-                    <iframe
-                      src="https://www.youtube.com/embed/HR4e5Lgp6nM?wmode=opaque&amp;amp;enablejsapi=1"
-                      title="Recipe Video"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    >
-                    </iframe>
-                  </div>
-                </div>
-              </section>
-              <section class="recipe-content px-3">
-                <div class="row justify-content-between">
-                  <div class="col-12 col-lg-5">
-                    <h2>Інгредієнти</h2>
-                    <ul class="recipe--ingredients-list">
-                      <li>
-                        1 рулон (250 г) - пісочне тісто Кulinarium Meister;
-                      </li>
-                      <li>6-8 шт - абрикос;</li>
-                      <li>200 г - черешня;</li>
-                      <li>1 шт - лимон;</li>
-                      <li>2 ст. л. - цукор;</li>
-                      <li>1 ст. л. - крохмаль;</li>
-                      <li>2-3 ст. л. - вершковий сир;</li>
-                      <li>30 г - мигдаль;</li>
-                      <li>30 г - кешью;</li>
-                      <li>50-70 г - мед.</li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-lg-7">
-                    <h2>Приготування</h2>
-                    <ul class="recipe--preparation-list">
-                      <li>З абрикос та черешень вийняти кісточки.</li>
-                      <li>
-                        Збризнути лимонним соком, додати цукор, крохмаль та
-                        ретельно перемішати.
-                      </li>
-                      <li>
-                        Розвернути рулон пісочного тіста, залишаючи його на
-                        пергаменті.
-                      </li>
-                      <li>
-                        Змастити вершковим сиром, викласти фрукти і посипати
-                        горіхами (мигдалем та кешью).
-                      </li>
-                      <li>Сформувати борти корзини.</li>
-                      <li>
-                        Відправити в розігріту до 160 градусів духовку на 30-40
-                        хвилин.
-                      </li>
-                      Подавати в теплому вигляді, поливаючи сумішшю меда з
-                      лимоном.
-                    </ul>
-                  </div>
-                </div>
-              </section>
-              <hr />
+          <div class="dough-page-container">
+            <div
+              class="dough-hero-title text-center position-relative"
+              style="z-index: 100"
+            >
+              <h1 class="multilingual-text m-auto">
+                Домашні смакування з замороженого тіста..Ready-to-Finish Home
+                Flavours (Frozen) ..Gotowe Do Pieca Domowe Smaki (mrożone)
+                ..Угощения домашнего качества из замороженного теста
+              </h1>
+              <p class="multilingual-text mx-auto mt-4">
+                Нова лінійка заморожених виробів з тіста від Kulinarium Meister
+                - справжнє задоволення..A new range of frozen dough products
+                from Kulinarium Meister - true delight..Nowa linia mrożonych
+                wyrobów z ciasta od Kulinarium Meister - prawdziwa
+                rozkosz..Новая линейка замороженных изделий из теста от
+                Kulinarium Meister - настоящее удовольствие
+              </p>
+              <p class="multilingual-text mx-auto fw-bold" style="color: red;">
+                Скоро з'явиться в продажу!..Coming soon!..Wkrótce w sprzedaży!..
+                Скоро в продаже!
+              </p>
             </div>
-            <section class="recipe--avatars" id="recipe--avatars">
-              <h5 class="text-center text-secondary multilingual-text pb-3">
-                Пісочне тісто..Shortcrust Pastry..Ciasto kruche..Тесто песочное
-              </h5>
-              <div
-                class="row row-cols-2 row-cols-md-3 row-cols-xl-5 g-1 g-md-2 g-lg-3 g-xxl-5 justify-content-center"
-              >
-                <article class="col">
-                  <a href="/recipe_details/basket_with_fruits_and_nuts.html">
-                    <img
-                      src="/assets/images/recipes/basket-with-fruits-and-nuts.webp"
-                      alt="Fruit and Nut
-                        Basket"
-                      class="img-fluid"
-                    />
-                    <p
-                      class="regular-recipe-title--page multilingual-text mt-3 mb-2"
-                    >
-                      Кошик із фруктами та горіхами..Fruit and Nut
-                      Basket..Koszyk z owocami i orzechami..Корзинка с фруктами
-                      и орехами
-                    </p>
-                  </a>
-                </article>
-                <article class="col">
-                  <a href="/recipe_details/mint_cheesecake.html">
-                    <img
-                      src="/assets/images/recipes/mint-cheesecake-with-strawberry-compote.webp"
-                      alt="Mint Cheesecake
-                        with Strawberry Compote"
-                      class="img-fluid"
-                    />
-                    <p
-                      class="regular-recipe-title--page multilingual-text mt-3 mb-2"
-                    >
-                      М'ятний чізкейк із полуничним компоте..Mint Cheesecake
-                      with Strawberry Compote..Sernik miętowy z kompotem
-                      truskawkowym..Мятный чизкейк с клубничным компотом
-                    </p>
-                  </a>
-                </article>
-                <article class="col">
-                  <a href="/recipe_details/strawberry_cheesecake.html">
-                    <img
-                      src="/assets/images/recipes/strawberry-cheesecake.webp"
-                      alt="strawberry-cheesecake"
-                      class="img-fluid"
-                    />
-                    <p
-                      class="regular-recipe-title--page multilingual-text mt-3 mb-2"
-                    >
-                      Полуничний чізкейк..Strawberry Cheesecake..Sernik
-                      truskawkowy..Клубничный чизкейк
-                    </p>
-                  </a>
-                </article>
-                <article class="col">
-                  <a href="/recipe_details/lemon_tart_strawberries.html">
-                    <img
-                      src="/assets/images/recipes/strawberry-lemon-tart.webp"
-                      alt="Lemon Tart with
-                        Strawberries"
-                      class="img-fluid"
-                    />
-                    <p
-                      class="regular-recipe-title--page multilingual-text mt-3 mb-2"
-                    >
-                      Лимонний тарт із полуницею..Lemon Tart with
-                      Strawberries..Limonkowa tarta z truskawkami..Лимонный тарт
-                      с клубникой
-                    </p>
-                  </a>
-                </article>
-                <article class="col">
-                  <a href="/recipe_details/quiche_crab_spinach.html">
-                    <img
-                      src="/assets/images/recipes/quiche-with-crab-and-spinach.webp"
-                      alt="Quiche with Crab
-                        Sticks and Spinach"
-                      class="img-fluid"
-                    />
-                    <p
-                      class="regular-recipe-title--page multilingual-text mt-3 mb-2"
-                    >
-                      Кіш із крабовими паличками та шпинатом..Quiche with Crab
-                      Sticks and Spinach..Quiche z paluszkami krabowymi i
-                      szpinakiem..Киш с крабовыми палочками и шпинатом
-                    </p>
-                  </a>
-                </article>
-                <article class="col">
-                  <a href="/recipe_details/quiche_salmon_broccoli.html">
-                    <img
-                      src="/assets/images/recipes/quiche-with-salmon-and-broccoli.webp"
-                      alt="Quiche with Salmon and
-                        Broccoli"
-                      class="img-fluid"
-                    />
-                    <p
-                      class="regular-recipe-title--page multilingual-text mt-3 mb-2"
-                    >
-                      Кіш з лососем та брокколі..Quiche with Salmon and
-                      Broccoli..Quiche z łososiem i brokułami..Киш с лососем и
-                      брокколи
-                    </p>
-                  </a>
-                </article>
-                <article class="col">
-                  <a href="/recipe_details/chicken_pie.html">
-                    <img
-                      src="/assets/images/recipes/chicken-pie.webp"
-                      alt="Chicken Pie"
-                      class="img-fluid"
-                    />
-                    <p
-                      class="regular-recipe-title--page multilingual-text mt-3 mb-2"
-                    >
-                      Кіш з курячим філе..Chicken Pie..Quiche z filetem z
-                      kurczaka..Киш с куриным филе
-                    </p>
-                  </a>
-                </article>
-                <article class="col">
-                  <a href="/recipe_details/berry_tart.html">
-                    <img
-                      src="/assets/images/recipes/berry-tart.webp"
-                      alt="Berry Tart"
-                      class="img-fluid"
-                    />
-                    <p
-                      class="regular-recipe-title multilingual-text text-center mt-3"
-                    >
-                      Ягідний тарт..Berry Tart..Tarta z jagodami..Ягодный тарт
-                    </p>
-                  </a>
-                </article>
-              </div>
-              <a href="#video-recipe-iframe">
-                <p
-                  class="text-secondary text-center multilingual-text pt-4 pt-xl-5"
-                >
-                  Повернутись до відео..Back to Video..Powrót do
-                  wideo..Вернуться к видео
-                </p>
-              </a>
-            </section>
           </div>
         </main>
       </div>
-
       <!-- Footer -->
       <footer id="footer-index">
         <div class="footer-container">
@@ -847,5 +666,7 @@
     <script src="../src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../src/js/lang-switcher.js"></script>
     <script src="../src/js/index.js"></script>
+    <script src="../src/js/mobile_paginator_for_home_pg.js"></script>
+    <script src="../src/js/zoom_effect.js"></script>
   </body>
 </html>
