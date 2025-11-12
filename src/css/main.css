@@ -588,10 +588,47 @@ header {
   font-style: normal;
   text-transform: uppercase;
   letter-spacing: .05em;
-  background-color: rgba(0, 0, 0, .1);
-  border-color: rgba(0, 0, 0, .1);
+  background-color: rgba(0, 0, 0, .1) !important;
+  /* Add !important */
   box-shadow: 0 2px 0 0 rgba(0, 0, 0, .1);
-  color: rgba(28, 28, 28, .79);
+  color: rgba(28, 28, 28, .79) !important;
+  /* Explicitly set border */
+  -webkit-appearance: none;
+  /* Remove iOS default styling */
+  -moz-appearance: none;
+  /* Remove Firefox default styling */
+  appearance: none;
+  /* Remove default styling */
+  /* iOS-specific fixes */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+/* Target the parent button element more specifically */
+button.d-inline-block {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+}
+
+/* Remove Bootstrap's active/focus states */
+.button-recipe-more:hover,
+.button-recipe-more:focus,
+.button-recipe-more:active,
+.button-recipe-more:focus-visible,
+button.d-inline-block:hover,
+button.d-inline-block:focus,
+button.d-inline-block:active {
+  background-color: rgba(0, 0, 0, .15) !important;
+  border-color: rgba(0, 0, 0, .15) !important;
+  color: rgba(28, 28, 28, .79) !important;
+  outline: none;
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, .1);
 }
 
 /* FOOTER */
