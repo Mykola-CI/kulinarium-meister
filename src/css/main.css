@@ -1110,6 +1110,41 @@ button.d-inline-block:active {
   text-transform: none;
 }
 
+/* Frozen hero: use a pseudo-element for a translucent background image
+   so the foreground h1 text is not affected by the transparency */
+#frozen-hero-title {
+  position: relative;
+  overflow: hidden;
+}
+
+#frozen-hero-title::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* Replace the URL below with your image path */
+  background-image: url("/assets/images/ice_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* adjust transparency without affecting text */
+  pointer-events: none;
+  z-index: 0;
+}
+
+#frozen-hero-title > h1,
+#frozen-hero-title h1 {
+  position: relative;
+  z-index: 1;
+}
+
+#christmas-ball {
+  margin-top: 30px;
+  width: 12%;
+}
+#christmas-cone {
+  width: 10%;
+}
+
 
 /* Target touch devices only */
 @media (hover: none) and (pointer: coarse) {
