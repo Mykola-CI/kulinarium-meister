@@ -29,6 +29,8 @@ bower_components/
 .idea/
 *.bak
 *.tmp
+*.py
+
 
 drafts/
 tools/

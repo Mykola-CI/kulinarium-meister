@@ -719,11 +719,20 @@ button.d-inline-block:active {
   opacity: 0;
 }
 
-.product-image-container:hover .product-image.primary {
+.product-image--ravioli.secondary {
+  position: absolute;
+  top: 0;
+  left: 0;
   opacity: 0;
 }
 
-.product-image-container:hover .product-image.secondary {
+.product-image-container:hover .product-image.primary,
+.frozen-image-container--ravioli:hover .product-image.primary {
+  opacity: 0;
+}
+
+.product-image-container:hover .product-image.secondary,
+.frozen-image-container--ravioli:hover .product-image--ravioli.secondary {
   opacity: 1;
 }
 
@@ -1112,12 +1121,12 @@ button.d-inline-block:active {
 
 /* Frozen hero: use a pseudo-element for a translucent background image
    so the foreground h1 text is not affected by the transparency */
-#frozen-hero-title {
+.frozen-hero-title {
   position: relative;
   overflow: hidden;
 }
 
-#frozen-hero-title::after {
+.frozen-hero-title::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -1126,13 +1135,14 @@ button.d-inline-block:active {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  opacity: 0.5; /* adjust transparency without affecting text */
+  opacity: 0.5;
+  /* adjust transparency without affecting text */
   pointer-events: none;
   z-index: 0;
 }
 
-#frozen-hero-title > h1,
-#frozen-hero-title h1 {
+.frozen-hero-title > h1,
+.frozen-hero-title h1 {
   position: relative;
   z-index: 1;
 }
@@ -1141,6 +1151,7 @@ button.d-inline-block:active {
   margin-top: 30px;
   width: 12%;
 }
+
 #christmas-cone {
   width: 10%;
 }
